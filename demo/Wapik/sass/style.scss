@@ -1,0 +1,11 @@
+@import '_normalize.scss';
+@import '_variables.scss';
+@import '_grid.scss';
+//----- home page ----- //
+@import 'pages/home.scss';
+
+//----- about page ----- //
+@import 'pages/about-us.scss';
+
+//----- contact page ----- //
+@import 'pages/contact-us.scss';
