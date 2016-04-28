@@ -9,6 +9,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/slickslide.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -138,9 +139,9 @@
 						<p class="buttom-text">Lorem Ipsum is simply dummy text</p>
 					<div class="hover-title">
 						<ul>
-							<a href="#" title="Tooltip on top"><li class="hover-title-first">Men Shop</li></a>
-							<a href="#"><li class="present">&nbsp;</li></a>
-							<a href="#"><li class="cart">&nbsp;</li></a>
+							<a href="#" ><li class="hover-title-first" data-title="view">Men Shop</li></a>
+							<a href="#" ><li class="present" data-title="present">&nbsp;</li></a>
+							<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
 							<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
 						</ul>
 					</div>
@@ -156,9 +157,9 @@
 					</ul>
 					<div class="hover-title">
 						<ul>
-							<a href="#"><li class="hover-title-first">Men Shop</li></a>
-							<a href="#"><li class="present">&nbsp;</li></a>
-							<a href="#"><li class="cart">&nbsp;</li></a>
+							<a href="#"><li class="hover-title-first" data-title="view">Women Shop</li></a>
+							<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+							<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
 							<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
 						</ul>
 					</div>											
@@ -172,15 +173,15 @@
 					</ul>
 					<div class="hover-title">
 						<ul>
-							<a href="#"><li class="hover-title-first">Baby Shop</li></a>
-							<a href="#"><li class="present">&nbsp;</li></a>
-							<a href="#"><li class="cart">&nbsp;</li></a>
+							<a href="#"><li class="hover-title-first" data-title="view">Baby Shop</li></a>
+							<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+							<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
 							<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
 						</ul>
 					</div>						
 				</div>
 			</div>
-			</div>
+		</div>
 		</div>
 	</section>
 
@@ -198,9 +199,9 @@
 						<a href=""><img src="img/crafts.jpg" class="img-responsive" alt=""></a>
 					<div class="hover-title-crafts">
 						<ul>
-							<a href="#"><li class="hover-crafts">crafts</li></a>
-							<a href="#"><li class="present">&nbsp;</li></a>
-							<a href="#"><li class="cart">&nbsp;</li></a>
+							<a href="#"><li class="hover-crafts" data-title="view">crafts</li></a>
+							<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+							<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
 							<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
 						</ul>
 					</div>							
@@ -209,13 +210,341 @@
 				<div class="col-md-5 right-padding">
 					<div class="jewelry">
 						<a href="#"><img src="img/jewelry.jpg" class="img-responsive" alt=""></a>
+					<div class="hover-title-jewelry">
+						<ul>
+							<a href="#"><li class="hover-jewelry">jewelry</a></li>
+							<div class="arrow"></div>
+						</ul>
+					</div>							
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<br><br><br>
+
+	<section>
+		<div class="container">
+			<div class="title">
+			  <h3 class="Head">New Products<span class="Arrows"></span></h3>
+			  <!-- Carousel Container -->
+			  <div class="SlickCarousel">
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			        	<a href="#"><img src="img/jewelry-slide.jpg" alt=""></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Jewelry</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>			          
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			         <a href="#"><img src="img/bag-slide.jpg" alt="" class="img-responsive"></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Bags</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>					         
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			          <a href="#"><img src="img/clock-slide.jpg" class="img-responsive"></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Clocks</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>					          
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			         	<a href="#"><img src="img/jewelry-slide.jpg" alt="" class="img-responsive"></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Jewelry</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>					         
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			          <a href="#"><img src="img/bag-slide.jpg" class="img-responsive"></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Bags</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>					          
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-fill">
+			          <a href="#"><img src="img/clock-slide.jpg" class="img-responsive"></a>
+									<div class="hover-title">
+										<ul>
+											<a href="#"><li class="hover-title-first" data-title="view">Clocks</li></a>
+											<a href="#"><li class="present" data-title="present">&nbsp;</li></a>
+											<a href="#"><li class="cart" data-title="add to cart">&nbsp;</li></a>
+											<li class="hover-price"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+										</ul>
+									</div>					          
+			        </div>
+			      </div>
+			    </div>			    
+			  </div>
+			</div>
+			  <!-- Carousel Container -->
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="content">
+			  <h3 class="title">Featured Products<span class="shots"></span></h3>
+			  <!-- Carousel Container -->
+			  <div class="SlickCarousel2">
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			        	<h5 class="salary">20% off</h5>
+			        	<a href="#"><img src="img/girl1.jpg" alt=""></a>
+			        </div>
+			        
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			         <a href="#"><img src="img/girl2.jpg" alt=""></a>
+			        </div>
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>	
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>			        		        
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			        	<h5 class="new">New</h5>
+			          <a href="#"><img src="img/girl3.jpg" alt=""></a>
+			        </div>
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>			        			        
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			        	<a href="#"><img src="img/girl4.jpg" alt=""></a>				         
+			        </div>
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>	
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>			        			        
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			        	<a href="#"><img src="img/girl1.jpg" alt=""></a>
+			        </div>
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>	
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>			        			        
+			      </div>
+			    </div>
+			    <!-- Item -->
+			    <div class="ProductBlock">
+			      <div class="Content">
+			        <div class="img-girls">
+			          <a href="#"><img src="img/girl2.jpg" alt=""></a>				      
+			        </div>
+			        <div class="title-block">
+				        <h4 class="title-product">Product Title here</h4>
+				        <p class="description-product">Short Description here</p>
+			        </div>
+			        <div class="product-items">
+			        	<ul>
+			        		<a href="#"><li class="arrows-product" data-title="title"></li></a>
+			        		<a href="#"><li class="present-product" data-title="present"></li></a>
+			        		<a href="#"><li class="cart-product" data-title="add to cart"></li></a>
+			        		<li class="price-product"><span class="dollar">$99.</span><span class="min-count">00</span></li>
+			        	</ul>
+			        </div>			        				        
+			      </div>
+			    </div>			    
+			  </div>
+			</div>
+			  <!-- Carousel Container -->
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="about">
+			<h2 class="title-about">Who We Are</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="buttom-bloks">
+			<a href="#" class="buttom-bloks-chose">Chose <br>Product</a>
+			<a href="#" class="buttom-bloks-register">Register /<br>Login</a>
+			<a href="#" class="buttom-bloks-checkout">Checkout</a>
+			<a href="#" class="register-now">Register Now</a>
+		</div>
+	</section>
+
+	<footer class="container">
+		<div class="col-md-3 col-sm-6">
+			<h2>shopping with us</h2>
+			<ul>
+				<a href="#"><li>why shop with us?</li></a>
+				<a href="#"><li>how it works</li></a>
+				<a href="#"><li>delivery</li></a>
+				<a href="#"><li>returns</li></a>
+				<a href="#"><li>where's my order</li></a>
+				<a href="#"><li>contact & help</li></a>
+				<a href="#"><li>wedding list</li></a>
+				<a href="#"><li>wish lists</li></a>
+				<a href="#"><li>gift vouchers</li></a>
+			</ul>
+		</div>
+		<div class="col-md-2 col-sm-6">
+			<h2>about us</h2>
+			<ul>
+				<a href="#"><li>our story</li></a>
+				<a href="#"><li>customer contact</li></a>
+				<a href="#"><li>awards</li></a>
+				<a href="#"><li>press centre</li></a>
+				<a href="#"><li>work with us</li></a>
+				<a href="#"><li>terms & conditions</li></a>
+				<a href="#"><li>privacy & cookies</li></a>
+			</ul>			
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h2>selling with us</h2>
+			<ul>
+				<a href="#"><li>why join?</li></a>
+				<a href="#"><li>faqs</li></a>
+				<a href="#"><li>apply to sell with us</li></a>
+				<a href="#"><li>affiliates</li></a>
+			</ul>				
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<h2>signup newsletter</h2>
+			<input type="email" placeholder="your email" maxlength="40">
+			<input type="submit" value="subscribe now">
+			<h3>Keep in touch</h3>
+			<a href="#"><img src="img/rss-icon.jpg" alt=""></a>
+			<a href="#"><img src="img/facebook-icon.jpg" alt=""></a>
+			<a href="#"><img src="img/twitter-icon.jpg" alt=""></a>
+			<a href="#"><img src="img/flickr-icon.jpg" alt=""></a>
+			<a href="#"><img src="img/Google-icon.jpg" alt=""></a>
+		</div>
+
+	</footer>
+		<div class="container">
+		<div class="copyright">
+			<p class="copy">Copyright © 2016 Gift Shop,  All right reserved</p>
+			<p class="author">Designed by <span>Amysxain</span></p>
+		</div>
+		</div>
+	<br><br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
