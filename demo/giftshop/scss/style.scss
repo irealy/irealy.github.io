@@ -893,14 +893,46 @@ footer {
 	.register-now {
 		padding: 15px 130px;
 	}
+	.men,
+	.women,
+	.baby,
+	.crafts,
+	.jewelry {
+		background: #fff;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 @media only screen and (max-width : 768px) {
 	.register-now {
 		padding: 15px 100px;
 	}
 }
+@media only screen and (max-width : 462px) {
+	.Arrows {
+		display: none;
+	}
+	.shots {
+		display: none;
+	}
+}
 @media only screen and (max-width : 402px) {
+	.buttom-bloks-chose {
+		padding: 77px 38px 0px 180px;
+	}
+	.buttom-bloks-register {
+		padding: 77px 38px 0px 180px;
+	}
+	.buttom-bloks-checkout {
+		padding: 77px 38px 0px 163px;
+	}		
 	.register-now {
 		padding: 15px 50px;
-	}	
+	}
+	footer input {
+		padding: 25px 70px;
+	}
+	footer input[type=submit] {
+		padding: 25px 75px 25px 110px
+	}
 }
