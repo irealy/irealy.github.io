@@ -1,3 +1,15 @@
+var positionY;
+var image;
+
+function parallaxEffect() {
+  positionY = window.pageYOffset;
+  image = document.getElementsByClassName('header');
+
+  image.style.top = positionY * .4 + 'px';
+}
+window.addEventListener('scroll', parallaxEffect);
+
+
 $(function(){
  var shrinkHeader = 150;
   $(window).scroll(function() {
