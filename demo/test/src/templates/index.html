@@ -1,0 +1,29 @@
+---
+title: test project with Nunjucks
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+
+	
+	{# partial example #}
+	{% include "partials/_header.html" %}
+
+	{# mixin example 
+	{{mixins.icon('facebook')}} #}
+
+	{% include "partials/_content.html" %}
+
+
+	{# 
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	end of example #}
+
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

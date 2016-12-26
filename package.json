@@ -1,0 +1,19 @@
+{
+  "name": "gitirealy",
+  "version": "1.0.0",
+  "description": "Hello! I'm web developer. If you want to work with me - write me!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irealy/irealy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irealy/irealy.github.io/issues"
+  },
+  "homepage": "https://github.com/irealy/irealy.github.io#readme"
+}
