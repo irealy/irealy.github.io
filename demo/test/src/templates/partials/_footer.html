@@ -1,13 +1,16 @@
+{% import 'data/data.html' as data %}
+
 <footer class="footer">
   	<div class="container">
   		<p class="footer-text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
 
   		<ul class="footer__nav-list">
-  			<li class="footer__nav-item"><a href="#">Об издании</a></li>
-  			<li class="footer__nav-item"><a href="#">Рекламодателям</a></li>
-  			<li class="footer__nav-item"><a href="#">Соглашения и правила</a></li>
-  			<li class="footer__nav-item"><a href="#">Помощь</a></li>
-  			<li class="footer__nav-item"><a href="#">Контакты</a></li>
+
+        {% for navFooter in data.footerNavigation %}
+
+  			 <li class="footer__nav-item"><a href="#">{{navFooter.item}}</a></li>
+
+        {% endfor %}
 
   			<div class="clearfix"></div>
   		</ul>
