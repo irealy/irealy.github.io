@@ -1,3 +1,5 @@
+{% import 'data/data.html' as data %}
+
 <div class="content__item">
         <div class="news">
           <div class="news__item-head">
@@ -25,79 +27,17 @@
             <h3 class="news__item-title">Все новости</h3>
           </div>
           
-          <div class="news__item-text">
+          {% for news in data.newsItem %}
+
+          <div class="news__item-text {% if news.headtext %} news__item-headtext {% endif %}">
             <div class="news__item-info">
-              <div class="info-date">22.06.14 - 7:24</div>
+              <div class="info-date">{{news.date}}</div>
             </div>
-            <a class="news__item-text-head news__item-text-unhead" href="#">Председатель парламента Александр Турчинов
-          обратился к людям, заблокировавшим улицу
-          Грушевского, прямо из зала.</a>
+            <a class="news__item-text-head {% if news.headtext %} news__item-headtext {% else %} news__item-text-unhead {% endif %} " href="#">{{news.text}}</a>
           </div>
 
-          <div class="news__item-text news__item-headtext">
-            <div class="news__item-info">
-              <div class="info-date">21.06.14 - 8:03</div>
-            </div>
-            <a class="news__item-text-head news__item-text-head" href="#">Фракцию Коммунистической партии Украины покинули сразу два депутата.</a>
-          </div>
+          {% endfor %}
 
-          <div class="news__item-text news__item-headtext">
-            <div class="news__item-info">
-              <div class="info-date">23.06.14 - 23:18</div>
-              <div class="info-photo"></div>
-            </div>
-            <a class="news__item-text-head news__item-text-head" href="#">В ходе антитеррористической операции на Луганщине ликвидировано укрепление боевиков и взят мост через Северский...</a>
-          </div>
-
-          <div class="news__item-text news__item-headtext">
-            <div class="news__item-info">
-              <div class="info-date">27.06.14 - 8:34</div>
-            </div>
-            <a class="news__item-text-head news__item-text-head" href="#">Блокпост АТО №1 штурмовали 8 российских танков. Погибли 4 военнослужащих.</a>
-          </div>
-
-          <div class="news__item-text">
-            <div class="news__item-info">
-              <div class="info-date">23.06.14 - 7:45</div>
-            </div>
-            <a class="news__item-text-head news__item-text-unhead" href="#">Украинский комментатор в прямом эфире спел известный хит про Путина.</a>
-          </div>
-
-          <div class="news__item-text">
-            <div class="news__item-info">
-              <div class="info-date">24.06.14 - 23:30</div>
-            </div>
-            <a class="news__item-text-head news__item-text-unhead" href="#">Международные дипломаты дружно поддержали идею Путина.</a>
-          </div>
-
-          <div class="news__item-text news__item-headtext">
-            <div class="news__item-info">
-              <div class="info-date">25.06.14 - 8:40</div>
-            </div>
-            <a class="news__item-text-head news__item-text-head" href="#">Сепаратисты ДНР берут под контроль банковскую систему Донецкой области.</a>
-          </div>
-
-          <div class="news__item-text">
-            <div class="news__item-info">
-              <div class="info-date">24.06.14 - 23:30</div>
-            </div>
-            <a class="news__item-text-head news__item-text-unhead" href="#">Украинские военные отказались от более надежных бронежилетов ради подвижности. Эксперты считают это ошибкой.</a>
-          </div>
-
-          <div class="news__item-text news__item-headtext">
-            <div class="news__item-info">
-              <div class="info-date">26.06.14 - 23:49</div>
-            </div>
-            <a class="news__item-text-head news__item-text-head" href="#">Два блокпоста АТО возле Славянска боевики атаковали с применением «Града» и танков. Есть раненые /обновлено/.</a>
-          </div>
-
-          <div class="news__item-text">
-            <div class="news__item-info">
-              <div class="info-date">24.06.14 - 0:20</div>
-            </div>
-            <a class="news__item-text-head news__item-text-unhead" href="#">Во Львове видного налоговика подвели его «волосатые руки».</a>
-          </div>
-          
           <div class="clearfix"></div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+{% import 'data/data.html' as data %}
+
  <div class="content__item">
     <div class="news">
       <div class="news__item-head">
@@ -28,23 +30,12 @@
         <div class="news__item-info">
           <h4 class="vote-title">Что надо сделать, чтобы решить проблему востока Украины?</h4>
 
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text"> Поубивать всех "ватников" и зажарить их сердца на медленном огне</p>
+          {% for votes in data.vote %}
 
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text">Сбросить на Луганскую и Донецкую области атомную бомбу</p>
-
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text">Начать переговоры с лидерами ЛНР и ДНР</p>
-
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text">Отдать Донецк и Луганск России</p>
-
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text">Выстроить по всей границе с РФ 5-метровую стальную стену</p>
-
-          <input type="radio" name="radio" class="radio-buttons">
-          <p class="radio-text">Отмотать время назад...</p>
+          <input type="{{votes.type}}" id="{{votes.value}}" name="radio" class="radio-buttons">
+          <label for="{{votes.value}}" class="radio-text">{{votes.text}}</label>
+          
+          {% endfor %}
               
         <div class="vote-footer">
           <button type="button" class="vote-btn">Голосовать</button>

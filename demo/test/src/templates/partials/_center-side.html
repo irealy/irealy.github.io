@@ -1,8 +1,12 @@
+{% import 'data/data.html' as data %}
+
 <div class="article__item">
   <div class="news">
     <div class="news__item-head">
       <h3 class="news__item-title">Статьи</h3>
     </div>
+
+    {% for article in data.article %}
 
     <div class="news__item-text news--article-text">
             
@@ -11,14 +15,14 @@
       </div>
 
       <div class="news__item-info news--article">
-        <div class="info-date">24.06.14 - 0:20</div>
-        <div class="categories">Тенденции</div>
+        <div class="info-date">{{article.date}}</div>
+        <div class="categories">{{article.categories}}</div>
   
-        <a class="info-title" href="#">Рада, пора на выход!</a>
+        <a class="info-title" href="#">{{article.title}}</a>
             
         <div class="author">
           <p class="author__text">Автор:</p>
-          <a href="#" class="author__name">Максим Михайленко</a>
+          <a href="#" class="author__name">{{article.author}}</a>
         </div>
 
       </div>
@@ -26,37 +30,14 @@
       <div class="clearfix"></div>
 
       <div class="news__item-text-unhead">
-        <p>Седьмой парламентский созыв публично агонизирует. Хотя в Верховной Раде зарегистрирован законопроект о самороспуске, это вовсе не означает, что парламентарии спешат на досрочные выборы. <span>...</span></p>
+        <p>{{article.text}} <span><a href="">...</a></span></p>
       </div>
 
     </div>
 
-    <div class="news__item-text news--article-text">
-            
-      <div class="article__img">
-        <img src="img/article-img-2.jpg" alt="">
-      </div>
+    {% endfor %}
 
-      <div class="news__item-info news--article">
-        <div class="info-date">19.06.14 - 8:41</div>
-        <div class="categories">размышления</div>
-  
-        <a class="info-title" href="#">Сосед-агрессор</a>
-            
-        <div class="author">
-          <p class="author__text">Автор:</p>
-          <a href="#" class="author__name">Дарина Сож</a>
-        </div>
-        </div>
 
-        <div class="clearfix"></div>
-
-      <div class="news__item-text-unhead">
-        <p>В наш век развитых технологий простое человеческое общение вместо привычных живых встреч, и уж тем более бумажных писем, все более сводится к мобильной связи и социальным сетям. Легко и удобно. Если бы не одно НО. 
-        <span>...</span></p>
-      </div>
-
-    </div>
 
   </div>
 </div>
