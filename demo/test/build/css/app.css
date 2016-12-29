@@ -520,6 +520,8 @@ body {
 
 .footer .footer-text {
   color: #b5bbc1;
+  width: 50%;
+  margin-bottom: 25px;
 }
 
 .footer .footer__nav-list {
