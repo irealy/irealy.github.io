@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.block {
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	background-color: #f8f8f8;
+	padding: 50px 60px;
+
+}
+.input {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #e2e2e2;
+	font-size: 15px;
+	color: #a7a7a7;
+	padding: 15px 20px;
+	outline: none;
+	position: relative;
+	background-image: url(arrow.png);
+	background-repeat: no-repeat;
+	background-position: 550px 50%;
+}
+.input::after {
+	content: '';
+
+}
+
+.selectblock {
+	display: none;
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	margin-top: 5px;
+	outline: none;
+}
+.selectblock option {
+	font-size: 15px;
+	padding: 15px 20px;
+}
+
