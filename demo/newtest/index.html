@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="combo.select.css">
+</head>
+<body>
+
+		<div class="block1">
+
+ 			<div class="input">Город *</div>
+			<select size="6" class="selectblock"> 
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			</select> 
+			
+
+		</div>
+		<div class="hide"></div> 
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.input').on('click', function() {
+				$('.selectblock').slideToggle();
+			});
+
+			$('.selectblock option').on('click', function() {
+				var text = $(this).text();
+				$('.input').html(text);
+				$('.selectblock').slideUp();
+			});
+
+			$('.hide').on('click', function() {
+				$('.selectblock').slideUp();
+			})
+
+
+		})
+	</script>
+
+</body>
+</html>
