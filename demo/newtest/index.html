@@ -13,13 +13,10 @@
 
 			<select class="selectblock"> 
 				<option>Киев</option>
+				<option>Киев</option>
+				<option>Киев</option>
 			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
+
 			</select> 
 
 			<ul class="selectitem"></ul>
@@ -37,7 +34,6 @@
 
 		$('.selectblock option').each(function() {
 			$('.selectitem').append('<li>' + $(this).text() + '</li>');
-
 		});
 
 		$('.input').on('click', function() {
@@ -48,15 +44,12 @@
 			var text = $(this).text();
 			$(this).parent().siblings('.input').text(text);
 			$(this).addClass('active').siblings().removeClass('active');
+
+			var indexFirst = $('.selectitem li').index($(this)[0]);
+			
+			$('.selectblock option').index()
 			$('.selectitem').slideUp();
 		});
-
-		$('.selectitem li').each(function() {
-			if($(this).attr('class') == 'active') {
-				
-			}
-		})
-
 
 		$('.hide').on('click', function() {
 			$('.selectitem').slideUp();
