@@ -13,15 +13,17 @@
 
 			<select class="selectblock"> 
 				<option>Киев</option>
-				<option>Киев</option>
-				<option>Киев</option>
-			    <option>Львов</option>
+				<option>Львов</option>
+				<option>Днепр</option>
+			    <option>Чернигов</option>
 
 			</select> 
 
 			<ul class="selectitem"></ul>
 
 		</div>
+
+		
 		
 		<div class="hide"></div> 
 	</div>
@@ -32,33 +34,30 @@
 	<script>
 		$(document).ready(function() {
 
-		$('.selectblock option').each(function() {
-			$('.selectitem').append('<li>' + $(this).text() + '</li>');
-		});
+			$('.selectblock option').each(function() {
+				$('.selectitem').append('<li>' + $(this).text() + '</li>');
+			});
 
-		$('.input').on('click', function() {
-			$(this).next().next().slideToggle();
-		});
+			$('.input').on('click', function() {
+				$(this).next().next().slideToggle();
+			});
 
-		$('.selectitem li').on('click', function() {
-			var text = $(this).text();
-			$(this).parent().siblings('.input').text(text);
-			$(this).addClass('active').siblings().removeClass('active');
+			$('.selectitem li').on('click', function() {
+				var text = $(this).text();
+				$(this).parent().siblings('.input').text(text);
+				$(this).attr('class', 'active').siblings().removeAttr('class', 'active');
 
-			var indexFirst = $(this).index();
+				var indexFirst = $(this).index();
+				$('.selectblock option').eq(indexFirst).attr('selected', 'selected').siblings().removeAttr('selected', 'selected');
+				
+				$('.selectitem').slideUp();
+			});
+
+			$('.hide').on('click', function() {
+				$('.selectitem').slideUp();
+			});
 			
-			$('.selectblock option').eq(indexFirst).prop('selected', true);
-
-			console.log($('.selectblock option'))
-			$('.selectitem').slideUp();
 		});
-
-		$('.hide').on('click', function() {
-			$('.selectitem').slideUp();
-		});
-
-
-		})
 	</script>
 
 </body>
