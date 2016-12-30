@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="combo.select.css">
 </head>
 <body>
 
@@ -25,25 +24,47 @@
 			    <option>Бровары</option>
 			    <option>Винница</option>
 			</select> 
+			<br>
+			<br>
+			<br>
+
+			<div class="input">Город *</div>
+			<select size="6" class="selectblock"> 
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			</select> 
 			
 
 		</div>
 		<div class="hide"></div> 
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 	<script>
 		$(document).ready(function() {
 			$('.input').on('click', function() {
-				$('.selectblock').slideToggle();
+				$(this).next().slideToggle();
 			});
 
 			$('.selectblock option').on('click', function() {
 				var text = $(this).text();
-				$('.input').html(text);
+				$(this).parent().siblings('.input').text(text);
+
+
 				$('.selectblock').slideUp();
 			});
+
 
 			$('.hide').on('click', function() {
 				$('.selectblock').slideUp();

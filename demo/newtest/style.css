@@ -49,11 +49,12 @@
 .selectblock option {
 	font-size: 15px;
 	padding: 15px 20px;
+	cursor: pointer;
+}
+.selectblock option:hover {
+	background-color: #f9f9f9;
 }
 
-.select1 option {
-	margin-bottom: 10px;
-}
 .hide {
 	position: absolute;
 	top: 0;
