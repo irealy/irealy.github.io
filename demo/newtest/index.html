@@ -45,9 +45,11 @@
 			$(this).parent().siblings('.input').text(text);
 			$(this).addClass('active').siblings().removeClass('active');
 
-			var indexFirst = $('.selectitem li').index($(this)[0]);
+			var indexFirst = $(this).index();
 			
-			$('.selectblock option').index()
+			$('.selectblock option').eq(indexFirst).prop('selected', true);
+
+			console.log($('.selectblock option'))
 			$('.selectitem').slideUp();
 		});
 
