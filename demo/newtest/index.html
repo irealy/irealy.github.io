@@ -10,81 +10,22 @@
 		<div class="block1">
 
  			<div class="input">Город *</div>
-			<select size="6" class="selectblock"> 
+
+			<select class="selectblock"> 
+				<option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
 			    <option>Киев</option>
 			    <option>Львов</option>
 			    <option>Днепропетровск</option>
 			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
 			</select> 
 
+			<ul class="selectitem"></ul>
+
 		</div>
-		<div class="block1">
-			<div class="input">Город *</div>
-			<select size="6" class="selectblock"> 
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			</select> 
 		
-
-		</div>
-
-		<div class="block1">
-			<div class="input">Город *</div>
-			<select size="6" class="selectblock"> 
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			</select> 
-		
-
-		</div>
-
-		<div class="block1">
-			<div class="input">Город *</div>
-			<select size="6" class="selectblock"> 
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			    <option>Киев</option>
-			    <option>Львов</option>
-			    <option>Днепропетровск</option>
-			    <option>Черкассы</option>
-			    <option>Бровары</option>
-			    <option>Винница</option>
-			</select> 
-		
-
-		</div>
 		<div class="hide"></div> 
 	</div>
 		
@@ -93,19 +34,33 @@
 
 	<script>
 		$(document).ready(function() {
-			$('.input').on('click', function() {
-				$(this).next().slideToggle();
-			});
 
-			$('.selectblock option').on('click', function() {
-				var text = $(this).text();
-				$(this).parent().siblings('.input').text(text);
-				$('.selectblock').slideUp();
-			});
+		$('.selectblock option').each(function() {
+			$('.selectitem').append('<li>' + $(this).text() + '</li>');
 
-			$('.hide').on('click', function() {
-				$('.selectblock').slideUp();
-			});
+		});
+
+		$('.input').on('click', function() {
+			$(this).next().next().slideToggle();
+		});
+
+		$('.selectitem li').on('click', function() {
+			var text = $(this).text();
+			$(this).parent().siblings('.input').text(text);
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.selectitem').slideUp();
+		});
+
+		$('.selectitem li').each(function() {
+			if($(this).attr('class') == 'active') {
+				
+			}
+		})
+
+
+		$('.hide').on('click', function() {
+			$('.selectitem').slideUp();
+		});
 
 
 		})

@@ -54,7 +54,35 @@
 .selectblock option:hover {
 	background-color: #f9f9f9;
 }
+.selectitem {
+	display: none;
+	margin-top: 5px;
+	background-color: #fff;
+	width: 100%;
+	font-size: 15px;
+	overflow: auto;
+	position: relative;
+	z-index: 3;
+	height: 282px;
+	padding: 0;
+	border: 1px solid #e2e2e2;
+	box-shadow: -2px 10px 35px -19px rgba(0,0,0, .9)
+}
 
+.selectitem li {
+	padding: 15px 25px;
+	list-style: none;
+	cursor: pointer;
+}
+.selectitem li:hover {
+	background-color: #f8f8f8;
+}
+.active {
+	background-color: #f5f5f5;
+}
+.city {
+	padding: 15px 20px;
+}
 .hide {
 	position: absolute;
 	top: 0;
