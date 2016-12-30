@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+	<div class="block">
 		<div class="block1">
 
  			<div class="input">Город *</div>
@@ -24,10 +24,9 @@
 			    <option>Бровары</option>
 			    <option>Винница</option>
 			</select> 
-			<br>
-			<br>
-			<br>
 
+		</div>
+		<div class="block1">
 			<div class="input">Город *</div>
 			<select size="6" class="selectblock"> 
 			    <option>Киев</option>
@@ -43,11 +42,52 @@
 			    <option>Бровары</option>
 			    <option>Винница</option>
 			</select> 
-			
+		
+
+		</div>
+
+		<div class="block1">
+			<div class="input">Город *</div>
+			<select size="6" class="selectblock"> 
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			</select> 
+		
+
+		</div>
+
+		<div class="block1">
+			<div class="input">Город *</div>
+			<select size="6" class="selectblock"> 
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			    <option>Киев</option>
+			    <option>Львов</option>
+			    <option>Днепропетровск</option>
+			    <option>Черкассы</option>
+			    <option>Бровары</option>
+			    <option>Винница</option>
+			</select> 
+		
 
 		</div>
 		<div class="hide"></div> 
-
+	</div>
+		
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
@@ -57,26 +97,15 @@
 				$(this).next().slideToggle();
 			});
 
-			// $('.selectblock option').on('click', function() {
-			// 	var text = $(this).text();
-			// 	$(this).parent().siblings('.input').text(text);
-
-
-			// 	$('.selectblock').slideUp();
-			// });
-
-			$("block1").each(function () { 
-					var $that = $(this); 
-					$that.on("click", function (event) { 
-					var target = $(event.target); 
-					if (target.is('.selectblock option')) { 
-					$that.find(".input").text(target.text()); 
-				} 
-			}) 
+			$('.selectblock option').on('click', function() {
+				var text = $(this).text();
+				$(this).parent().siblings('.input').text(text);
+				$('.selectblock').slideUp();
+			});
 
 			$('.hide').on('click', function() {
 				$('.selectblock').slideUp();
-			})
+			});
 
 
 		})
