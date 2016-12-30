@@ -57,14 +57,22 @@
 				$(this).next().slideToggle();
 			});
 
-			$('.selectblock option').on('click', function() {
-				var text = $(this).text();
-				$(this).parent().siblings('.input').text(text);
+			// $('.selectblock option').on('click', function() {
+			// 	var text = $(this).text();
+			// 	$(this).parent().siblings('.input').text(text);
 
 
-				$('.selectblock').slideUp();
-			});
+			// 	$('.selectblock').slideUp();
+			// });
 
+			$("block1").each(function () { 
+					var $that = $(this); 
+					$that.on("click", function (event) { 
+					var target = $(event.target); 
+					if (target.is('.selectblock option')) { 
+					$that.find(".input").text(target.text()); 
+				} 
+			}) 
 
 			$('.hide').on('click', function() {
 				$('.selectblock').slideUp();
