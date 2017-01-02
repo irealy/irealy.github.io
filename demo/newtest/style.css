@@ -5,15 +5,13 @@
 	height: 100%;
 }*/
 .block {
-	width: 550px;
-	background-color: #f8f8f8;
-	margin: 0 auto;
-}
-.block1 {
 	width: 100%;
 	background-color: #f8f8f8;
 	padding: 50px 60px;
 	position: relative;
+	width: 550px;
+	background-color: #f8f8f8;
+	margin: 0 auto;
 }
 .input {
 	width: 100%;
