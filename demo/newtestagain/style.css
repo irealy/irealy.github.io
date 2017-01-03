@@ -4,16 +4,14 @@
 /*html, body {
 	height: 100%;
 }*/
-.block {
-	width: 100%;
-	background-color: #f8f8f8;
+.select {
 	padding: 50px 60px;
 	position: relative;
 	width: 550px;
 	background-color: #f8f8f8;
 	margin: 0 auto;
 }
-.input {
+.select__placeholder {
 	width: 100%;
 	background-color: #fff;
 	border: 1px solid #e2e2e2;
@@ -25,7 +23,7 @@
 	z-index: 1;
 	cursor: pointer;
 }
-.input::after {
+.select__placeholder::after {
 	content: '';
 	position: absolute;
 	right: 20px;
@@ -36,7 +34,7 @@
 	height: 7px;
 }
 
-.selectblock {
+.select__item {
 	display: none;
 	width: 100%;
 	border: 1px solid #e2e2e2;
@@ -46,15 +44,15 @@
 	z-index: 2;
 	box-shadow: -2px 10px 35px -19px rgba(0,0,0, .9)
 }
-.selectblock option {
+.select__item option {
 	font-size: 15px;
 	padding: 15px 20px;
 	cursor: pointer;
 }
-.selectblock option:hover {
+.select__item option:hover {
 	background-color: #f9f9f9;
 }
-.selectitem {
+.select__list {
 	display: none;
 	margin-top: 5px;
 	background-color: #fff;
@@ -69,20 +67,18 @@
 	box-shadow: -2px 10px 35px -19px rgba(0,0,0, .9)
 }
 
-.selectitem li {
+.select__list li {
 	padding: 15px 25px;
 	list-style: none;
 	cursor: pointer;
 }
-.selectitem li:hover {
+.select__list li:hover {
 	background-color: #f8f8f8;
 }
 .active {
 	background-color: #f5f5f5;
 }
-.city {
-	padding: 15px 20px;
-}
+
 .hide {
 	position: absolute;
 	top: 0;
