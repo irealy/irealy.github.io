@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+			<select class="selectblock"> 
+				<option>Киев</option>
+				<option>Львов</option>
+				<option>Днепр</option>
+			    <option>Чернигов</option>
+			</select> 
+
+			<select class="selectblock"> 
+				<option>Украина</option>
+				<option>Россия</option>
+				<option>США</option>
+			    <option>Канада</option>
+			    <option>Куба</option>
+			</select> 
+
+			<select class="selectblock"> 
+				<option>КНДР</option>
+				<option>Россия</option>
+				<option>США</option>
+			    <option>Канада</option>
+			    <option>Куба</option>
+			</select> 
+
+		
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			
+
+			$('.selectblock').each(function() {
+			    var $this = $(this)
+			    var number = $this.children('option').length;
+			    $this.wrap('<div class="block"></div>');
+			    $this.after('<div class="input">Выбрать *</div>');
+
+			    var list = $this.next('.input');
+			    var listitem = $('<ul />', {
+			        'class': 'selectitem'
+			    }).insertAfter(list);
+
+				    for (var i = 0; i < number; i++) {
+				        $('<li />', {
+				            text: $this.children('option').eq(i).text()
+				        }).appendTo(listitem);
+				    }
+			});
+
+			$('.input').click(function() {
+				$(this).next().slideToggle();
+			});
+
+			$('.selectitem li').click(function() {
+				var $this = $(this);
+				var text = $this.text();
+				$this.parent().siblings('.input').text(text);
+				$this.attr('class', 'active')
+					 .siblings().removeAttr('class', 'active');
+
+				var indexFirst = $this.index();
+				$('.selectitem').children('li').length;
+				
+				$('.selectblock option').eq(indexFirst)
+					.attr('selected', 'selected')
+					.siblings().removeAttr('selected', 'selected');
+				var ss = $('.selectblock').children('option').length;
+				console.log(ss);
+				$('.input').next().slideUp();
+			});
+
+			// $(':not(selectitem)').click(function() {
+			// 	$('.selectitem').slideUp();
+			// })
+			// $(document).mouseup(function (e){ 
+ 		// 		var selectBlock = $(".selectitem"); 
+ 		// 		if (!selectBlock.is(e.target) && selectBlock.has(e.target).length === 0) { 
+ 		// 			selectBlock.slideUp(); 
+ 		// 		}
+ 		// 	});
+			
+		});
+	</script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,4 +84,70 @@
 	</script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+			<select class="selectblock"> 
+				<option>Киев</option>
+				<option>Львов</option>
+				<option>Днепр</option>
+			    <option>Чернигов</option>
+			</select> 
+
+		
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			$('.selectblock').wrap('<div class="block"></div>');
+			$('.block').append('<div class="input">Город *</div>')
+					   .append('<ul class="selectitem"></ul>');
+
+			$('.block .selectblock').find('option').each(function(i, value) {
+				$('.selectitem').append('<li>' + $(value).text() + '</li>');
+			});
+
+			$('.input').click(function() {
+				$(this).next().slideToggle();
+			});
+
+			$('.selectitem li').click(function() {
+				var $this = $(this);
+				var text = $this.text();
+				$this.parent().siblings('.input').text(text);
+				$this.attr('class', 'active')
+					 .siblings().removeAttr('class', 'active');
+
+				var indexFirst = $this.index();
+				$('.selectblock option').eq(indexFirst)
+					.attr('selected', 'selected')
+					.siblings().removeAttr('selected', 'selected');
+				
+				$('.input').next().slideUp();
+			});
+
+			// $(':not(selectitem)').click(function() {
+			// 	$('.selectitem').slideUp();
+			// })
+			$(document).mouseup(function (e){ 
+ 				var selectBlock = $(".selectitem"); 
+ 				if (!selectBlock.is(e.target) && selectBlock.has(e.target).length === 0) { 
+ 					selectBlock.slideUp(); 
+ 				}
+ 			});
+			
+		});
+	</script>
+
+</body>
+>>>>>>> 7dcaa23f4fc4373e8f07e59124c017da54ee67b3
 </html>
