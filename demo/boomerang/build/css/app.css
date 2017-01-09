@@ -431,7 +431,7 @@ body {
 .colors__item {
   width: 50%;
   float: left;
-  padding-top: 45px;
+  padding-top: 50px;
   padding-bottom: 45px;
   position: relative;
 }
@@ -643,7 +643,7 @@ body {
 
 .colors__choose {
   display: table;
-  margin-top: 23px;
+  margin-top: 26px;
 }
 
 .colors__title, .about-us__title, .news__title, .gallery__title {
