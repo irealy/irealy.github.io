@@ -897,6 +897,7 @@ body {
   font-weight: 700;
   color: #164f36;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .news__text .news__text-date {
