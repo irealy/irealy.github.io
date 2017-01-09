@@ -449,15 +449,25 @@ body {
   text-align: center;
 }
 
+.reviews__item {
+  width: 48%;
+}
+
+.сall-professional__item {
+  width: 52%;
+}
+
 .reviews__item,
 .сall-professional__item {
-  width: 50%;
   float: left;
 }
 
 .reviews__people {
-  width: 50%;
   float: left;
+}
+
+.reviews__people_first-child {
+  width: 54%;
 }
 
 .news__item {
@@ -783,6 +793,12 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 1.25;
+  width: 192px;
+  float: left;
+}
+
+.reviews__people_text-even {
+  width: 200px;
 }
 
 .reviews__all-news {
@@ -1242,6 +1258,9 @@ body {
     width: 133.55px;
     float: none;
     margin: 15px auto;
+  }
+  .reviews__people_text-even{
+    width: 100%;
   }
   .reviews__separator{
     top: 85%;
