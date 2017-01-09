@@ -1,0 +1,51 @@
+// **** gallery section **** //
+
+.gallery
+	padding: 45px 0px 0px
+	+r(950)
+		padding-left: 15px
+		padding-right: 15px	
+
+.gallery__title
+	@extend .about-us__title
+	color: #000
+
+.gallery__wrap
+	position: absolute
+	right: 0
+	left: 0
+	border-top: 2px solid #f6bd14
+	border-bottom: 2px solid #f6bd14
+	background-color: rgba(black, .84);
+	overflow: hidden
+
+.gallery__slider
+	width: 950px
+	margin: 0 auto
+	background-color: #fff
+	position: relative
+	+r(992)
+		width: 550px
+	+r(768)
+		width: 350px
+	+r(480)
+		width: 190px
+
+.gallery__slider-item
+	position: relative
+	.gallery__slider-overlay
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		background-color: rgba(#f6bd14, .84)
+		height: 100%
+		width: 100%
+		line-height: 190px
+		text-align: center
+		font-family: $roboto
+		font-size: 17px
+		font-weight: 700
+		+tr(opacity .5s)
+		&:hover 
+			opacity: 1
