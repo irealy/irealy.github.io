@@ -12,10 +12,6 @@
         </style>
     
         <style>
-            .cls-1{fill:#f6bd14}
-        </style>
-    
-        <style>
             .cls-1{fill:#f6bd14}.cls-2{fill:#fff;fill-rule:evenodd;filter:url(#filter)}
         </style>
         <filter id="filter" x="29.813" y="24.813" width="9.375" height="9.438" filterUnits="userSpaceOnUse">
@@ -39,17 +35,11 @@
     
     <circle class="cls-1" cx="34.5" cy="34.5" r="34.5"/>
     <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="24" y="23" width="19" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAZCAQAAAB5wt0hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQQMAxSbI6K6AAABAklEQVQoz6XTsUoDQRSF4W8TERaEKKIgorCQkCoQwcrKPoWW9r6CKXwCEQXzAvaW9ml8A9MGLGKhgjaBQBTFXYtkJUpINnqbGWZ+7rnnMBOUTtUFJlXsLCh9yplWcS4DRG5uuDnQHguUXUGKtbUmtssgmR1LRbctjr0vDpaglMzS7dwDDhUdgxN3LrHuaLTblhau7Q7Fu27so+r2DxbqXlARaoBQRQMrM1lIRWsikSYikUhPUyRS+yn6qIM+OiDW1yFNM6OFdLYn71gVugeb3jxj3tqoaM8rloS6YMOHLsIB9jveveGD/1+8ZVBAFeQVVL/Ps8cbZ6CS/PKCnSn/NHHxBbFdOzETN6b7AAAAAElFTkSuQmCC"/>
-</symbol><symbol id="icon-callback-phone" viewBox="0 0 30 30">
-    
-    <circle class="cls-1" cx="15" cy="15" r="15"/>
-    <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="8" y="7" width="15" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAQAAABjX+2PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQMQBjBSvNCDAAAA4ElEQVQY023PvyuEcRgA8I9DSsbb1Olser9/ABkYFKvBiM6qlE0mm81kuC5FSrm/ACXDTcpwy1uUxY/JoWQ5LK/BpfvxfZ7l6fk8z1OPTBKS++QgE8tcGFNzoRhKItGXHGmoO/ahkDa7OWdGxaEBeYu92zlP5g2B2Ri/K7TqfIyfvYJT2zEuG9dEf3oX4fTWlyssheXYNjtGNFAJkz1/ZwjTqkbxacGNM4+qLtOsxYR1++Bb3d+NmtX0ocWETXtdl9/M/TNhTdlgx8BLGxOmnCi2NbY6mDBsw4oJP67tpue/QQtHIrTeaMUAAAAASUVORK5CYII="/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
-</symbol><symbol id="icon-footer-tel" viewBox="0 0 15 16">
-    <image data-name="Vector Smart Object copy" width="15" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAQAAABjX+2PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQQQFjHyrsr9AAAAy0lEQVQY023OIUtDcRTG4edOQTAsmecUo7DqsFhEP4Ng0GpaUvwQ5oWFYfIDWMTiLEabCIIDNWwOYaY7LcdyGW73f055Ob9zzvsKNr3ohFRXslX3bqxlRxKV6fr06NJYLfLyQt+GiRAOEs+92bMEdsq3FV9qhV5J4XcjcOU8hdvW5ViI50T04MK1EA7L0QRVd4ZCbiuBg20fQvjWtOhWx65sioOTQkw8FKqnPsVBq2Q80vjvc+x3bmEwG6TpdWZwOp902Zkn4UfPfvgDmMqS8nuwLFkAAAAASUVORK5CYII="/>
 </symbol><symbol id="icon-free-ship" viewBox="0 0 69 69">
     
     <circle class="cls-1" cx="34.5" cy="34.5" r="34.5"/>

@@ -85,22 +85,10 @@ html {
   fill: initial;
 }
 
-.icon-callback-phone {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
 .icon-facebook {
   width: 0.53em;
   height: 1em;
   fill: #000;
-}
-
-.icon-footer-tel {
-  width: 0.94em;
-  height: 1em;
-  fill: initial;
 }
 
 .icon-free-ship {
@@ -428,7 +416,7 @@ body {
   position: relative;
 }
 
-.colors__item {
+.production__item {
   width: 50%;
   float: left;
   padding-top: 50px;
@@ -436,14 +424,14 @@ body {
   position: relative;
 }
 
-.colors__choose-item {
+.production__choose-item {
   width: 15.50%;
   margin: 0px 2.5px;
   float: left;
   position: relative;
 }
 
-.about-us__advantages-item {
+.advantages__item {
   width: 16.66%;
   float: left;
   text-align: center;
@@ -462,17 +450,24 @@ body {
   float: left;
 }
 
-.reviews__people {
+.review {
   float: left;
+  font-family: Arial, sans-serif;
 }
 
-.reviews__people_first-child {
-  width: 54%;
+.review:nth-child(odd) {
+  width: 44%;
 }
 
-.news__item {
+.review:nth-child(even) {
+  width: 46%;
+  float: right;
+}
+
+.latest-news {
   width: 50%;
   float: left;
+  margin: 7px 0px;
 }
 
 .footer__logo {
@@ -503,17 +498,17 @@ body {
   margin-left: 10px;
 }
 
-.callback__icon svg {
-  fill: #f6bd14;
+.callback__icon {
   width: 30px;
   height: 30px;
   float: left;
   position: absolute;
   right: 180px;
   top: 0;
+  background-image: url("../img/callback-phone.png");
 }
 
-.callback__phone, .footer__phone {
+.callback__phone {
   text-align: right;
   display: block;
   text-decoration: none;
@@ -524,7 +519,7 @@ body {
   position: relative;
 }
 
-.callback__phone span, .footer__phone span {
+.callback__phone span {
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -583,7 +578,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 24px 9px;
+  padding: 25px 9px;
 }
 
 .navigation__item:after {
@@ -607,8 +602,24 @@ body {
   background-repeat: no-repeat;
 }
 
-.services__image {
+.services__image-install, .services__image-sale, .services__image-repair, .services__image-build {
+  background-image: url("../img/services-plant.jpg");
+  background-size: cover;
   position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.services__image-sale {
+  background-image: url("../img/services-sale.jpg");
+}
+
+.services__image-repair {
+  background-image: url("../img/services-repair.jpg");
+}
+
+.services__image-build {
+  background-image: url("../img/services-build.jpg");
 }
 
 .services__title {
@@ -620,7 +631,7 @@ body {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  padding: 20px;
+  padding: 15px 20px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -633,30 +644,30 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #fff;
   font-weight: 400;
-  padding-left: 18px;
   font-size: 16px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.colors {
+.production {
   background-color: #f6bc14;
 }
 
-.colors__item_left {
+.production__item_left {
   padding-right: 20px;
 }
 
-.colors__item_right {
+.production__item_right {
   padding-left: 20px;
 }
 
-.colors__choose {
+.production__choose {
   display: table;
   margin-top: 26px;
 }
 
-.colors__title, .about-us__title, .news__title, .gallery__title {
+.production__title, .about-us__title, .news__title, .gallery__title {
   text-transform: uppercase;
   color: #2b2b2b;
   font-family: "Roboto Condensed", sans-serif;
@@ -665,25 +676,85 @@ body {
   font-size: 24px;
 }
 
-.colors__text, .about-us__descr {
+.production__text, .about-us__descr {
   color: #2b2b2b;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-.colors__choose-image {
+.production__choose-image {
   width: 70px;
   height: 70px;
 }
 
-.colors__overlay {
+.production__choose_image_1 {
+  background-image: url("../img/choose-color/choose-color-1.png");
+  background-size: cover;
+}
+
+.production__choose_image_2 {
+  background-image: url("../img/choose-color/choose-color-2.png");
+  background-size: cover;
+}
+
+.production__choose_image_3 {
+  background-image: url("../img/choose-color/choose-color-2.png");
+  background-size: cover;
+}
+
+.production__choose_image_4 {
+  background-image: url("../img/choose-color/choose-color-3.png");
+  background-size: cover;
+}
+
+.production__choose_image_5 {
+  background-image: url("../img/choose-color/choose-color-4.png");
+  background-size: cover;
+}
+
+.production__choose_image_6 {
+  background-image: url("../img/choose-color/choose-color-5.png");
+  background-size: cover;
+}
+
+.production__choose_image_7 {
+  background-image: url("../img/choose-color/choose-color-6.png");
+  background-size: cover;
+}
+
+.production__choose_image_8 {
+  background-image: url("../img/choose-color/choose-color-6.png");
+  background-size: cover;
+}
+
+.production__choose_image_9 {
+  background-image: url("../img/choose-color/choose-color-7.png");
+  background-size: cover;
+}
+
+.production__choose_image_10 {
+  background-image: url("../img/choose-color/choose-color-8.png");
+  background-size: cover;
+}
+
+.production__choose_image_11 {
+  background-image: url("../img/choose-color/choose-color-9.png");
+  background-size: cover;
+}
+
+.production__choose_image_12 {
+  background-image: url("../img/choose-color/choose-color-10.png");
+  background-size: cover;
+}
+
+.production__overlay {
   opacity: 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  height: 93%;
+  height: 100%;
   width: 100%;
   line-height: 72px;
   color: #252525;
@@ -698,12 +769,12 @@ body {
   transition: opacity 0.5s;
 }
 
-.colors__overlay:hover {
+.production__overlay:hover {
   opacity: 1;
   color: #252525;
 }
 
-.colors__more {
+.production__more {
   display: inline-block;
   background-color: #2b2b2b;
   font-size: 13px;
@@ -712,10 +783,11 @@ body {
   text-decoration: none;
   font-family: 'Aria', sans-serif;
   border-radius: 3px;
-  margin-top: 5px;
+  margin-top: 8px;
+  margin-left: 4px;
 }
 
-.color__choose-separator {
+.production__choose-separator {
   background-image: url("../img/choose-separator.png");
   height: 266px;
   width: 1px;
@@ -728,30 +800,34 @@ body {
   background-image: url("../img/services-bg.jpg");
   background-repeat: no-repeat;
   background-position: 34% -386px;
-  padding: 40px 0px 50px;
+  padding: 50px 0px 45px;
+}
+
+.about-us__title, .news__title, .gallery__title {
+  margin-bottom: 9px;
 }
 
 .about-us__descr {
-  margin: 6px 0px;
+  margin: 7.5px 0px;
 }
 
-.about-us__advantages {
-  margin-top: 15px;
+.advantages {
+  margin-top: 28px;
 }
 
-.about-us__advantages-item svg {
+.advantages__item svg {
   fill: #f6bd14;
   width: 69px;
   height: 69px;
 }
 
-.about-us__advantages-text {
+.advantages__text {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: #252525;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .reviews {
@@ -775,30 +851,25 @@ body {
   text-transform: uppercase;
   font-size: 24px;
   color: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-.reviews__people {
+.review__people {
   font-family: Arial, sans-serif;
 }
 
-.reviews__people-name {
+.review__people-name {
   color: #f6bd14;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 13px;
 }
 
-.reviews__people-text {
+.review__people-text {
   color: #fff;
   font-size: 14px;
   line-height: 1.25;
-  width: 192px;
   float: left;
-}
-
-.reviews__people_text-even {
-  width: 200px;
 }
 
 .reviews__all-news {
@@ -885,7 +956,7 @@ body {
 }
 
 .news {
-  padding: 40px 0px 50px;
+  padding: 40px 0px 38px;
   background-image: url("../img/news-separator.png");
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -895,19 +966,19 @@ body {
   color: #000;
 }
 
-.news__image {
+.latest-news__image {
   float: left;
   width: 23%;
   margin-right: 15px;
 }
 
-.news__text {
+.latest-news__text {
   margin-left: 15px;
   float: left;
   width: 70%;
 }
 
-.news__text .news__text-title {
+.latest-news__text .latest-news__text-title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -916,24 +987,25 @@ body {
   text-decoration: none;
 }
 
-.news__text .news__text-date {
+.latest-news__text .latest-news__text-date {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color: #636363;
   font-size: 14px;
 }
 
-.news__text .news__text-descr {
+.latest-news__text .latest-news__text-descr {
   font-family: Arial, sans-serif;
   font-size: 13px;
 }
 
 .gallery {
-  padding: 45px 0px 0px;
+  padding: 43px 0px 0px;
 }
 
 .gallery__title {
   color: #000;
+  margin-bottom: 15px;
 }
 
 .gallery__wrap {
@@ -980,7 +1052,10 @@ body {
 .footer {
   background-color: #fff;
   padding: 10px 0px 30px;
-  margin-top: 244px;
+  margin-top: 243px;
+  background-image: url("../img/news-separator.png");
+  background-repeat: repeat-x;
+  background-position: center top;
 }
 
 .footer__logo img {
@@ -1015,15 +1090,23 @@ body {
 
 .footer__phone-icon {
   float: left;
-  margin-top: 23px;
+  margin-top: 13px;
   margin-right: 15px;
+  background-image: url("../img/footer-tel.png");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 16px;
 }
 
 .footer__phone {
   color: #000;
   float: left;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .footer__phone span {
@@ -1036,7 +1119,7 @@ body {
   font-size: 14px;
   color: #000;
   font-family: Arial, sans-serif;
-  margin-top: 22px;
+  margin-top: 13px;
 }
 
 @media only screen and (max-width: 992px){
@@ -1089,7 +1172,7 @@ body {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
   }
-  .colors__item_left{
+  .production__item_left{
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1136,30 +1219,27 @@ body {
   .services__item{
     width: 50%;
   }
-  .colors__item{
+  .production__item{
     width: 100%;
   }
   .reviews__item,
   .сall-professional__item{
     width: 100%;
   }
-  .news__item{
+  .latest-news{
     width: 100%;
     margin: 15px 0px;
-  }
-  .services__image{
-    width: 100%;
   }
   .services__title{
     font-size: 20px;
   }
-  .colors__item_right{
+  .production__item_right{
     padding-top: 0px;
   }
-  .colors__title, .about-us__title, .news__title, .gallery__title{
+  .production__title, .about-us__title, .news__title, .gallery__title{
     text-align: center;
   }
-  .color__choose-separator{
+  .production__choose-separator{
     bottom: -110px;
     top: auto;
     right: auto;
@@ -1193,14 +1273,14 @@ body {
   .professional__form .professional__form-button{
     width: 100%;
   }
-  .news__text{
+  .latest-news__text{
     width: 100%;
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 650px){
-  .about-us__advantages-item{
+  .advantages__item{
     width: 33.3%;
     height: 150px;
   }
@@ -1230,13 +1310,20 @@ body {
   .callback{
     width: 100%;
   }
-  .colors__choose-item{
+  .production__choose-item{
     width: 24.3%;
+    margin: 10px 2.5px;
   }
-  .about-us__advantages-item{
+  .advantages__item{
     width: 50%;
   }
-  .reviews__people{
+  .review:nth-child(odd){
+    width: 100%;
+  }
+  .review:nth-child(even){
+    width: 100%;
+  }
+  .review{
     width: 100%;
   }
   .logo__image{
@@ -1246,11 +1333,11 @@ body {
     float: none;
     text-align: center;
   }
-  .callback__icon svg{
+  .callback__icon{
     right: auto;
     left: 15px;
   }
-  .callback__phone, .footer__phone{
+  .callback__phone{
     text-align: center;
   }
   .callback__btn{
@@ -1258,9 +1345,6 @@ body {
     width: 133.55px;
     float: none;
     margin: 15px auto;
-  }
-  .reviews__people_text-even{
-    width: 100%;
   }
   .reviews__separator{
     top: 85%;

@@ -38,7 +38,7 @@
 	+r(520)
 		width: 100%
 
-.colors__item 
+.production__item 
 	width: 50%
 	float: left
 	padding-top: 50px
@@ -48,15 +48,16 @@
 		width: 100%
 
 
-.colors__choose-item
+.production__choose-item
 	width: 15.50%
 	margin: 0px 2.5px
 	float: left
 	position: relative
 	+r(480)
 		width: 24.3%
+		margin: 10px 2.5px
 
-.about-us__advantages-item
+.advantages__item
 	width: 16.66%
 	float: left
 	text-align: center
@@ -78,17 +79,27 @@
 	+r(768)
 		width: 100%
 
-.reviews__people
+.review
 	float: left
+	font-family: $arial
+	&:nth-child(odd)
+		width: 44%
+		+r(480)
+			width: 100%
+
+	&:nth-child(even)
+		width: 46%
+		float: right
+		+r(480)
+			width: 100%
+
 	+r(480)
 		width: 100%
 
-.reviews__people_first-child
-	width: 54%
-
-.news__item
+.latest-news
 	width: 50%
 	float: left
+	margin: 7px 0px
 	+r(768)
 		width: 100%
 		margin: 15px 0px

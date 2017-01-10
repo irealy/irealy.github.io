@@ -5,11 +5,24 @@
 	background-position: 34% -150px
 	background-repeat: no-repeat
 
-.services__image 
+.services__image-install
+	background-image: url("../img/services-plant.jpg")
+	background-size: cover
 	position: absolute
-	+r(768)
-		width: 100%
+	width: 100%;
+	height: 100%
 
+.services__image-sale
+	@extend .services__image-install
+	background-image: url("../img/services-sale.jpg")
+
+.services__image-repair
+	@extend .services__image-install
+	background-image: url("../img/services-repair.jpg")
+
+.services__image-build
+	@extend .services__image-install
+	background-image: url("../img/services-build.jpg")
 
 .services__title 
 	position: absolute
@@ -20,7 +33,7 @@
 	color: #fff	
 	font-size: 24px
 	font-weight: 700
-	padding: 20px
+	padding: 15px 20px
 	font-family: $roboto
 	+r(768)
 		font-size: 20px
@@ -34,7 +47,7 @@
 	font-family: $roboto
 	color: #fff
 	font-weight: 400
-	padding-left: 18px
 	font-size: 16px
-	padding-top: 7px
-	padding-bottom: 7px
+	padding-left: 18px
+	padding-top: 5px
+	padding-bottom: 5px
