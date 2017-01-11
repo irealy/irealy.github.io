@@ -877,13 +877,14 @@ body {
 .reviews__all-news {
   color: #f6bd14;
   display: inline-block;
-  padding: 6px;
+  padding: 6px 9px;
   border: 1px solid #cfac1c;
   border-radius: 2px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   float: right;
-  margin-top: 24px;
+  margin-top: 26px;
+  margin-right: -6px;
 }
 
 .reviews__separator {
@@ -976,6 +977,7 @@ body {
 
 .latest-news__text {
   margin-left: 15px;
+  margin-top: -8px;
   float: left;
   width: 70%;
 }
