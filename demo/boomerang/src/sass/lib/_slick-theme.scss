@@ -67,7 +67,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 47%;
     margin-top: -10px;
     padding: 0;
     border: none;
@@ -86,7 +86,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 
 .slick-prev {
-    left: -85px;
+    left: -103px;
     background-image: url("../img/arrow-prev.png");
     [dir="rtl"] & {
         left: auto;
@@ -110,7 +110,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -85px;
+    right: -103px;
     background-image: url("../img/arrow-next.png");
     [dir="rtl"] & {
         left: -25px;

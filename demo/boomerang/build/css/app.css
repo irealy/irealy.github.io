@@ -238,7 +238,7 @@ html {
   cursor: pointer;
   background: transparent;
   color: transparent;
-  top: 50%;
+  top: 47%;
   margin-top: -10px;
   padding: 0;
   border: none;
@@ -264,7 +264,7 @@ html {
 }
 
 .slick-prev {
-  left: -85px;
+  left: -103px;
   background-image: url("../img/arrow-prev.png");
 }
 
@@ -282,7 +282,7 @@ html {
 }
 
 .slick-next {
-  right: -85px;
+  right: -103px;
   background-image: url("../img/arrow-next.png");
 }
 
@@ -506,6 +506,7 @@ body {
   right: 180px;
   top: 0;
   background-image: url("../img/callback-phone.png");
+  margin-top: 8px;
 }
 
 .callback__phone {
@@ -516,6 +517,7 @@ body {
   font-size: 26px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+  margin-top: 8px;
   position: relative;
 }
 
@@ -532,7 +534,7 @@ body {
   font-size: 14px;
   color: #2b2b2b;
   padding: 7px 10px;
-  margin-top: 10px;
+  margin-top: 4px;
   border-radius: 2px;
   text-decoration: none;
   font-family: Arial, sans-serif;
@@ -779,12 +781,12 @@ body {
   background-color: #2b2b2b;
   font-size: 13px;
   color: #fff;
-  padding: 8px 5px;
+  padding: 6px 9px;
   text-decoration: none;
   font-family: 'Aria', sans-serif;
   border-radius: 3px;
-  margin-top: 8px;
-  margin-left: 4px;
+  margin-top: 13px;
+  margin-left: 1px;
 }
 
 .production__choose-separator {
@@ -889,12 +891,12 @@ body {
   width: 1px;
   height: 323px;
   position: absolute;
-  right: -1px;
+  right: -6px;
   top: 0;
 }
 
 .сall-professional__item {
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 .professional__form {
@@ -1000,7 +1002,7 @@ body {
 }
 
 .gallery {
-  padding: 43px 0px 0px;
+  padding: 38px 0px 0px;
 }
 
 .gallery__title {
