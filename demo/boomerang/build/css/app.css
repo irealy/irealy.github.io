@@ -973,6 +973,7 @@ body {
   float: left;
   width: 23%;
   margin-right: 15px;
+  margin-top: -3px;
 }
 
 .latest-news__text {
@@ -1004,7 +1005,7 @@ body {
 }
 
 .gallery {
-  padding: 38px 0px 0px;
+  padding: 43px 0px 0px;
 }
 
 .gallery__title {
@@ -1056,7 +1057,7 @@ body {
 .footer {
   background-color: #fff;
   padding: 10px 0px 30px;
-  margin-top: 243px;
+  margin-top: 240px;
   background-image: url("../img/news-separator.png");
   background-repeat: repeat-x;
   background-position: center top;
