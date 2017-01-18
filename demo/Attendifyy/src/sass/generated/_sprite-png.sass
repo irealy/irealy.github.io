@@ -1,0 +1,144 @@
+$icons: (0:0)
+$icons: map-merge($icons,('about': (X: -116px, Y:-166px, W: 46px, H: 46px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('app-build': (X: -178px, Y:-116px, W: 30px, H: 29px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('app-review': (X: -236px, Y:-193px, W: 30px, H: 19px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('app-stores': (X: 0px, Y:-224px, W: 30px, H: 29px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('app-submit': (X: -236px, Y:-153px, W: 30px, H: 30px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('astrazeneca-logo': (X: 0px, Y:0px, W: 168px, H: 42px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('delegates': (X: -172px, Y:-166px, W: 48px, H: 42px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('eventbrite': (X: -58px, Y:-166px, W: 48px, H: 47px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('exhibitmaps': (X: 0px, Y:-166px, W: 48px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('exhibitors': (X: -59px, Y:-108px, W: 48px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('google-logo': (X: 0px, Y:-52px, W: 135px, H: 46px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('maps': (X: -117px, Y:-108px, W: 48px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('news': (X: -236px, Y:-47px, W: 48px, H: 38px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('schedule': (X: -178px, Y:-58px, W: 48px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('speakers': (X: -236px, Y:-95px, W: 26px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('sponsors': (X: 0px, Y:-108px, W: 49px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('twitterfeed': (X: -236px, Y:0px, W: 50px, H: 37px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('webview': (X: -178px, Y:0px, W: 48px, H: 48px, TW: 286px, TH: 253px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+.icon-about
+ width: 46px
+ height: 46px
+ background-image: url('../img/sprite.png')
+ background-position: -116px -166px
+.icon-app-build
+ width: 30px
+ height: 29px
+ background-image: url('../img/sprite.png')
+ background-position: -178px -116px
+.icon-app-review
+ width: 30px
+ height: 19px
+ background-image: url('../img/sprite.png')
+ background-position: -236px -193px
+.icon-app-stores
+ width: 30px
+ height: 29px
+ background-image: url('../img/sprite.png')
+ background-position: 0px -224px
+.icon-app-submit
+ width: 30px
+ height: 30px
+ background-image: url('../img/sprite.png')
+ background-position: -236px -153px
+.icon-astrazeneca-logo
+ width: 168px
+ height: 42px
+ background-image: url('../img/sprite.png')
+ background-position: 0px 0px
+.icon-delegates
+ width: 48px
+ height: 42px
+ background-image: url('../img/sprite.png')
+ background-position: -172px -166px
+.icon-eventbrite
+ width: 48px
+ height: 47px
+ background-image: url('../img/sprite.png')
+ background-position: -58px -166px
+.icon-exhibitmaps
+ width: 48px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: 0px -166px
+.icon-exhibitors
+ width: 48px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: -59px -108px
+.icon-google-logo
+ width: 135px
+ height: 46px
+ background-image: url('../img/sprite.png')
+ background-position: 0px -52px
+.icon-maps
+ width: 48px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: -117px -108px
+.icon-news
+ width: 48px
+ height: 38px
+ background-image: url('../img/sprite.png')
+ background-position: -236px -47px
+.icon-schedule
+ width: 48px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: -178px -58px
+.icon-speakers
+ width: 26px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: -236px -95px
+.icon-sponsors
+ width: 49px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: 0px -108px
+.icon-twitterfeed
+ width: 50px
+ height: 37px
+ background-image: url('../img/sprite.png')
+ background-position: -236px 0px
+.icon-webview
+ width: 48px
+ height: 48px
+ background-image: url('../img/sprite.png')
+ background-position: -178px 0px

@@ -1,0 +1,157 @@
+.header
+	background-image: url("../img/header-bg.jpg")
+	background-position: center center
+	background-repeat: no-repeat
+	min-height: 760px
+	position: relative
+	&::before 
+		content: ''
+		position: absolute
+		z-index: -1
+		left: 0
+		top: 0
+		background-image: url("../img/header-bg-leftside.png")
+		min-height: 760px
+		width: 50%
+	&::after 
+		content: ''
+		position: absolute
+		z-index: -2
+		right: 0
+		top: 0
+		background-image: url("../img/header-bg-rightside.png")
+		min-height: 760px
+		width: 50%
+
+.navigation 
+	padding: 33px 0px
+
+.navigation__logo img 
+	margin-left: 3px
+
+.navigation__list-item
+	float: left
+	a 
+		float: left
+		font-size: 15px
+		font-weight: 400
+		color: #fff
+		text-decoration: none
+		font-family: 'HelveticaNeun', sans-serif
+		padding: 6px 20px
+		opacity: .6
+
+.navigation__list-item_second
+	@extend .navigation__list-item
+	a
+		color: #424f58
+		opacity: 1
+		&:hover 
+			text-decoration: underline
+			color: #4d8fbf
+
+.action-buttons__login	
+	display: inline-block
+	color: #fff
+	text-decoration: none
+	font-size: 14px
+	border: 2px solid #537cb2
+	padding: 6px 30px
+	border-radius: 30px
+	font-family: $helveticanuen-mid
+	font-weight: 400
+	margin-right: 5px
+	transition: all .5s
+	&:hover
+		background-color: #fff
+		color: #4d8fbf
+		border: 2px solid #fff
+
+.action-buttons__signup
+	@extend .action-buttons__login
+	border: none
+	background-color: #8fb324
+	padding: 8px 24px
+	margin-right: 0
+	&:hover
+		background-color: #56ae00
+		color: #fff
+		border: none
+
+.header__middle
+	display: inline-block
+	text-align: center
+	height: 587px
+	width: 100%
+
+.header__middle-align
+	margin-top: 171px
+
+.header__middle-title
+	color: #fff
+	font-size: 56px
+	font-family: $omnes-light
+	font-weight: 300
+	letter-spacing: -1.5px
+
+.header__middle-descr
+	color: #cce5ff
+	font-size: 20px
+	font-family: $helveticanuen-mid
+	font-weight: 400
+	margin-top: 6px
+	letter-spacing: -0.7px
+
+.header__middle-btn
+	display: inline-block
+	border: 2px solid #fff
+	color: #fff
+	text-decoration: none
+	background-color: transparent
+	font-size: 18px
+	font-family: $helveticanuen-mid
+	font-weight: 500
+	padding: 9px 51px
+	margin-top: 53px
+	border-radius: 30px
+	transition: all .5s
+	&:hover
+		background-color: #fff
+		color: #5f8ec2;
+
+.header__bottom-orgranizations-descr
+	font-family: 'HelveticaNeunMedium', sans-serif
+	font-weight: 400
+	font-size: 13px
+	text-align: center
+	color: #baddff
+
+.header__bottom-orgranizations
+	text-align: center
+	margin-top: 15px
+
+.header__bottom-orgranizations-image
+	opacity: .7
+	transition: opacity .5s
+	margin: 0px 11px
+	&:hover
+		opacity: 1
+	&:first-child
+		margin-left: 0px
+	&:last-child
+		margin-right: 0px
+
+
+.second-navigation
+	border-bottom: 1px solid #e5e5e5
+
+.navigation_second
+	padding-top: 13px
+	padding-bottom: 45px
+
+.action-buttons__login_second
+	color: #4d8fbf
+	&:hover 
+		background-color: #4d8fbf
+		border: 2px solid #4d8fbf
+		color: #fff

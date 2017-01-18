@@ -1,0 +1,124 @@
+.main-app
+	background-color: #f5fafd
+	padding: 60px 0px 0px
+
+.main__app_space
+	padding-bottom: 60px
+
+.main-app__about-title
+	font-family: $omnes-light
+	font-size: 40px
+	font-weight: 300
+	color: #3d90cc
+	line-height: 50px
+	letter-spacing: -0.6px
+
+.main-app__about-descr
+	color: #36434c
+	font-size: 16px
+	font-family: $helveticanuen-light
+	font-weight: 300
+	margin-top: 30px
+	line-height: 30px
+
+.main-app__about-descr_space
+	width: 89%
+
+.main-app__about-btn
+	display: inline-block
+	color: #4c8fbf
+	border: 2px solid #4d8fbf
+	border-radius: 40px
+	text-decoration: none
+	position: relative
+	padding: 11px 45px 8px 27px
+	font-family: $helveticanuen-mid
+	font-weight: 500
+	margin-top: 50px
+	font-size: 14px
+	transition: all .5s
+	&::after 
+		content: ''
+		background-image: url("../img/btn-arrow.png")
+		width: 7px
+		height: 13px
+		position: absolute
+		right: 25px
+		top: 13px
+		transition: all .5s
+	&:hover 
+		background-color: #4d8fbf
+		color: #fff
+		&::after 
+			background-image: url("../img/btn-arrow-hover.png")
+			background-repeat: no-repeat
+
+
+.main-app__features-phone
+	background-image: url("../img/iphone-5.png")
+	background-repeat: no-repeat
+	width: 66%
+	height: 483px
+	cursor: pointer
+	float: left
+	margin-top: -2px
+
+.main-app__features-list
+	float: left
+	width: 34%
+	padding-top: 71px
+
+.main-app__features-item
+	width: 60px
+	height: 60px
+	margin: 12px auto
+	border: 2px solid #d5e5f2
+	border-radius: 50%
+	background-repeat: no-repeat
+	background-position: center center
+	transition: all .5s
+	position: relative
+	cursor: pointer
+	span 
+		margin-left: 70px
+		margin-top: 14px
+		display: inline-block
+		color: #98a7b2
+		font-size: 11px
+		font-family: $helveticanuen-mid
+		border: 1px solid #e1effa
+		border-radius: 100% 30px 30px 100%/ 30px
+		padding: 7px 10px 7px 15px
+		transition: all .5s
+		position: relative
+
+	&:hover 
+		background-color: #8abc1d
+		border: 2px solid #8abc1d
+		span
+			background-color: #8abc1d
+			border: 1px solid #8abc1d
+			color: #fff
+
+
+
+
+// icons collection
+.main-app__features-item_messages
+	background-image: url("../img/messages-icon.png")
+
+
+.main-app__features-item_photos
+	background-image: url("../img/photos-icon.png")
+
+
+.main-app__features-item_polls
+	background-image: url("../img/polls-icon.png")
+
+
+.main-app__features-item_likes
+	background-image: url("../img/likes-icon.png")
+
+
+.main-app__features-item_comments
+	background-image: url("../img/comments-icon.png")
