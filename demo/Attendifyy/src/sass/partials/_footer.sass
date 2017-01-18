@@ -1,69 +1,107 @@
-.get-started
-	background-color: #3e444d
-	text-align: center
-	padding: 0px 0px 49px
+.footer
+	background-color: #343840
+	padding: 40px 0px 25px
 
-.get-started__title
-	font-family: $omnes-light
-	font-weight: 300
-	font-size: 34px
+.footer__item-categorie
 	color: #fff
-	letter-spacing: -0.5px
-	margin-top: 4px
-
-.start-form
-	width: 270px
-	margin-right: 125px
-	margin-left: auto
-	margin-top: 34px
-
-.start-form__title
-	font-family: $helveticanuen-light
-	font-weight: 300
-	font-size: 22px
-	color: #fff
-	margin-bottom: 15px
-
-.start-form__email
-	width: 100%
-	color: #9ea1a6
-	font-size: 14px
-	padding: 12px
-	background-color: #fff
-	border-radius: 6px
-	margin: 7px 0px
-	text-align: center
-
-.start-form__password
-	@extend .start-form__email
-
-.start-form__btn
-	@extend .start-form__email
-	font-size: 15px
-	color: #fff
+	font-size: 16px
 	font-family: $helveticanuen-bold
 	font-weight: 700
-	background-color: #8fb324
-	padding: 15px 12px
-	margin: 11px 0px
 
-.request-form
-	@extend .start-form
-	margin-left: 125px
-	margin-right: auto
+.footer__item-list li
+	margin: 5px 0px
 
-.request__title
-	@extend .start-form__title
+.footer__item-point
+	font-family: $helveticanuen
+	font-size: 13px
+	color: #676f80
+	font-weight: 400
+	text-decoration: none
+	padding-left: 16px
+	position: relative
+	&::before 
+		content: ''
+		background-image: url("../img/footer-arrow.png")
+		height: 6px
+		width: 4px
+		position: absolute
+		top: 4px
+		left: 2px
+	&:hover 
+		color: #bdc2ce
+	&:hover::before 
+		background-image: url("../img/footer-arrow-hover.png")
 
-.request__name
-	@extend .start-form__email
+.footer__item-social-list
+	width: 160px
+	margin-top: 5px
 
-.request__field
-	@extend .start-form__email
+.footer__item-social-point
+	width: 40px
+	height: 40px
+	border: 2px solid #3b4049
+	border-radius: 50%
+	float: left
+	transition: opacity .5s
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 6px
+	span
+		opacity: .2
+		transition: opacity .5s
+	&:hover span
+		opacity: 1
 
-.request__phone
-	@extend .start-form__email
+// hover collection
 
-.request__btn
-	@extend .start-form__btn
-	background-color: #3d91cc
+.footer__item-social-point_facebook,
+.footer__item-social-point_twitter,
+.footer__item-social-point_in,
+.footer__item-social-point_google,
+.footer__item-social-point_pinterest,
+.footer__item-social-point_instagram
+	transition: all .5s
+
+.footer__item-social-point_facebook:hover
+	background-color: #3b5998
+	border: 2px solid #3b5998
+	
+.footer__item-social-point_twitter:hover 
+	background-color: #00aced
+	border: 2px solid #00aced
+
+.footer__item-social-point_in:hover 
+	background-color: #0977b5
+	border: 2px solid #0977b5
+	
+.footer__item-social-point_google:hover 
+	background-color: #cc3732
+	border: 2px solid #cc3732
+	
+.footer__item-social-point_pinterest:hover 
+	background-color: #cc2127
+	border: 2px solid #cc2127
+
+.footer__item-social-point_instagram:hover 
+	background-color: #3f729b
+	border: 2px solid #3f729b
+
+.copyright
+	display: table
+	padding: 38px 0px 20px
+	width: 100%
+
+.copyright__item-rights
+	font-family: $helveticanuen
+	font-weight: 400
+	color: #676f80
+	font-size: 12px
+
+.copyright__item-policy
+	color: #676f80
+	font-size: 12px
+	font-family: $helveticanuen
+	font-weight: 400
+.copyright__item-terms
+	@extend .copyright__item-policy
