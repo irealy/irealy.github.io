@@ -2766,8 +2766,8 @@ function tabs() {
   });
 
   $('.app-tabs__content').each(function (i) {
-    var me = $(this);
-    me.attr('data-tab', 'tab-' + i);
+    var self = $(this);
+    self.attr('data-tab', 'tab-' + i);
   });
 
   $('.app-tabs__item').click(function () {
