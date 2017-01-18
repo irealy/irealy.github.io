@@ -7,7 +7,35 @@
 			<a href="#" class="main-app__about-btn">Learn more</a>
 		</div>
 
-		<div class="main-app__tabs">tabs coming soon</div>
+		<div class="app-tabs">
+			<ul class="app-tabs__list">
+				<li class="app-tabs__item app-tabs__item_active">{{mixins.png('tabs-build')}} <span class="app-tabs__item-title">Build</span> </li>
+				<li class="app-tabs__item">{{mixins.png('tabs-manage')}} <span class="app-tabs__item-title">Manage</span></li>
+				<li class="app-tabs__item">{{mixins.png('tabs-measure')}} <span class="app-tabs__item-title">Measure</span></li>
+			</ul>
 
+			<!-- begin build tab -->
+			<div class="app-tabs__content">
+				<div class="build"></div>
+			</div>
+
+			<!-- end build tab -->
+		
+			<!-- begin manage tab -->
+
+			<div class="app-tabs__content">
+				<div class="manage-message"></div>
+			</div>
+
+			<!-- end manage tab -->
+
+			<!-- begin measure tab -->
+
+			<div class="app-tabs__content">
+				<div class="graph"></div>
+			</div>
+			<!-- end measure tab -->
+					
+		</div>
 	</div>
 </section>

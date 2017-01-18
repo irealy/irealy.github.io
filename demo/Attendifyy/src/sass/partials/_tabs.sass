@@ -1,0 +1,108 @@
+
+.app-tabs__list
+	font-size: 0
+
+.app-tabs__item
+	width: 33.3%
+	display: inline-block
+	text-align: center
+	border-bottom: 1px solid #dae8f2
+	cursor: pointer
+	padding: 8px 0px
+	background-color: #fff
+	.icon-png
+		opacity: .2
+		margin-right: 6px
+	&:first-child
+		border-top-left-radius: 10px
+	&:nth-child(2)
+		border-left: 1px solid #dae8f2
+		border-right: 1px solid #dae8f2
+	&:last-child
+		border-top-right-radius: 10px
+
+
+// active list item modify
+
+.app-tabs__item_active
+	position: relative
+	transition: all .5s
+	&::after 
+		content: ''
+		display: block
+		height: 3px
+		width: 100%
+		background-color: #528cc2
+		position: absolute
+		bottom: -1px
+		z-index: 3
+
+.app-tabs__item_active .icon-png
+	opacity: 1
+	transition: all .5s
+
+.app-tabs__item_active .app-tabs__item-title
+	color: #528cc2
+
+// active list item modify
+
+.app-tabs__item-title
+	position: relative
+	top: -8px
+	opacity: 1
+	color: #9faeb8
+	font-size: 13px
+	font-family: $helveticanuen-mid
+	font-weight: 500
+
+// tabs content
+
+.app-tabs__content
+	background-color: #fcfdff
+	border-bottom-right-radius: 10px
+	border-bottom-left-radius: 10px
+
+// build tab
+
+.build
+	background-image: url("../img/tab-build.png")
+	background-repeat: no-repeat
+	background-position: center 30px
+	height: 324px
+	position: relative
+	&::before 
+		content: ''
+		position: absolute
+		bottom: -17px
+		left: -57px
+		background-image: url("../img/tabs-drag.png")
+		height: 102px
+		width: 119px
+
+// build tab
+
+// manage tab
+
+.manage-message
+	background-image: url("../img/tab-message.png")
+	background-position: center center
+	background-repeat: no-repeat
+	height: 324px
+
+// manage tab
+
+// measure tab
+
+.graph
+	background-image: url("../img/graph.png")
+	background-position: center center
+	background-repeat: no-repeat
+	width: 100%
+	height: 324px
+	border-bottom-right-radius: 8px
+	border-bottom-left-radius: 8px
+
+// measure tab
+
+
+	

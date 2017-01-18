@@ -215,7 +215,7 @@ html {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -178px -116px;
+  background-position: -120px -224px;
 }
 
 .icon-app-review {
@@ -229,14 +229,14 @@ html {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -224px;
+  background-position: -80px -224px;
 }
 
 .icon-app-submit {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -236px -153px;
+  background-position: 0px -224px;
 }
 
 .icon-astrazeneca-logo {
@@ -278,7 +278,7 @@ html {
   width: 11px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -272px -95px;
+  background-position: -296px -25px;
 }
 
 .icon-google-logo {
@@ -292,21 +292,21 @@ html {
   width: 18px;
   height: 18px;
   background-image: url("../img/sprite.png");
-  background-position: -145px -52px;
+  background-position: -195px -224px;
 }
 
 .icon-in {
   width: 15px;
   height: 15px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -263px;
+  background-position: -296px 0px;
 }
 
 .icon-instagram {
   width: 16px;
   height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -145px -80px;
+  background-position: -52px -264px;
 }
 
 .icon-maps {
@@ -327,7 +327,28 @@ html {
   width: 15px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -40px -224px;
+  background-position: 0px -264px;
+}
+
+.icon-popup-blockuser {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/sprite.png");
+  background-position: -25px -264px;
+}
+
+.icon-popup-hide {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/sprite.png");
+  background-position: -78px -264px;
+}
+
+.icon-popup-user {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/sprite.png");
+  background-position: -145px -82px;
 }
 
 .icon-schedule {
@@ -351,11 +372,53 @@ html {
   background-position: 0px -108px;
 }
 
+.icon-tab-comment {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sprite.png");
+  background-position: -145px -52px;
+}
+
+.icon-tab-heart {
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/sprite.png");
+  background-position: -160px -224px;
+}
+
+.icon-tab-more {
+  width: 32px;
+  height: 8px;
+  background-image: url("../img/sprite.png");
+  background-position: -223px -224px;
+}
+
+.icon-tabs-build {
+  width: 30px;
+  height: 29px;
+  background-image: url("../img/sprite.png");
+  background-position: -40px -224px;
+}
+
+.icon-tabs-manage {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: -178px -116px;
+}
+
+.icon-tabs-measure {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: -236px -153px;
+}
+
 .icon-twitter {
   width: 18px;
   height: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -65px -224px;
+  background-position: -104px -264px;
 }
 
 .icon-twitterfeed {
@@ -479,6 +542,16 @@ body {
   float: left;
 }
 
+.app-tabs {
+  width: 49.2%;
+  float: left;
+  border: 1px solid #dae8f2;
+  border-radius: 10px;
+  margin-top: 22px;
+  margin-left: 7px;
+  background-color: #fcfdff;
+}
+
 .specification__item {
   width: 33.3%;
   float: left;
@@ -504,10 +577,15 @@ body {
   width: 12.66%;
   height: 121px;
   float: left;
-  border: 2px solid #47728e;
+  border: 2px solid #5374a5;
   border-radius: 17px;
   padding: 2px;
   margin: 20px 19px;
+  transition: all .5s;
+}
+
+.performance__list-item:hover {
+  border: 2px solid #426985;
 }
 
 .powerfull-app__item {
@@ -952,6 +1030,114 @@ body {
   background-image: url("../img/comments-icon.png");
 }
 
+.app-tabs__list {
+  font-size: 0;
+}
+
+.app-tabs__item {
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #dae8f2;
+  cursor: pointer;
+  padding: 8px 0px;
+  background-color: #fff;
+}
+
+.app-tabs__item .icon-png {
+  opacity: .2;
+  margin-right: 6px;
+}
+
+.app-tabs__item:first-child {
+  border-top-left-radius: 10px;
+}
+
+.app-tabs__item:nth-child(2) {
+  border-left: 1px solid #dae8f2;
+  border-right: 1px solid #dae8f2;
+}
+
+.app-tabs__item:last-child {
+  border-top-right-radius: 10px;
+}
+
+.app-tabs__item_active {
+  position: relative;
+  transition: all .5s;
+}
+
+.app-tabs__item_active::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #528cc2;
+  position: absolute;
+  bottom: -1px;
+  z-index: 3;
+}
+
+.app-tabs__item_active .icon-png {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.app-tabs__item_active .app-tabs__item-title {
+  color: #528cc2;
+}
+
+.app-tabs__item-title {
+  position: relative;
+  top: -8px;
+  opacity: 1;
+  color: #9faeb8;
+  font-size: 13px;
+  font-family: "HelveticaNeueCyr-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.app-tabs__content {
+  background-color: #fcfdff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.build {
+  background-image: url("../img/tab-build.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  height: 324px;
+  position: relative;
+}
+
+.build::before {
+  content: '';
+  position: absolute;
+  bottom: -17px;
+  left: -57px;
+  background-image: url("../img/tabs-drag.png");
+  height: 102px;
+  width: 119px;
+}
+
+.manage-message {
+  background-image: url("../img/tab-message.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 324px;
+}
+
+.graph {
+  background-image: url("../img/graph.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 324px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
 .specification {
   background-color: #3d464d;
   padding: 40px 0px 35px;
@@ -1064,9 +1250,13 @@ body {
 }
 
 .performance__list-item-wrap {
-  border: 1px solid #517fa1;
+  border: 1px solid #5477aa;
   border-radius: 15px;
   padding: 18px 0px 12px;
+}
+
+.performance__list-item-wrap:hover {
+  border: 1px solid #4c7999;
 }
 
 .performance__list-item-image {
