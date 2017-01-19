@@ -23,6 +23,8 @@
 
 .main-app__about-descr_space
 	width: 89%
+	+r(950)
+		width: 100%
 
 .main-app__about-btn
 	display: inline-block
@@ -62,11 +64,18 @@
 	cursor: pointer
 	float: left
 	margin-top: -2px
-
-.main-app__features-list
-	float: left
-	width: 34%
-	padding-top: 71px
+	+r(950)
+		width: 41%
+		margin-left: 150px
+	+r(768)
+		width: 56%
+		margin-left: 50px
+	+r(580)
+		margin: 0 auto
+		width: 74%
+	+r(450)
+		width: 100%
+		background-position: center center
 
 .main-app__features-item
 	width: 60px
@@ -79,6 +88,12 @@
 	transition: all .5s
 	position: relative
 	cursor: pointer
+	+r(450)
+		float: left
+		width: 50px
+		height: 50px
+		margin: 12px 3px
+
 	span 
 		margin-left: 70px
 		margin-top: 14px
@@ -91,6 +106,8 @@
 		padding: 7px 10px 7px 15px
 		transition: all .5s
 		position: relative
+		+r(580)
+			display: none
 	svg
 		stroke: #cad9e6
 		stroke-width: 2px
@@ -100,6 +117,8 @@
 		top: 50%
 		left: 50%
 		transform: translate(-50%, -50%)
+		+r(450)
+			font-size: 20px
 
 	&:hover 
 		background-color: #8abc1d
