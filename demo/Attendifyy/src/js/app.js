@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 	tabs();
 
+	modal();
+
 });
 
 function tabs() {
@@ -36,3 +38,18 @@ function tabs() {
 	});
 
 };
+
+function modal() {
+
+	$('.our-clients__item').click(function() {
+		var self = $(this);
+		$('.our-clients__wrap').hide();
+		$('.our-clients__modal').fadeIn();
+	});
+
+	$('.our-clients__modal-close').click(function() {
+		$('.our-clients__modal').hide()
+		$('.our-clients__wrap').fadeIn();
+	});
+
+}

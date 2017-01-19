@@ -91,6 +91,15 @@
 		padding: 7px 10px 7px 15px
 		transition: all .5s
 		position: relative
+	svg
+		stroke: #cad9e6
+		stroke-width: 2px
+		fill: transparent
+		font-size: 30px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 
 	&:hover 
 		background-color: #8abc1d
@@ -104,21 +113,14 @@
 
 
 // icons collection
-.main-app__features-item_messages
-	background-image: url("../img/messages-icon.png")
+
+.main-app__features-item_photos svg
+	font-size: 24px
 
 
-.main-app__features-item_photos
-	background-image: url("../img/photos-icon.png")
+.main-app__features-item_polls svg
+	font-size: 20px
+	stroke-width: 1px
 
-
-.main-app__features-item_polls
-	background-image: url("../img/polls-icon.png")
-
-
-.main-app__features-item_likes
-	background-image: url("../img/likes-icon.png")
-
-
-.main-app__features-item_comments
-	background-image: url("../img/comments-icon.png")
+.main-app__features-item_comments svg
+	font-size: 25px

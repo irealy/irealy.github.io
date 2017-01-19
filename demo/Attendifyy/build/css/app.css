@@ -138,6 +138,12 @@ html {
   fill: initial;
 }
 
+.icon-close-modal {
+  width: 1em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-control {
   width: 1em;
   height: 1em;
@@ -198,6 +204,12 @@ html {
   fill: initial;
 }
 
+.icon-polls {
+  width: 1.5em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-share {
   width: 1.19em;
   height: 1em;
@@ -208,35 +220,35 @@ html {
   width: 46px;
   height: 46px;
   background-image: url("../img/sprite.png");
-  background-position: -116px -166px;
+  background-position: 0px -206px;
 }
 
 .icon-app-build {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -120px -224px;
+  background-position: -254px -206px;
 }
 
 .icon-app-review {
   width: 30px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -236px -193px;
+  background-position: -98px -262px;
 }
 
 .icon-app-stores {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -80px -224px;
+  background-position: -58px -262px;
 }
 
 .icon-app-submit {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -224px;
+  background-position: -174px -206px;
 }
 
 .icon-astrazeneca-logo {
@@ -246,39 +258,53 @@ html {
   background-position: 0px 0px;
 }
 
+.icon-autodesk-logo {
+  width: 156px;
+  height: 27px;
+  background-image: url("../img/sprite.png");
+  background-position: -178px 0px;
+}
+
+.icon-bloomberg-logo {
+  width: 150px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -108px;
+}
+
 .icon-delegates {
   width: 48px;
   height: 42px;
   background-image: url("../img/sprite.png");
-  background-position: -172px -166px;
+  background-position: -56px -206px;
 }
 
 .icon-eventbrite {
   width: 48px;
   height: 47px;
   background-image: url("../img/sprite.png");
-  background-position: -58px -166px;
+  background-position: -232px -148px;
 }
 
 .icon-exhibitmaps {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -178px -58px;
+  background-position: -58px -148px;
 }
 
 .icon-exhibitors {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -166px;
+  background-position: -116px -148px;
 }
 
 .icon-facebook {
   width: 11px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -296px -25px;
+  background-position: -344px -25px;
 }
 
 .icon-google-logo {
@@ -292,56 +318,63 @@ html {
   width: 18px;
   height: 18px;
   background-image: url("../img/sprite.png");
-  background-position: -195px -224px;
+  background-position: -173px -262px;
 }
 
 .icon-in {
   width: 15px;
   height: 15px;
   background-image: url("../img/sprite.png");
-  background-position: -296px 0px;
+  background-position: -344px 0px;
 }
 
 .icon-instagram {
   width: 16px;
   height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -52px -264px;
+  background-position: -78px -310px;
 }
 
 .icon-maps {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -178px 0px;
+  background-position: 0px -148px;
 }
 
 .icon-news {
   width: 48px;
   height: 38px;
   background-image: url("../img/sprite.png");
-  background-position: -236px -47px;
+  background-position: 0px -262px;
+}
+
+.icon-philips-logo {
+  width: 150px;
+  height: 28px;
+  background-image: url("../img/sprite.png");
+  background-position: -178px -37px;
 }
 
 .icon-pinterest {
   width: 15px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -264px;
+  background-position: 0px -310px;
 }
 
 .icon-popup-blockuser {
   width: 17px;
   height: 17px;
   background-image: url("../img/sprite.png");
-  background-position: -25px -264px;
+  background-position: -25px -310px;
 }
 
 .icon-popup-hide {
   width: 16px;
   height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -78px -264px;
+  background-position: -52px -310px;
 }
 
 .icon-popup-user {
@@ -355,21 +388,21 @@ html {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -117px -108px;
+  background-position: -237px -75px;
 }
 
 .icon-speakers {
   width: 26px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -236px -95px;
+  background-position: -295px -75px;
 }
 
 .icon-sponsors {
   width: 49px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -108px;
+  background-position: -178px -75px;
 }
 
 .icon-tab-comment {
@@ -383,56 +416,56 @@ html {
   width: 25px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -160px -224px;
+  background-position: -138px -262px;
 }
 
 .icon-tab-more {
   width: 32px;
   height: 8px;
   background-image: url("../img/sprite.png");
-  background-position: -223px -224px;
+  background-position: -201px -262px;
 }
 
 .icon-tabs-build {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -40px -224px;
+  background-position: -294px -206px;
 }
 
 .icon-tabs-manage {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -178px -116px;
+  background-position: -214px -206px;
 }
 
 .icon-tabs-measure {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -236px -153px;
+  background-position: -290px -148px;
 }
 
 .icon-twitter {
   width: 18px;
   height: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -104px -264px;
+  background-position: -104px -310px;
 }
 
 .icon-twitterfeed {
   width: 50px;
   height: 37px;
   background-image: url("../img/sprite.png");
-  background-position: -236px 0px;
+  background-position: -114px -206px;
 }
 
 .icon-webview {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -59px -108px;
+  background-position: -174px -148px;
 }
 
 @font-face {
@@ -630,7 +663,7 @@ body {
 }
 
 .our-clients__item:nth-child(6) {
-  margin-left: 30px;
+  margin-left: 25px;
   margin-right: 0px;
 }
 
@@ -999,6 +1032,19 @@ body {
   position: relative;
 }
 
+.main-app__features-item svg {
+  stroke: #cad9e6;
+  stroke-width: 2px;
+  fill: transparent;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .main-app__features-item:hover {
   background-color: #8abc1d;
   border: 2px solid #8abc1d;
@@ -1010,24 +1056,17 @@ body {
   color: #fff;
 }
 
-.main-app__features-item_messages {
-  background-image: url("../img/messages-icon.png");
+.main-app__features-item_photos svg {
+  font-size: 24px;
 }
 
-.main-app__features-item_photos {
-  background-image: url("../img/photos-icon.png");
+.main-app__features-item_polls svg {
+  font-size: 20px;
+  stroke-width: 1px;
 }
 
-.main-app__features-item_polls {
-  background-image: url("../img/polls-icon.png");
-}
-
-.main-app__features-item_likes {
-  background-image: url("../img/likes-icon.png");
-}
-
-.main-app__features-item_comments {
-  background-image: url("../img/comments-icon.png");
+.main-app__features-item_comments svg {
+  font-size: 25px;
 }
 
 .app-tabs__list {
@@ -1321,7 +1360,7 @@ body {
 
 .our-clients {
   background-color: #f4f9fd;
-  padding: 45px 0px 50px;
+  padding: 45px 0px 24px;
   text-align: center;
 }
 
@@ -1343,6 +1382,8 @@ body {
 
 .our-clients__wrap {
   padding: 25px;
+  display: table;
+  width: 100%;
 }
 
 .our-clients__item {
@@ -1351,17 +1392,16 @@ body {
   border-radius: 30px;
   height: 210px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .our-clients__item-logo {
-  font-size: 42px;
   position: absolute;
   left: 50%;
-  top: 21%;
+  top: 25%;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
-  height: 60px;
 }
 
 .our-clients__item-logo img {
@@ -1390,6 +1430,73 @@ body {
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
+}
+
+.our-clients__item-logo_google {
+  top: 24%;
+}
+
+.our-clients__item-logo_astrazeneca {
+  top: 20%;
+}
+
+.our-clients__item-logo_bloomberg {
+  top: 32%;
+}
+
+.our-clients__item-autodesk {
+  top: 33%;
+}
+
+.our-clients__item-logo_philips {
+  top: 31%;
+}
+
+.our-clients__modal {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #dae8f2;
+  border-radius: 30px;
+  width: 95%;
+  margin: 45px auto 53px;
+  position: relative;
+}
+
+.our-clients__modal-content {
+  background-image: url("../img/modal-image.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 478px;
+  border-radius: 30px;
+}
+
+.our-clients__modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #a1aab2;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-weight: 400;
+  transition: all .5s;
+}
+
+.our-clients__modal-close svg {
+  font-size: 15px;
+  stroke: #b8c3cc;
+  stroke-width: 2px;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: all .5s;
+}
+
+.our-clients__modal-close:hover {
+  color: #4d8fbf;
+}
+
+.our-clients__modal-close:hover svg {
+  stroke: #4d8fbf;
 }
 
 .our-clients__item-icons svg {
