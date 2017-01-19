@@ -911,6 +911,15 @@ body {
 
 .second-navigation {
   border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.second-navigation.second-navigation_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
 }
 
 .navigation_second {
@@ -928,13 +937,59 @@ body {
   color: #fff;
 }
 
+.navigation__btn {
+  height: 20px;
+  width: 25px;
+  background-color: transparent;
+  position: relative;
+  top: 5px;
+  right: 0;
+  display: none;
+}
+
+.navigation__btn::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #338de9;
+}
+
+.navigation__btn::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #338de9;
+}
+
+.navigation__btn span {
+  background-color: #338de9;
+  height: 3px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
 .main-app {
   background-color: #f5fafd;
   padding: 60px 0px 0px;
 }
 
-.main__app_space {
+.main-app_space {
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-app_js-nav-active {
+  padding: 119px 0px 0px;
 }
 
 .main-app__about-title {
@@ -2002,6 +2057,19 @@ body {
 
 @media only screen and (max-width: 950px) {
 
+  .navigation__logo {
+    width: 80%;
+    text-align: center;
+  }
+
+  .navigation__list {
+    display: none;
+  }
+
+  .action-buttons {
+    display: none;
+  }
+
   .main-app__about {
     width: 100%;
     text-align: center;
@@ -2015,9 +2083,8 @@ body {
   }
 
   .app-tabs {
-    position: relative;
-    left: 50%;
-    margin-left: -189px;
+    width: 100%;
+    margin-left: 0px;
   }
 
   .performance__list-item {
@@ -2034,6 +2101,18 @@ body {
     background-repeat: repeat;
   }
 
+  .header__middle-align {
+    margin-top: 20px;
+  }
+
+  .navigation_second {
+    padding-bottom: 0;
+  }
+
+  .navigation__btn {
+    display: block;
+  }
+
   .main-app__about-descr_space {
     width: 100%;
   }
@@ -2041,6 +2120,10 @@ body {
   .main-app__features-phone {
     width: 41%;
     margin-left: 150px;
+  }
+
+  .build::before {
+    left: 0px;
   }
 
   .powerfull-app {
@@ -2166,6 +2249,21 @@ body {
 
   .main-app__features-item svg {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .build {
+    background-size: 100%;
+  }
+
+  .manage-message {
+    background-size: 100%;
+  }
+
+  .graph {
+    background-size: 100%;
   }
 }
 
