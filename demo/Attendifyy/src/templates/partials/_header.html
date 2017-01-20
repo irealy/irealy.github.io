@@ -1,3 +1,4 @@
+<!-- BEGIN header -->
 <header class="header">
 	<div class="header__container container">
 		<div class="navigation">
@@ -15,7 +16,7 @@
 				<a href="#" class="action-buttons__signup">Sign Up</a>
 			</div>
 
-			<button class="navigation__btn">
+			<button class="navigation__btn navigation__btn_top">
 				<span></span>
 			</button>
 		</div>
@@ -32,13 +33,27 @@
 		<div class="header__bottom">
 			<p class="header__bottom-orgranizations-descr">Hundreds of organizations trust Attendify to enhance their events:</p>
 			<div class="header__bottom-orgranizations">
-				<img class="header__bottom-orgranizations-image" src="img/aol-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/astrazeneca-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/autodesk-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/bloomberg-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/disnei-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/google-organization.png" alt="">
-				<img class="header__bottom-orgranizations-image" src="img/philips-organization.png" alt="">
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('aol-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('astrazeneca-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('autodesk-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('bloomberg-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('disnei-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('google-organization')}}
+				</div>
+				<div class="header__bottom-orgranizations-image">
+					{{mixins.png('philips-organization')}}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -63,6 +78,31 @@
 			<button class="navigation__btn">
 				<span></span>
 			</button>
+
+			<!-- begin toggle popup -->
+
+			<div class="toogle-navigation">
+				<div class="toogle-navigation__logo"><img src="img/second-logo.png" alt="Attendify"></div>
+
+				<ul class="toogle-navigation__list">
+					<li><a href="#" class="toggle-navigation__item">Main</a></li>
+					<li><a href="#" class="toggle-navigation__item">Products</a></li>
+					<li><a href="#" class="toggle-navigation__item">Pricing</a></li>
+					<li><a href="#" class="toggle-navigation__item">About</a></li>
+					<li><a href="#" class="toggle-navigation__item">Blog</a></li>
+				</ul>
+
+				<div class="action-buttons">
+					<a href="#" class="action-buttons__login action-buttons__login_second">Login</a>
+					<a href="#" class="action-buttons__signup">Sign Up</a>
+				</div>
+
+				<div class="toogle-navigation__close"></div>
+			</div>
+
+			<!-- end toggle popup -->
+
 		</div>
 	</div>
 </section>
+<!-- END header -->

@@ -220,35 +220,42 @@ html {
   width: 46px;
   height: 46px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -206px;
+  background-position: -116px -293px;
+}
+
+.icon-aol-organization {
+  width: 69px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
+  background-position: -192px -239px;
 }
 
 .icon-app-build {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -254px -206px;
+  background-position: -384px -304px;
 }
 
 .icon-app-review {
   width: 30px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -98px -262px;
+  background-position: -166px -202px;
 }
 
 .icon-app-stores {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -58px -262px;
+  background-position: -384px -226px;
 }
 
 .icon-app-submit {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -174px -206px;
+  background-position: -384px -146px;
 }
 
 .icon-astrazeneca-logo {
@@ -258,9 +265,23 @@ html {
   background-position: 0px 0px;
 }
 
+.icon-astrazeneca-organization {
+  width: 132px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
+  background-position: -178px -54px;
+}
+
 .icon-autodesk-logo {
   width: 156px;
   height: 27px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -202px;
+}
+
+.icon-autodesk-organization {
+  width: 137px;
+  height: 44px;
   background-image: url("../img/sprite.png");
   background-position: -178px 0px;
 }
@@ -269,6 +290,13 @@ html {
   width: 150px;
   height: 30px;
   background-image: url("../img/sprite.png");
+  background-position: 0px -162px;
+}
+
+.icon-bloomberg-organization {
+  width: 139px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
   background-position: 0px -108px;
 }
 
@@ -276,35 +304,42 @@ html {
   width: 48px;
   height: 42px;
   background-image: url("../img/sprite.png");
-  background-position: -56px -206px;
+  background-position: -172px -293px;
+}
+
+.icon-disnei-organization {
+  width: 76px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
+  background-position: -106px -239px;
 }
 
 .icon-eventbrite {
   width: 48px;
   height: 47px;
   background-image: url("../img/sprite.png");
-  background-position: -232px -148px;
+  background-position: -58px -293px;
 }
 
 .icon-exhibitmaps {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -58px -148px;
+  background-position: -325px -116px;
 }
 
 .icon-exhibitors {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -116px -148px;
+  background-position: -325px -174px;
 }
 
 .icon-facebook {
   width: 11px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -344px -25px;
+  background-position: -420px -48px;
 }
 
 .icon-google-logo {
@@ -314,67 +349,81 @@ html {
   background-position: 0px -52px;
 }
 
+.icon-google-organization {
+  width: 96px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -239px;
+}
+
 .icon-google {
   width: 18px;
   height: 18px;
   background-image: url("../img/sprite.png");
-  background-position: -173px -262px;
+  background-position: -149px -108px;
 }
 
 .icon-in {
   width: 15px;
   height: 15px;
   background-image: url("../img/sprite.png");
-  background-position: -344px 0px;
+  background-position: -316px -293px;
 }
 
 .icon-instagram {
   width: 16px;
   height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -78px -310px;
+  background-position: -290px -293px;
 }
 
 .icon-maps {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -148px;
+  background-position: -325px -58px;
 }
 
 .icon-news {
   width: 48px;
   height: 38px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -262px;
+  background-position: -384px 0px;
 }
 
 .icon-philips-logo {
   width: 150px;
   height: 28px;
   background-image: url("../img/sprite.png");
-  background-position: -178px -37px;
+  background-position: -160px -162px;
+}
+
+.icon-philips-organization {
+  width: 122px;
+  height: 44px;
+  background-image: url("../img/sprite.png");
+  background-position: -178px -108px;
 }
 
 .icon-pinterest {
   width: 15px;
   height: 20px;
   background-image: url("../img/sprite.png");
-  background-position: 0px -310px;
+  background-position: -271px -239px;
 }
 
 .icon-popup-blockuser {
   width: 17px;
   height: 17px;
   background-image: url("../img/sprite.png");
-  background-position: -25px -310px;
+  background-position: -296px -239px;
 }
 
 .icon-popup-hide {
   width: 16px;
   height: 16px;
   background-image: url("../img/sprite.png");
-  background-position: -52px -310px;
+  background-position: -149px -136px;
 }
 
 .icon-popup-user {
@@ -388,21 +437,21 @@ html {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -237px -75px;
+  background-position: -325px -232px;
 }
 
 .icon-speakers {
   width: 26px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -295px -75px;
+  background-position: -384px -48px;
 }
 
 .icon-sponsors {
   width: 49px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -178px -75px;
+  background-position: -325px 0px;
 }
 
 .icon-tab-comment {
@@ -416,56 +465,56 @@ html {
   width: 25px;
   height: 19px;
   background-image: url("../img/sprite.png");
-  background-position: -138px -262px;
+  background-position: -206px -202px;
 }
 
 .icon-tab-more {
   width: 32px;
   height: 8px;
   background-image: url("../img/sprite.png");
-  background-position: -201px -262px;
+  background-position: -241px -202px;
 }
 
 .icon-tabs-build {
   width: 30px;
   height: 29px;
   background-image: url("../img/sprite.png");
-  background-position: -294px -206px;
+  background-position: -384px -265px;
 }
 
 .icon-tabs-manage {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -214px -206px;
+  background-position: -384px -186px;
 }
 
 .icon-tabs-measure {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: -290px -148px;
+  background-position: -384px -106px;
 }
 
 .icon-twitter {
   width: 18px;
   height: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -104px -310px;
+  background-position: -271px -269px;
 }
 
 .icon-twitterfeed {
   width: 50px;
   height: 37px;
   background-image: url("../img/sprite.png");
-  background-position: -114px -206px;
+  background-position: -230px -293px;
 }
 
 .icon-webview {
   width: 48px;
   height: 48px;
   background-image: url("../img/sprite.png");
-  background-position: -174px -148px;
+  background-position: 0px -293px;
 }
 
 @font-face {
@@ -521,6 +570,10 @@ body {
   background: #FFF;
   font-size: 16px;
   line-height: 1.4;
+}
+
+body.menu-active {
+  overflow: hidden;
 }
 
 .container {
@@ -892,9 +945,10 @@ body {
 }
 
 .header__bottom-orgranizations-image {
-  opacity: .7;
+  opacity: .6;
   transition: opacity .5s;
   margin: 0px 11px;
+  display: inline-block;
 }
 
 .header__bottom-orgranizations-image:hover {
@@ -942,6 +996,7 @@ body {
   width: 25px;
   background-color: transparent;
   position: relative;
+  z-index: 100;
   top: 5px;
   right: 0;
   display: none;
@@ -975,6 +1030,96 @@ body {
   position: absolute;
   top: 8px;
   left: 0;
+}
+
+.navigation__btn_top span {
+  background-color: #fff;
+}
+
+.navigation__btn_top::before {
+  background-color: #fff;
+}
+
+.navigation__btn_top::after {
+  background-color: #fff;
+}
+
+.toogle-navigation__close {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 38px;
+}
+
+.toogle-navigation__close::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #338de9;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  transition: all .5s;
+}
+
+.toogle-navigation__close::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #338de9;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: all .5s;
+}
+
+.toogle-navigation {
+  position: fixed;
+  top: -100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  overflow-x: auto;
+  transition: all 1s;
+}
+
+.toogle-navigation.toogle-navigation__active {
+  top: 0px;
+}
+
+.toogle-navigation__logo {
+  margin-bottom: 20px;
+}
+
+.toggle-navigation__item {
+  color: #424f58;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "HelveticaNeueCyr-Medium", sans-serif;
+  font-weight: 500;
+  padding: 10px 0px;
+  display: block;
+}
+
+.toogle-navigation .action-buttons {
+  display: block;
+  width: 100%;
+  margin-top: 35px;
 }
 
 .main-app {
@@ -1774,10 +1919,6 @@ body {
   border-right: 1px solid #e5e5e5;
 }
 
-.select-price__item-title_blue + .select-price__item-descr + .select-price__item-count {
-  border-right: 1px solid #e5e5e5;
-}
-
 .select-price__item-title_purple {
   background-color: #7068ae;
   margin-top: -10px;
@@ -2091,6 +2232,27 @@ body {
     margin: 20px 10px;
   }
 
+  .our-clients__item {
+    width: 46%;
+    margin: 10px 0;
+  }
+
+  .our-clients__item:first-child {
+    margin: 10px 0;
+  }
+
+  .our-clients__item:nth-child(3) {
+    margin: 10px 0;
+  }
+
+  .our-clients__item:nth-child(4) {
+    margin: 10px 0;
+  }
+
+  .our-clients__item:nth-child(6) {
+    margin: 10px 0;
+  }
+
   .footer__item {
     width: 50%;
     text-align: center;
@@ -2099,6 +2261,12 @@ body {
 
   .header {
     background-repeat: repeat;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__middle {
+    height: 420px;
   }
 
   .header__middle-align {
@@ -2131,12 +2299,39 @@ body {
     padding-right: 15px;
   }
 
+  .our-clients {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .our-clients__wrap {
+    padding: 0;
+  }
+
+  .our-clients__modal-content {
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .pricing {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .footer__item-social-list {
     margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
+
+  .header__middle-title {
+    font-size: 40px;
+  }
+
+  .header__middle-descr {
+    font-size: 16px;
+  }
 
   .main-app__features-phone {
     width: 56%;
@@ -2159,8 +2354,28 @@ body {
     width: 50%;
   }
 
+  .select-price__item {
+    width: 100%;
+  }
+
+  .select-price__item:last-child, .select-price__item:nth-child(2) {
+    border-radius: 0px;
+  }
+
   .get-started__item {
     width: 100%;
+  }
+
+  .select-price__item-title_blue {
+    border-radius: 0;
+  }
+
+  .select-price__item-title_purple {
+    border-radius: 0;
+  }
+
+  .select-price__item-title_pink {
+    border-radius: 0;
   }
 }
 
@@ -2169,6 +2384,10 @@ body {
   .performance__list-item {
     width: 29.3%;
     margin: 2%;
+  }
+
+  .our-clients__item {
+    width: 100%;
   }
 
   .main-app__features-phone {

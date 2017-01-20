@@ -13,6 +13,7 @@
 
   <body>
     <!-- BEGIN content -->
+    <!-- BEGIN header -->
     <header class="header">
       <div class="header__container container">
         <div class="navigation">
@@ -24,7 +25,7 @@
             <li class="navigation__list-item"><a href="#">About</a></li>
             <li class="navigation__list-item"><a href="#">Blog</a></li>
           </ul>
-          <div class="action-buttons"> <a href="#" class="action-buttons__login">Login</a> <a href="#" class="action-buttons__signup">Sign Up</a> </div> <button class="navigation__btn">
+          <div class="action-buttons"> <a href="#" class="action-buttons__login">Login</a> <a href="#" class="action-buttons__signup">Sign Up</a> </div> <button class="navigation__btn navigation__btn_top">
 				<span></span>
 			</button> </div>
         <div class="header__middle">
@@ -34,11 +35,15 @@
         </div>
         <div class="header__bottom">
           <p class="header__bottom-orgranizations-descr">Hundreds of organizations trust Attendify to enhance their events:</p>
-          <div class="header__bottom-orgranizations"> <img class="header__bottom-orgranizations-image" src="img/aol-organization.png" alt=""> <img class="header__bottom-orgranizations-image" src="img/astrazeneca-organization.png" alt="">
-            <img class="header__bottom-orgranizations-image" src="img/autodesk-organization.png"
-              alt=""> <img class="header__bottom-orgranizations-image" src="img/bloomberg-organization.png" alt=""> <img class="header__bottom-orgranizations-image" src="img/disnei-organization.png" alt="">
-              <img class="header__bottom-orgranizations-image" src="img/google-organization.png"
-                alt=""> <img class="header__bottom-orgranizations-image" src="img/philips-organization.png" alt=""> </div>
+          <div class="header__bottom-orgranizations">
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-aol-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-astrazeneca-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-autodesk-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-bloomberg-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-disnei-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-google-organization"></span> </div>
+            <div class="header__bottom-orgranizations-image"> <span class="icon-png icon-philips-organization"></span> </div>
+          </div>
         </div>
       </div>
     </header>
@@ -55,9 +60,26 @@
           </ul>
           <div class="action-buttons"> <a href="#" class="action-buttons__login action-buttons__login_second">Login</a> <a href="#" class="action-buttons__signup">Sign Up</a> </div> <button class="navigation__btn">
 				<span></span>
-			</button> </div>
+			</button>
+          <!-- begin toggle popup -->
+          <div class="toogle-navigation">
+            <div class="toogle-navigation__logo"><img src="img/second-logo.png" alt="Attendify"></div>
+            <ul class="toogle-navigation__list">
+              <li><a href="#" class="toggle-navigation__item">Main</a></li>
+              <li><a href="#" class="toggle-navigation__item">Products</a></li>
+              <li><a href="#" class="toggle-navigation__item">Pricing</a></li>
+              <li><a href="#" class="toggle-navigation__item">About</a></li>
+              <li><a href="#" class="toggle-navigation__item">Blog</a></li>
+            </ul>
+            <div class="action-buttons"> <a href="#" class="action-buttons__login action-buttons__login_second">Login</a> <a href="#" class="action-buttons__signup">Sign Up</a> </div>
+            <div class="toogle-navigation__close"></div>
+          </div>
+          <!-- end toggle popup -->
+        </div>
       </div>
     </section>
+    <!-- END header -->
+    <!-- BEGIN main-app -->
     <section class="main-app main-app_js-nav">
       <div class="main-app__container container">
         <div class="main-app__about">
@@ -75,6 +97,8 @@
         </div>
       </div>
     </section>
+    <!-- END main-app -->
+    <!-- BEGIN specification -->
     <section class="specification">
       <div class="specification__container container">
         <div class="specification__item">
@@ -94,6 +118,8 @@
         </div>
       </div>
     </section>
+    <!-- END specification -->
+    <!-- BEGIN performance -->
     <section class="performance">
       <div class="performance__container container">
         <h2 class="performance__title">All the bells & whistles</h2>
@@ -174,6 +200,8 @@
         </ul>
       </div>
     </section>
+    <!-- END performance -->
+    <!-- BEGIN main-app with tabs -->
     <section class="main-app main-app_space">
       <div class="main-app__container container">
         <div class="main-app__about">
@@ -203,6 +231,8 @@
         </div>
       </div>
     </section>
+    <!-- END main-app with tabs -->
+    <!-- BEGIN powerfull-app -->
     <section class="powerfull-app">
       <div class="powerfull-app__container container">
         <h2 class="powerfull-app__title">Your own branded event app in 1 week? Yes!</h2>
@@ -230,6 +260,8 @@
           </div>
         </div> <a href="#" class="powerfull-app__btn">How-to Guide</a> </div>
     </section>
+    <!-- END powerfull-app -->
+    <!-- BEGIN our-clients -->
     <section class="our-clients">
       <div class="our-clients__container container">
         <h2 class="our-clients__title">Engagement you can count on.</h2>
@@ -291,6 +323,8 @@
         </div>
       </div>
     </section>
+    <!-- END our-clients -->
+    <!-- BEGIN helped-events -->
     <section class="helped-events">
       <div class="helped-events__container container">
         <h2 class="helped-events__title">Attendify has helped events of all types deliver differentiating mobile experiences:</h2>
@@ -315,6 +349,8 @@
         </div>
       </div>
     </section>
+    <!-- END helped-events -->
+    <!-- BEGIN pricing -->
     <section class="pricing">
       <div class="pricing__container container">
         <h2 class="pricing__title">Simple pricing.</h2>
@@ -343,6 +379,8 @@
         <!-- end pricing -->
       </div>
     </section>
+    <!-- END pricing -->
+    <!-- BEGIN get-started -->
     <section class="get-started">
       <div class="get-started__container container">
         <h2 class="get-started__title">Ready to get started?</h2>
@@ -357,6 +395,8 @@
         </div>
       </div>
     </section>
+    <!-- END get-started -->
+    <!-- BEGIN footer -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__item">
@@ -417,6 +457,7 @@
         </div>
       </div>
     </footer>
+    <!-- END footer -->
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
