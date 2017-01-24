@@ -1,0 +1,171 @@
+.header
+	padding: 38px 0px
+	background-image: url("../img/header-bg.png")
+	background-position: center center
+	background-repeat: no-repeat
+	min-height: 628px
+	position: relative
+
+.nav__list
+	float: right
+
+.nav__list li
+	display: inline-block
+	&:last-child a 
+		padding-right: 0px
+		opacity: .5
+
+
+.nav__list-item
+	padding: 15px 19px
+	font-weight: 700
+	font-size: 14px
+	color: #fff
+	text-decoration: none
+	display: block
+	transition: all .5s
+	svg
+		stroke-width: 1px
+		font-size: 26px
+		fill: #fff
+		vertical-align: middle
+		margin-right: 5px
+		margin-top: -5px
+		transition: all .5s
+	&:hover
+		color: $orange
+	&:hover svg
+		fill: $orange
+
+.header__choice
+	position: absolute
+	top: 66%
+	left: 50%
+	transform: translate(-50%, -50%)
+	text-align: center
+
+.header__choise-title
+	background-image: url("../img/header-choice.png")
+	background-repeat: no-repeat
+	width: 549px
+	height: 156px
+
+.header__choice-town
+	background-image: url("../img/header-city.png")
+	width: 236px
+	height: 233px
+	margin: 0 auto
+	position: relative
+	top: -37px
+	&::before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		z-index: -1
+		box-shadow: 0px 80px 268px 247px #0883c6;
+
+.header__choice-btn
+	font-weight: 700
+	color: #fff
+	font-size: 18px
+	padding: 18px 80px
+	background-color: $orange
+	text-decoration: none
+	position: relative
+	top: -20px
+	border-radius: 10px
+	transition: all .5s
+	box-shadow: 3px 3px 0px #1265af
+	&:hover
+		background-color: #fff
+		color: #155da9
+
+.header__choice-better
+	position: relative
+	top: 23px
+	background-image: url("../img/choice-better.png")
+	width: 347px
+	height: 222px
+	margin: 0 auto
+
+.header__choice-better-home
+	font-weight: 600
+	font-size: 30px
+	color: #7ec8e7
+	text-align: right
+	text-transform: uppercase
+	position: absolute
+	left: -285px
+	top: 45px
+	line-height: 40px
+	svg
+		position: absolute
+		bottom: -50px
+		right: -15px
+		transform: rotate(228deg) rotateY(180deg)
+		fill: $orange
+		font-size: 44px
+
+
+.header__choice-better-present
+	@extend .header__choice-better-home
+	color: #f6ab49
+	right: -239px
+	left: auto
+	top: 81px
+	text-align: left
+	svg
+		position: absolute
+		top: -60px
+		left: 12px
+		transform: rotate(62deg) rotateY(180deg)
+		fill: #72bbe0
+		font-size: 44px
+
+
+.stiky-nav
+	background-color: #fff
+	height: 100px
+	width: 100%
+	position: fixed
+	z-index: 1000
+	top: -100%
+	left: 0
+	padding: 18px 107px
+	text-align: center
+	transition: all .75s
+	&.stiky-nav-active
+		top: 0
+
+
+.stiky-nav__logo
+	background-image: url("../img/logo.svg")
+	background-repeat: no-repeat
+	width: 40%
+	height: 64px
+	display: block
+	float: left
+
+.stiky-nav__tagline-title
+	font-family: 'UniSans', sans-serif
+	color: $orange
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 800
+	text-shadow: 1px 1px 0px #145da9
+	display: inline-block
+	letter-spacing: -1px
+
+.stiky-nav__tagline-descr
+	font-weight: 700
+	color: #145da9
+	font-size: 14px
+	letter-spacing: 3px
+
+.nav__list-item_stiky
+	color: #155da9
+	padding: 23px 19px 15px
+	svg
+		fill: #3372b4
+

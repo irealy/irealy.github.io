@@ -1,0 +1,56 @@
+{% import 'data/data.html' as data %}
+<section class="step-two" data-city="astana">
+	<div class="step-two__container container">
+
+		<h2 class="step-two__title">Шаг 2</h2>
+		<p class="step-two__descr">Проголосуйте за жилой комплекс</p>
+		
+		<ul class="step-two__list">
+			{% for vote in data.votes %}
+			<li class="step-two__list-item">
+				<div class="step-two__list-item-image" 
+
+				style="background-image: url('{{vote.image}}')">
+					
+				</div>
+				<h4 class="step-two__list-item-name">{{vote.name}}</h4>
+				<p class="step-two__list-item-descr">{{vote.descr}}</p>
+
+				<a class="step-two__list-item-more" href="#!">Подробнее...</a>
+
+				<button class="step-two__list-item-vote">Проголосовать</button>
+			</li>
+			{% endfor %}
+
+		</ul>
+
+	</div>
+</section>
+
+<section class="step-two" data-city="almatu">
+	<div class="step-two__container container">
+
+		<h2 class="step-two__title">Шаг 2</h2>
+		<p class="step-two__descr">Проголосуйте за жилой комплекс</p>
+		
+		<ul class="step-two__list">
+			{% for vote in data.votes %}
+			<li class="step-two__list-item">
+				<div class="step-two__list-item-image" 
+
+				style="background-image: url('{{vote.image}}')">
+					
+				</div>
+				<h4 class="step-two__list-item-name">{{vote.name}}</h4>
+				<p class="step-two__list-item-descr">{{vote.descr}}</p>
+
+				<a class="step-two__list-item-more" href="#!">Подробнее...</a>
+
+				<button class="step-two__list-item-vote">Проголосовать</button>
+			</li>
+			{% endfor %}
+
+		</ul>
+
+	</div>
+</section>
