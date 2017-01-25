@@ -314,13 +314,17 @@
           </div>
         </div>
       </footer>
-      <div class="modal-form" data-form="0">
+      <div class="fill-modal" data-form="0">
         <div class="container">
-          <div class="modal-form__item"> <img src="img/about-logo.png" alt="">
-            <div class="modal-form__close"></div>
+          <div class="fill-modal__item"> <img src="img/about-logo.png" alt="">
+            <h2 class="fill-modal__title">Для участия в розыгрыше призов <br>заполните следующие поля и нажмите кнопку <br>«Проголосовать»</h2>
+            <form action="" class="fill-modal__form"> <input type="text" class="fill-modal__form-lastname"> <input type="text" class="fill-modal__form-name"> <input type="email" class="fill-modal__form-email"> <button type="submit" class="fill-modal__form-btn">Проголосовать</button>
+              <input type="checkbox"
+                id="confirm" name='confirm' class="fill-modal__form-confirm"> <label for="confirm" class="fill-modal__form-confirm-label">Я соглашаюсь с официальными правилами участия и даю согласие на обработку персональных данных</label> </form>
+            <div class="fill-modal__close"></div>
           </div>
         </div>
-        <div class="modal-form__overlay"></div>
+        <div class="fill-modal__overlay"></div>
       </div>
       </div>
       <!-- END content -->

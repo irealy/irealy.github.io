@@ -69,14 +69,14 @@ function modalForm() {
 	// конкретном или только к одному, поэтому пока сделаю на одно модальное окно.
 
 	$('.step-two__list-item-vote').click(function() {
-		$('.modal-form[data-form="0"]').fadeIn();
+		$('.fill-modal[data-form="0"]').fadeIn();
 		$('.stiky-nav').removeClass('stiky-nav-active');
 		$('body').addClass('no-active-scroll')
 
 	});
 
-	$('.modal-form__overlay, .modal-form__close').click(function() {
-		$('.modal-form[data-form="0"]').fadeOut();
+	$('.fill-modal__overlay, .fill-modal__close').click(function() {
+		$('.fill-modal[data-form="0"]').fadeOut();
 		$('.stiky-nav').addClass('stiky-nav-active');
 		$('body').removeClass('no-active-scroll')
 	})
