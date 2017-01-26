@@ -3116,11 +3116,7 @@ $(document).ready(function () {
 
 	// form validation 
 
-	$.validator.addMethod("formatDate", function (value, element) {
-		return value.match(/^\d\d?\/\d\d?\/\d\d\d\d$/);
-	}, "Please enter your date of birth in the format dd/mm/yyyy.");
-
-	$('.content__body-form').validate({
+	$('#form1').validate({
 		rules: {
 			email: {
 				required: true,
@@ -3131,16 +3127,66 @@ $(document).ready(function () {
 			},
 			efternavn: {
 				required: true
+			}
+		},
+
+		messages: {
+			email: {
+				required: 'Email is required',
+				email: 'Your email address must be in the format of name@domain.com'
 			},
+			fornavn: {
+				required: 'Fornavn is required'
+			},
+			efternavn: {
+				required: 'Efternavn is required'
+			}
+		},
+
+		submitHandler: function submitHandler(form) {
+			$(form).hide();
+			$('#form2').fadeIn();
+		},
+
+		showErrors: function showErrors(errorMap, errorList) {
+			$('.content__body-errors-count').html('Please fix the following ' + this.numberOfInvalids() + ' errors: <div class="toggle"></div>');
+			$('.toggle').html("Hide<span></span>");
+			this.defaultShowErrors();
+		},
+		errorContainer: '.content__body-errors',
+		errorLabelContainer: ".content__body-errors-messages ul",
+		wrapper: "li",
+
+		// focusClenaup: true,
+		onkeyup: false,
+		focusInvalid: true
+
+	});
+
+	// $('.content__body-next-btn').click(function() {
+	// 	if($('#email').hasClass('valid') && $('#fornavn').hasClass('valid') && $('#efternavn').hasClass('valid')) {
+	// 		$('#form1').hide();
+	// 		$('#form2').fadeIn();
+	// 	}
+
+	// })
+
+	$('#form2').validate({
+		rules: {
 			addresse: {
 				required: true
 			},
 			telefonnummer: {
 				required: true
 			},
-			alder: {
-				required: true,
-				formatDate: true
+			day: {
+				required: true
+			},
+			month: {
+				required: true
+			},
+			year: {
+				required: true
 			},
 			sex: {
 				required: true
@@ -3151,24 +3197,20 @@ $(document).ready(function () {
 		},
 
 		messages: {
-			email: {
-				required: 'Email is required',
-				email: 'Please enter a valid email address.'
-			},
-			fornavn: {
-				required: 'Fornavn is required'
-			},
-			efternavn: {
-				required: 'Efternavn is required'
-			},
 			addresse: {
 				required: 'Addresse is required'
 			},
 			telefonnummer: {
 				required: 'Telefonnummer is required'
 			},
-			alder: {
-				required: 'Alder is required'
+			day: {
+				required: 'Day is required'
+			},
+			month: {
+				required: 'Month is required'
+			},
+			year: {
+				required: 'Year is required'
 			},
 			sex: {
 				required: 'Køn is required'

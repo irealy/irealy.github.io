@@ -143,6 +143,10 @@ body.modal-active {
   position: relative;
 }
 
+#form2 {
+  display: none;
+}
+
 .content__body-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -181,12 +185,7 @@ body.modal-active {
   margin-bottom: 2px;
 }
 
-.content__body-form-label span {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.content__body-form-email, .content__body-form-fornavn, .content__body-form-efternavn, .content__body-form-addresse, .content__body-form-telefonnummer, .content__body-form-alder {
+.content__body-form-inputs {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #bbb;
@@ -198,7 +197,11 @@ body.modal-active {
   font-size: 15px;
 }
 
-.content__body-form-btn {
+.content__body-form-select {
+  margin-bottom: 10px;
+}
+
+.content__body-form-btn, .content__body-next-btn {
   display: inline-block;
   background-color: #168c2b;
   text-decoration: none;

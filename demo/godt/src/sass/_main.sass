@@ -29,6 +29,10 @@
 	+r(480)
 		padding: 10px 5px
 
+#form2 
+	display: none
+
+
 .content__body-title
 	font-family: Arial, Helvetica, sans-serif
 	font-size: 16px
@@ -61,11 +65,8 @@
 	font-weight: 700
 	font-size: 14px
 	margin-bottom: 2px
-	span
-		font-size: 12px
-		font-weight: 400
 
-.content__body-form-email
+.content__body-form-inputs
 	width: 100%
 	border-radius: 5px
 	border: 1px solid #bbb
@@ -76,20 +77,8 @@
 	margin-bottom: 12px
 	font-size: 15px
 
-.content__body-form-fornavn
-	@extend .content__body-form-email
-
-.content__body-form-efternavn
-	@extend .content__body-form-email
-
-.content__body-form-addresse
-	@extend .content__body-form-email
-
-.content__body-form-telefonnummer
-	@extend .content__body-form-email
-
-.content__body-form-alder
-	@extend .content__body-form-email
+.content__body-form-select
+	margin-bottom: 10px
 
 .content__body-form-btn
 	display: inline-block
@@ -102,6 +91,9 @@
 	padding: 10px 14px
 	margin-top: 10px
 	font-size: 16px
+
+.content__body-next-btn
+	@extend .content__body-form-btn
 
 .footer
 	margin-top: 140px

@@ -2793,10 +2793,13 @@ function scrolls() {
 	$('.step-one__item').click(function () {
 		var $this = $(this);
 		var choiceCity = $this.data('city');
-
 		if ($('.step-two').is(':hidden')) {
+
 			$('.step-two').fadeOut('fast');
 			$('.step-two[data-city=' + choiceCity + ']').slideDown();
+
+			var stepTwo = $('.step-two').offset().top;
+			$('body, html').animate({ scrollTop: stepTwo - 100 }, 1000);
 		}
 	});
 }

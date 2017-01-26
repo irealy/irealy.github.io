@@ -27,11 +27,25 @@ title: Survey Landscape
 				</li>
 			</ul>
 
-			<form class="content__body-form" action="">
+			<form class="content__body-form" action="" id="form1">
 
 				{% include "partials/_inputs.html" %}
 
 				<button type="submit" class="content__body-form-btn">NÆSTE SIDE ➤</button>
+			</form>
+
+			<!--  part two after click	 -->			
+
+			<form class="content__body-form" action="" id="form2">
+
+				{% include "partials/_inputs-adress.html" %}
+
+				{% include "partials/_radio-btns.html" %}
+
+				{% include "partials/_rules.html" %}
+
+				<button type="submit" class="content__body-form-btn">NÆSTE SIDE ➤</button>
+
 			</form>
 
 			<div class="content__body-errors">
@@ -42,7 +56,9 @@ title: Survey Landscape
 				</div>
 			</div>
 			
-		</div>	
+		</div>
+
+		
 	</div>
 </header>
 
@@ -61,5 +77,7 @@ title: Survey Landscape
 		</div>
 	</div>
 </footer>
+
+{% include "partials/_modal-rules.html" %}
 
 {% endblock %}
