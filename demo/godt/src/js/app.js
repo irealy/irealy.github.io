@@ -69,13 +69,7 @@ $(document).ready(function() {
 
 	});
 
-	// $('.content__body-next-btn').click(function() {
-	// 	if($('#email').hasClass('valid') && $('#fornavn').hasClass('valid') && $('#efternavn').hasClass('valid')) {
-	// 		$('#form1').hide();
-	// 		$('#form2').fadeIn();
-	// 	}
-
-	// })
+	
 
 	$('#form2').validate({
 		rules: {
