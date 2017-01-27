@@ -13,55 +13,54 @@
 	+r(950)
 		padding: 0
 
-.our-clients__item
-	background-color: #fff
-	border: 1px solid #dae8f2
-	border-radius: 30px
-	height: 210px
-	overflow: hidden
-	cursor: pointer
+	.our-clients__block
+		background-color: #fff
+		border: 1px solid #dae8f2
+		border-radius: 30px
+		height: 210px
+		overflow: hidden
+		cursor: pointer
 
-.our-clients__item-logo
-	position: absolute
-	left: 50%
-	top: 25%
-	transform: translate(-50%)
-	img 
-		vertical-align: bottom
+		.our-clients__block-logo
+			position: absolute
+			left: 50%
+			top: 25%
+			transform: translate(-50%)
+			img 
+				vertical-align: bottom
 
+		.our-clients__block-count
+			font-size: 32px
+			font-family: $helveticanuen-thin
+			color: #565656
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%)
 
-.our-clients__item-count
-	font-size: 32px
-	font-family: $helveticanuen-thin
-	color: #565656
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%)
+		.our-clients__block-descr
+			font-size: 13px
+			font-family: $helveticanuen-mid
+			color: #8a9399
+			position: absolute
+			top: 71%
+			left: 50%
+			transform: translate(-50%)
 
-.our-clients__item-descr
-	font-size: 13px
-	font-family: $helveticanuen-mid
-	color: #8a9399
-	position: absolute
-	top: 71%
-	left: 50%
-	transform: translate(-50%)
+		.our-clients__block-logo_google
+			top: 24%
 
-.our-clients__item-logo_google
-	top: 24%
+		.our-clients__block-logo_astrazeneca
+			top: 20%
 
-.our-clients__item-logo_astrazeneca
-	top: 20%
+		.our-clients__block-logo_bloomberg
+			top: 32%
 
-.our-clients__item-logo_bloomberg
-	top: 32%
+		.our-clients__block-autodesk
+			top: 33%
 
-.our-clients__item-autodesk
-	top: 33%
-
-.our-clients__item-logo_philips
-	top: 31%
+		.our-clients__block-logo_philips
+			top: 31%
 
 .our-clients__modal
 	display: none
@@ -72,41 +71,41 @@
 	margin: 45px auto 53px
 	position: relative
 
-.our-clients__modal-content
-	background-image: url('../img/modal-image.png')
-	background-repeat: no-repeat
-	width: 100%
-	height: 478px
-	border-radius: 30px
-	+r(950)
-		background-position: center center
-		background-size: contain
+	.our-clients__modal-content
+		background-image: url('../img/modal-image.png')
+		background-repeat: no-repeat
+		width: 100%
+		height: 478px
+		border-radius: 30px
+		+r(950)
+			background-position: center center
+			background-size: contain
 
-.our-clients__modal-close
-	position: absolute
-	top: 30px
-	right: 30px
-	cursor: pointer
-	font-size: 13px
-	color: #a1aab2
-	font-family: $helveticanuen
-	font-weight: 400
-	transition: all .5s
-	svg
-		font-size: 15px
-		stroke: #b8c3cc
-		stroke-width: 2px
-		vertical-align: middle
-		margin-left: 5px
+	.our-clients__modal-close
+		position: absolute
+		top: 30px
+		right: 30px
+		cursor: pointer
+		font-size: 13px
+		color: #a1aab2
+		font-family: $helveticanuen
+		font-weight: 400
 		transition: all .5s
-	&:hover 
-		color: #4d8fbf
 		svg
-			stroke: #4d8fbf
+			font-size: 15px
+			stroke: #b8c3cc
+			stroke-width: 2px
+			vertical-align: middle
+			margin-left: 5px
+			transition: all .5s
+		&:hover 
+			color: #4d8fbf
+			svg
+				stroke: #4d8fbf
 
 // svg collection
 
-.our-clients__item-icons svg
+.our-clients__block-icons svg
 	stroke: #dae8f2
 	stroke-width: 2px
 	fill: transparent

@@ -1,22 +1,17 @@
 body
-  background: #FFF
+  background-color: #fff
   font-size: 16px
   line-height: 1.4
-
-body.menu-active
-	overflow: hidden
+  &.menu-active
+    overflow: hidden
 
 .container 
-	max-width: 950px;
-	margin: 0 auto 
+  max-width: 950px
+  margin: 0 auto
+  +clr
 
-.container:before,
-.container:after
-    content: ""
-    display: table
-
-.container:after 
-    clear: both
+// .container
+//   +clr
 
 .icon-png
 	display: inline-block

@@ -29,9 +29,48 @@
 
 .navigation 
 	padding: 33px 0px
+	margin: 0 auto
+	max-width: 950px
+	+r(1000)
+		padding-left: 15px
+		padding-right: 15px
+
+	&.navigation_fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 200
+		width: 100%
+		background-color: #fff
+		padding: 12px 0px
+		border-bottom: 1px solid #e5e5e5
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: -100%
+			bottom: 0
+			z-index: -1
+			height: 60px
+			width: 100%
+			border-bottom: 1px solid #e5e5e5
+			background-color: #fff
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			right: -100%
+			bottom: 0
+			z-index: -1
+			height: 60px
+			width: 100%
+			border-bottom: 1px solid #e5e5e5
+			background-color: #fff
 
 .navigation__logo img 
 	margin-left: 3px
+	vertical-align: bottom
 
 .navigation__list-item
 	float: left
@@ -44,15 +83,13 @@
 		font-family: 'HelveticaNeun', sans-serif
 		padding: 6px 20px
 		opacity: .6
-
-.navigation__list-item_second
-	@extend .navigation__list-item
-	a
-		color: #424f58
-		opacity: 1
-		&:hover 
-			text-decoration: underline
-			color: #4d8fbf
+	&.navigation__list-item_second
+		a
+			color: #424f58
+			opacity: 1
+			&:hover 
+				text-decoration: underline
+				color: #4d8fbf
 
 .action-buttons__login	
 	display: inline-block
@@ -65,11 +102,17 @@
 	font-family: $helveticanuen-mid
 	font-weight: 400
 	margin-right: 5px
-	transition: all .5s
+	transition: background .5s
 	&:hover
 		background-color: #fff
 		color: #4d8fbf
 		border: 2px solid #fff
+	&.action-buttons__login_fixed
+		color: #4d8fbf
+		&:hover
+			background-color: #4d8fbf
+			border: 2px solid #4d8fbf
+			color: #fff
 
 .action-buttons__signup
 	@extend .action-buttons__login
@@ -85,100 +128,83 @@
 .header__middle
 	display: inline-block
 	text-align: center
-	height: 587px
 	width: 100%
 	+r(950)
 		height: 420px
+	.header__middle-align
+		margin-top: 171px
+		+r(950)
+			margin-top: 20px
 
-.header__middle-align
-	margin-top: 171px
-	+r(950)
-		margin-top: 20px
-
-.header__middle-title
-	color: #fff
-	font-size: 56px
-	font-family: $omnes-light
-	font-weight: 300
-	letter-spacing: -1.5px
-	+r(768)
-		font-size: 40px
-
-.header__middle-descr
-	color: #cce5ff
-	font-size: 20px
-	font-family: $helveticanuen-mid
-	font-weight: 400
-	margin-top: 6px
-	letter-spacing: -0.7px
-	+r(768)
-		font-size: 16px
-
-.header__middle-btn
-	display: inline-block
-	border: 2px solid #fff
-	color: #fff
-	text-decoration: none
-	background-color: transparent
-	font-size: 18px
-	font-family: $helveticanuen-mid
-	font-weight: 500
-	padding: 9px 51px
-	margin-top: 53px
-	border-radius: 30px
-	transition: all .5s
-	&:hover
-		background-color: #fff
-		color: #5f8ec2;
-
-.header__bottom-orgranizations-descr
-	font-family: 'HelveticaNeunMedium', sans-serif
-	font-weight: 400
-	font-size: 13px
-	text-align: center
-	color: #baddff
-
-.header__bottom-orgranizations
-	text-align: center
-	margin-top: 15px
-
-.header__bottom-orgranizations-image
-	opacity: .6
-	transition: opacity .5s
-	margin: 0px 11px
-	display: inline-block
-	&:hover
-		opacity: 1
-	&:first-child
-		margin-left: 0px
-	&:last-child
-		margin-right: 0px
-
-
-.second-navigation
-	border-bottom: 1px solid #e5e5e5
-	background-color: #fff
-	&.second-navigation_fixed
-		position: fixed
-		top: 0
-		left: 0
-		z-index: 200
-		width: 100%
-
-.navigation_second
-	padding-top: 13px
-	padding-bottom: 45px
-	+r(950)
-		padding-bottom: 0
-	
-
-.action-buttons__login_second
-	color: #4d8fbf
-	&:hover 
-		background-color: #4d8fbf
-		border: 2px solid #4d8fbf
+	.header__middle-title
 		color: #fff
+		font-size: 56px
+		font-family: $omnes-light
+		font-weight: 300
+		letter-spacing: -1.5px
+		+r(768)
+			font-size: 40px
 
+	.header__middle-descr
+		color: #cce5ff
+		font-size: 20px
+		font-family: $helveticanuen-mid
+		font-weight: 400
+		margin-top: 6px
+		letter-spacing: -0.7px
+		+r(768)
+			font-size: 16px
+
+	.header__middle-btn
+		display: inline-block
+		border: 2px solid #fff
+		color: #fff
+		text-decoration: none
+		background-color: transparent
+		font-size: 18px
+		font-family: $helveticanuen-mid
+		font-weight: 500
+		padding: 9px 51px
+		margin-top: 53px
+		border-radius: 30px
+		transition: all .5s
+		&:hover
+			background-color: #fff
+			color: #5f8ec2;
+
+.header__bottom
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	margin: 0 auto
+	max-width: 950px
+	padding-bottom: 27px
+
+	.header__bottom-orgranizations-descr
+		font-family: 'HelveticaNeunMedium', sans-serif
+		font-weight: 400
+		font-size: 13px
+		text-align: center
+		color: #baddff
+
+	.header__bottom-orgranizations
+		margin-top: 15px
+		text-align: center
+
+		.header__bottom-orgranizations-image
+			opacity: .6
+			transition: opacity .5s
+			display: inline-block
+			padding: 0px 11px
+			span
+				vertical-align: bottom
+			&:hover
+				opacity: 1
+			&:first-child
+				margin-left: 0px
+			&:last-child
+				margin-right: 0px
 
 .navigation__btn 
 	height: 20px
@@ -198,7 +224,7 @@
 		left: 0
 		height: 3px
 		width: 100%
-		background-color: #338de9
+		background-color: #fff
 	&::after
 		content: ''
 		position: absolute
@@ -206,16 +232,22 @@
 		left: 0
 		height: 3px
 		width: 100%
-		background-color: #338de9
+		background-color: #fff
+	span
+		background-color: #fff
+		height: 3px
+		width: 100%
+		display: block
+		position: absolute
+		top: 8px
+		left: 0
 
-.navigation__btn span
-	background-color: #338de9
-	height: 3px
-	width: 100%
-	display: block
-	position: absolute
-	top: 8px
-	left: 0
+.navigation__btn_fixed
+	span 
+		background-color: #4d8fbf
+	&::before,
+	&::after
+		background-color: #4d8fbf
 
 .navigation__btn_top
 	span
@@ -231,6 +263,7 @@
 	position: absolute
 	top: 20px
 	right: 38px
+	cursor: pointer
 	&::before
 		content: ''
 		display: block
@@ -242,7 +275,6 @@
 		left: 0px
 		top: 9px
 		transition: all .5s
-
 	&::after
 		content: ''
 		display: block
@@ -254,8 +286,6 @@
 		top: 9px
 		transform: rotate(-45deg);
 		transition: all .5s
-
-
 
 .toogle-navigation
 	position: fixed
@@ -274,20 +304,20 @@
 	&.toogle-navigation__active
 		top: 0px
 
-.toogle-navigation__logo
-	margin-bottom: 20px
+	.toogle-navigation__logo
+		margin-bottom: 20px
 
-.toggle-navigation__item
-	color: #424f58
-	text-decoration: none
-	font-size: 20px
-	font-family: $helveticanuen-mid
-	font-weight: 500
-	padding: 10px 0px
-	display: block
+	.toggle-navigation__item
+		color: #424f58
+		text-decoration: none
+		font-size: 20px
+		font-family: $helveticanuen-mid
+		font-weight: 500
+		padding: 10px 0px
+		display: block
 
-.toogle-navigation .action-buttons
-	display: block
-	width: 100%
-	margin-top: 35px
+	.action-buttons
+		display: block
+		width: 100%
+		margin-top: 35px
 

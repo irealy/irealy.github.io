@@ -2,7 +2,7 @@
 	background-color: #3e444d
 	text-align: center
 	padding: 0px 0px 49px
-
+	
 .start-form
 	width: 270px
 	margin-right: 125px
@@ -11,14 +11,14 @@
 	+r(992)
 		margin-right: auto
 
-.start-form__title
+.form-title
 	font-family: $helveticanuen-light
 	font-weight: 300
 	font-size: 22px
 	color: #fff
 	margin-bottom: 15px
 
-.start-form__email
+.form-input
 	width: 100%
 	color: #9ea1a6
 	font-size: 14px
@@ -28,11 +28,7 @@
 	margin: 7px 0px
 	text-align: center
 
-.start-form__password
-	@extend .start-form__email
-
-.start-form__btn
-	@extend .start-form__email
+.form-btn
 	font-size: 15px
 	color: #fff
 	font-family: $helveticanuen-bold
@@ -40,6 +36,11 @@
 	background-color: #8fb324
 	padding: 15px 12px
 	margin: 11px 0px
+	width: 100%
+	border-radius: 6px
+
+.form-btn_request
+	background-color: #3d91cc
 
 .request-form
 	@extend .start-form
@@ -48,18 +49,3 @@
 	+r(992)
 		margin-left: auto
 
-.request__title
-	@extend .start-form__title
-
-.request__name
-	@extend .start-form__email
-
-.request__field
-	@extend .start-form__email
-
-.request__phone
-	@extend .start-form__email
-
-.request__btn
-	@extend .start-form__btn
-	background-color: #3d91cc

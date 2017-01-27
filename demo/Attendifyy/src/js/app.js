@@ -22,7 +22,7 @@ function tabs() {
 
 	$('.app-tabs__content:not(:first)').hide();
 
-	$('.app-tabs__item').each(function(i) {
+	$('.app-tabs__list-point').each(function(i) {
 		var self = $(this);
 		self.attr('data-tab', 'tab-' + i);
 	});
@@ -32,10 +32,10 @@ function tabs() {
 		self.attr('data-tab', 'tab-' + i);
 	});
 
-	$('.app-tabs__item').click(function() {
+	$('.app-tabs__list-point').click(function() {
 		var self = $(this);
 		var dataTab = self.data('tab');
-		self.addClass('app-tabs__item_active').siblings().removeClass('app-tabs__item_active');
+		self.addClass('app-tabs__list-point_active').siblings().removeClass('app-tabs__list-point_active');
 		$('.app-tabs__content').hide();
 		$('.app-tabs__content[data-tab=' + dataTab + ']').fadeIn('normal');
 
@@ -45,7 +45,7 @@ function tabs() {
 
 function modal() {
 
-	$('.our-clients__item').click(function() {
+	$('.our-clients__block').click(function() {
 		
 		$('.our-clients__wrap').hide();
 		$('.our-clients__modal').fadeIn();
@@ -64,17 +64,23 @@ function modal() {
 };
 
 function stiky() {
-	var nav = $('.second-navigation').offset().top;
+	var nav = $('.main-app').offset().top;
 
 	$(document).scroll(function() {
 		var scroll = $(this).scrollTop();
 		
 		if(scroll > nav) {
-			$('.second-navigation').addClass('second-navigation_fixed');
-			$('.main-app_js-nav').addClass('main-app_js-nav-active');
+			$('.navigation').addClass('navigation_fixed');
+			$('.action-buttons__login').addClass('action-buttons__login_fixed');
+			$('.navigation__logo img').attr('src', 'img/second-logo.png');
+			$('.navigation__list-item').addClass('navigation__list-item_second');
+			$('.navigation__btn').addClass('navigation__btn_fixed');
 		} else {
-			$('.second-navigation').removeClass('second-navigation_fixed');
-			$('.main-app_js-nav').removeClass('main-app_js-nav-active');
+			$('.navigation').removeClass('navigation_fixed');
+			$('.action-buttons__login').removeClass('action-buttons__login_fixed');
+			$('.navigation__logo img').attr('src', 'img/logo.png');
+			$('.navigation__list-item').removeClass('navigation__list-item_second');
+			$('.navigation__btn').removeClass('navigation__btn_fixed');
 		}
 	});
 

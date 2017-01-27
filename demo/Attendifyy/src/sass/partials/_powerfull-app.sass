@@ -6,32 +6,36 @@
         padding-left: 15px
         padding-right: 15px
 
-.powerfull-app__item-image
-    height: 35px
+    .powerfull-app__item
 
-.powerfull-app__item-title
-    font-family: $helveticanuen-bold
-    font-size: 16px
-    color: #fff
-    margin-top: 9px
+        .powerfull-app__item-image
+            height: 35px
 
-.powerfull-app__item-descr
-    font-family: $helveticanuen
-    font-size: 12px
-    color: #c2c7cc
-    width: 72%
-    margin: 7px auto 0
+        .powerfull-app__item-title
+            font-family: $helveticanuen-bold
+            font-size: 16px
+            color: #fff
+            margin-top: 9px
 
-.powerfull-app__btn
-    display: inline-block
-    box-shadow: 0 0 0 1px #686e75, 0 0 0 1px transparent
-    border-radius: 30px
-    color: #fff
-    font-size: 13px
-    padding: 8px 33px
-    margin-top: 49px
-    text-decoration: none
-    font-family: $helveticanuen-mid
-    transition: all .5s
-    &:hover 
-        box-shadow: 0 0 0 1px #fff, 0 0 0 2px #fff
+        .powerfull-app__item-descr
+            font-family: $helveticanuen
+            font-size: 12px
+            color: #c2c7cc
+            width: 72%
+            margin: 7px auto 0
+            +r(950)
+                min-height: 50px
+
+    .powerfull-app__btn
+        display: inline-block
+        box-shadow: 0 0 0 1px #686e75, 0 0 0 1px transparent
+        border-radius: 30px
+        color: #fff
+        font-size: 13px
+        padding: 8px 33px
+        margin-top: 49px
+        text-decoration: none
+        font-family: $helveticanuen-mid
+        transition: all .5s
+        &:hover 
+            box-shadow: 0 0 0 1px #fff, 0 0 0 2px #fff

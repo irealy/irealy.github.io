@@ -1,6 +1,9 @@
 .navigation__logo
 	width: 25%
 	float: left
+	+r(1000)
+		width: 20%
+		text-align: right
 	+r(950)
 		width: 80%
 		text-align: center
@@ -15,6 +18,8 @@
 .action-buttons
 	width: 22%
 	float: left
+	+r(1000)
+		width: 25%
 	+r(950)
 		display: none
 
@@ -27,8 +32,6 @@
 		text-align: center
 		padding: 0px 15px
 
-
-
 .main-app__features
 	width: 50%
 	float: left
@@ -38,12 +41,12 @@
 		margin: 25px 0px 0px
 		padding-left: 0
 
-.main-app__features-list
+.main-app__features-info
 	float: left
 	width: 34%
 	padding-top: 71px
 	+r(1060)
-		width: 18%
+		width: 15%
 	+r(450)
 		width: 100%
 		padding: 0px 15px
@@ -67,7 +70,7 @@
 		width: 100%
 		margin-left: 0px
 
-.specification__item
+.specification__box
 	width: 33.3%
 	float: left
 	text-align: center
@@ -88,7 +91,7 @@
 		&::after 
 			display: none
 
-.performance__list-item
+.performance__list-case
     width: 120px
     height: 121px
     float: left
@@ -127,25 +130,25 @@
 		&:nth-child(2)::after
 			display: none
 
-.our-clients__item
+.our-clients__block
 	margin: 27px
 	width: 29.1%
 	float: left
 	position: relative
 	+r(950)
 		width: 46%
-		margin: 10px 0
+		margin: 10px
 		&:first-child
-			margin: 10px 0
+			margin: 10px
 
 		&:nth-child(3)
-			margin: 10px 0
+			margin: 10px
 
 		&:nth-child(4)
-			margin: 10px 0
+			margin: 10px
 
 		&:nth-child(6)
-			margin: 10px 0
+			margin: 10px
 
 	+r(580)
 		width: 100%
@@ -165,7 +168,7 @@
 		margin-right: 0px
 
 		
-.helped-events__item
+.helped-events__piece
 	width: 25%
 	float: left
 	position: relative
@@ -187,7 +190,7 @@
 		&::after
 			display: none
 
-.select-price__item
+.select-price__unit
 	width: 33.3%
 	float: left
 	background-color: #fff
@@ -203,13 +206,13 @@
 			border-radius: 0px
 
 
-.get-started__item
+.get-started__space
 	width: 50%
 	float: left
 	+r(678)
 		width: 100%
 
-.footer__item
+.footer__list
 	width: 25%
 	float: left
 	margin-top: 3px
@@ -219,14 +222,14 @@
 		text-align: center
 		margin: 25px 0px
 
-.copyright__item-left
+.copyright__left
 	width: 50%
 	float: left
 	+r(480)
 		width: 100%
 		text-align: center
 
-.copyright__item-right
+.copyright__right
 	width: 50%
 	float: right
 	text-align: right

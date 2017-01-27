@@ -1,59 +1,56 @@
-
 .app-tabs__list
 	font-size: 0
 
-.app-tabs__item
-	width: 33.3%
-	display: inline-block
-	text-align: center
-	border-bottom: 1px solid #dae8f2
-	cursor: pointer
-	padding: 8px 0px
-	background-color: #fff
-	.icon-png
-		opacity: .2
-		margin-right: 6px
-	&:first-child
-		border-top-left-radius: 10px
-	&:nth-child(2)
-		border-left: 1px solid #dae8f2
-		border-right: 1px solid #dae8f2
-	&:last-child
-		border-top-right-radius: 10px
+	.app-tabs__list-point
+		width: 33.3%
+		display: inline-block
+		text-align: center
+		border-bottom: 1px solid #dae8f2
+		cursor: pointer
+		padding: 8px 0px
+		background-color: #fff
+		.icon-png
+			opacity: .2
+			margin-right: 6px
+		&:first-child
+			border-top-left-radius: 10px
+		&:nth-child(2)
+			border-left: 1px solid #dae8f2
+			border-right: 1px solid #dae8f2
+		&:last-child
+			border-top-right-radius: 10px
 
+		.app-tabs__list-point-title
+			position: relative
+			top: -8px
+			opacity: 1
+			color: #9faeb8
+			font-size: 13px
+			font-family: $helveticanuen-mid
+			font-weight: 500
 
-// active list item modify
+	// active item
 
-.app-tabs__item_active
-	position: relative
-	transition: all .5s
-	&::after 
-		content: ''
-		display: block
-		height: 3px
-		width: 100%
-		background-color: #528cc2
-		position: absolute
-		bottom: -1px
-		z-index: 3
+	.app-tabs__list-point_active
+		position: relative
+		transition: all .5s
+		&::after 
+			content: ''
+			display: block
+			height: 3px
+			width: 100%
+			background-color: #528cc2
+			position: absolute
+			bottom: -1px
+			z-index: 3
 
-.app-tabs__item_active .icon-png
-	opacity: 1
-	transition: all .5s
+		.icon-png
+			opacity: 1
+			transition: all .5s
 
-.app-tabs__item_active .app-tabs__item-title
-	color: #528cc2
+		.app-tabs__list-point-title
+			color: #528cc2
 
-// active list item modify
-
-.app-tabs__item-title
-	position: relative
-	top: -8px
-	opacity: 1
-	color: #9faeb8
-	font-size: 13px
-	font-family: $helveticanuen-mid
-	font-weight: 500
 
 // tabs content
 

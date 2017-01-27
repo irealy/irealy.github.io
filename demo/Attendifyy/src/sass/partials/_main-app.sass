@@ -7,24 +7,23 @@
 	padding-left: 15px
 	padding-right: 15px
 
-.main-app_js-nav-active
-	padding: 119px 0px 0px
+.main-app__about
 
-.main-app__about-title
-	font-family: $omnes-light
-	font-size: 40px
-	font-weight: 300
-	color: #3d90cc
-	line-height: 50px
-	letter-spacing: -0.6px
+	.main-app__about-title
+		font-family: $omnes-light
+		font-size: 40px
+		font-weight: 300
+		color: #3d90cc
+		line-height: 50px
+		letter-spacing: -0.6px
 
-.main-app__about-descr
-	color: #36434c
-	font-size: 16px
-	font-family: $helveticanuen-light
-	font-weight: 300
-	margin-top: 30px
-	line-height: 30px
+	.main-app__about-descr
+		color: #36434c
+		font-size: 16px
+		font-family: $helveticanuen-light
+		font-weight: 300
+		margin-top: 30px
+		line-height: 30px
 
 .main-app__about-descr_space
 	width: 89%
@@ -60,90 +59,89 @@
 			background-image: url("../img/btn-arrow-hover.png")
 			background-repeat: no-repeat
 
+.main-app__features
 
-.main-app__features-phone
-	background-image: url("../img/iphone-5.png")
-	background-repeat: no-repeat
-	width: 66%
-	height: 483px
-	cursor: pointer
-	float: left
-	margin-top: -2px
-	+r(950)
-		width: 41%
-		margin-left: 150px
-	+r(768)
-		width: 56%
-		margin-left: 50px
-	+r(580)
-		margin: 0 auto
-		width: 74%
-	+r(450)
-		width: 100%
-		background-position: center center
-
-.main-app__features-item
-	width: 60px
-	height: 60px
-	margin: 12px auto
-	border: 2px solid #d5e5f2
-	border-radius: 50%
-	background-repeat: no-repeat
-	background-position: center center
-	transition: all .5s
-	position: relative
-	cursor: pointer
-	+r(450)
+	.main-app__features-phone
+		background-image: url("../img/iphone-5.png")
+		background-repeat: no-repeat
+		width: 66%
+		height: 483px
+		cursor: pointer
 		float: left
-		width: 50px
-		height: 50px
-		margin: 12px 3px
-
-	span 
-		margin-left: 70px
-		margin-top: 14px
-		display: inline-block
-		color: #98a7b2
-		font-size: 11px
-		font-family: $helveticanuen-mid
-		border: 1px solid #e1effa
-		border-radius: 100% 30px 30px 100%/ 30px
-		padding: 7px 10px 7px 15px
-		transition: all .5s
-		position: relative
+		margin-top: -2px
+		+r(950)
+			width: 41%
+			margin-left: 150px
+		+r(768)
+			width: 56%
+			margin-left: 50px
 		+r(580)
-			display: none
-	svg
-		stroke: #cad9e6
-		stroke-width: 2px
-		fill: transparent
-		font-size: 30px
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
+			margin: 0 auto
+			width: 74%
 		+r(450)
+			width: 100%
+			background-position: center center
+
+	.main-app__features-info
+
+		.main-app__features-info-point
+			width: 60px
+			height: 60px
+			margin: 12px auto
+			border: 2px solid #d5e5f2
+			border-radius: 50%
+			background-repeat: no-repeat
+			background-position: center center
+			transition: all .5s
+			position: relative
+			cursor: pointer
+			+r(450)
+				float: left
+				width: 50px
+				height: 50px
+				margin: 12px 3px
+			span 
+				margin-left: 70px
+				margin-top: 14px
+				display: inline-block
+				color: #98a7b2
+				font-size: 11px
+				font-family: $helveticanuen-mid
+				border: 1px solid #e1effa
+				border-radius: 100% 30px 30px 100%/ 30px
+				padding: 7px 10px 7px 15px
+				transition: all .5s
+				position: relative
+				+r(580)
+					display: none
+			svg
+				stroke: #cad9e6
+				stroke-width: 2px
+				fill: transparent
+				font-size: 30px
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				+r(450)
+					font-size: 20px
+			&:hover 
+				background-color: #8abc1d
+				border: 2px solid #8abc1d
+				span
+					background-color: #8abc1d
+					border: 1px solid #8abc1d
+					color: #fff
+
+			// icons collection
+
+		.main-app__features-info-point_photos svg
+			font-size: 24px
+
+
+		.main-app__features-info-point_polls svg
 			font-size: 20px
+			stroke-width: 1px
 
-	&:hover 
-		background-color: #8abc1d
-		border: 2px solid #8abc1d
-		span
-			background-color: #8abc1d
-			border: 1px solid #8abc1d
-			color: #fff
-
-
-
-// icons collection
-
-.main-app__features-item_photos svg
-	font-size: 24px
-
-
-.main-app__features-item_polls svg
-	font-size: 20px
-	stroke-width: 1px
-
-.main-app__features-item_comments svg
-	font-size: 25px
+		.main-app__features-info-point_comments svg
+			font-size: 25px
