@@ -164,14 +164,3 @@ $(document).ready(function() {
 
 
 //=include lib/locationfield.js
-	
-	// $('#autocomplete').change(function() {
-	// 	$('#city').val(city);
-	// });
-
-	// $('#autocomplete').change(function() {
-	// 	$('#street').attr('value', street);
-	// 	$('#postalcode').attr('value', postalcode);
-	// 	$('#city').val(city);
-	// 	$('#countryCode').val(countryCode);
-	// })
