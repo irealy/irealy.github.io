@@ -45,19 +45,15 @@
 	transition: all .5s
 	&::after 
 		content: ''
-		background-image: url("../img/btn-arrow.png")
-		width: 7px
-		height: 13px
+		+s('btn-arrow')
 		position: absolute
 		right: 25px
 		top: 13px
-		transition: all .5s
 	&:hover 
 		background-color: #4d8fbf
 		color: #fff
 		&::after 
-			background-image: url("../img/btn-arrow-hover.png")
-			background-repeat: no-repeat
+			+s('btn-arrow-hover');
 
 .main-app__features
 

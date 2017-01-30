@@ -23,16 +23,15 @@
 			position: relative
 			&::before 
 				content: ''
-				background-image: url("../img/footer-arrow.png")
-				height: 6px
-				width: 4px
+				display: inline-block
+				+s('footer-arrow')
 				position: absolute
 				top: 4px
 				left: 2px
 			&:hover 
 				color: #bdc2ce
 			&:hover::before 
-				background-image: url("../img/footer-arrow-hover.png")
+				+s('footer-arrow-hover')
 
 	.footer__catalog-social
 		width: 160px

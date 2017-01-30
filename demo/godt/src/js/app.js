@@ -9,7 +9,7 @@
 sayHello();
 $(document).ready(function() {
 
-	$('.content__body-rules-label span').click(function() {
+	$('.show-rules').click(function() {
 		$('.modal-rules, .modal-rules__overlay').fadeIn();
 		$('body').addClass('modal-active');
 	});

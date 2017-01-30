@@ -275,14 +275,6 @@ body.modal-active {
   vertical-align: middle;
 }
 
-.content__body-rules-label span {
-  color: #0016ff;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .modal-rules {
   max-width: 857px;
   margin: 30px auto 0px;
@@ -334,6 +326,18 @@ body.modal-active {
 
 .modal-rules__input {
   display: none;
+}
+
+.show-rules {
+  color: #0016ff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 3px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
 }
 
 .modal-rules__close {
@@ -461,14 +465,14 @@ body.modal-active {
   .footer__info{
     display: block;
   }
-  .content__body-rules-label span{
-    font-size: 14px;
-  }
   .modal-rules{
     margin: 15px;
   }
   .modal-rules__content ul{
     padding-left: 20px;
+  }
+  .show-rules{
+    font-size: 14px;
   }
 }
 
@@ -485,8 +489,8 @@ body.modal-active {
 }
 
 @media only screen and (max-width: 322px){
-  .content__body-rules-label{
-    margin-left: -2px;
+  .show-rules{
+    margin-left: 2px;
   }
 }
 

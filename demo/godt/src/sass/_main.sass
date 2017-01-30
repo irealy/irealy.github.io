@@ -148,16 +148,6 @@
 	margin-bottom: 5px
 	display: inline-block
 	vertical-align: middle
-	span
-		color: #0016ff
-		font-size: 16px
-		font-family: 'Montserrat', sans-serif
-		font-weight: 700
-		cursor: pointer
-		+r(768)
-			font-size: 14px
-	+r(322)
-		margin-left: -2px
 
 .modal-rules
 	max-width: 857px
@@ -202,6 +192,21 @@
 
 .modal-rules__input
 	display: none
+
+.show-rules
+	color: #0016ff
+	font-size: 16px
+	font-family: 'Montserrat', sans-serif
+	font-weight: 700
+	cursor: pointer
+	margin-left: 3px
+	display: inline-block
+	position: relative
+	top: -2px
+	+r(768)
+		font-size: 14px
+	+r(322)
+		margin-left: 2px
 
 .modal-rules__close
 	background-image: url("../img/close.png")
