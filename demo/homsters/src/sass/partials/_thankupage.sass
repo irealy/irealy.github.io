@@ -1,0 +1,67 @@
+.thankupage
+	background-color: #145da9
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 999
+	width: 100%
+	height: 100%
+	text-align: center
+	display: none
+
+	.thankupage__wrap
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 1000px
+		transform: translate(-50%, -50%)
+
+	
+	.thankupage__title
+		font-weight: 400
+		color: #fff
+		font-size: 34px
+		span
+			color: #f6ab49
+	
+	.another-info-box
+		transition: all .5s
+		&:hover:first-child
+			background-color: #0081c4
+		&:hover:first-child .another-info-box__image
+			background-image: url("../img/head-logo.svg")
+			&::before
+				color: #fff		
+		&:hover:first-child .another-info-box__text
+			color: #fff
+
+		.another-info-box__image
+			background-image: url("../img/logo.svg")
+			background-repeat: no-repeat
+			width: 300px
+			height: 64px
+			float: right
+			position: relative
+			left: 13px
+			margin-bottom: 30px
+			&::before
+				content: 'блог'
+				text-transform: uppercase
+				font-weight: 700
+				color: #145da9
+				font-size: 20px
+				position: absolute
+				left: -63px
+				top: -5px
+
+		.another-info-box__text
+			display: inline-block
+			color: #0c0c0c
+			font-size: 20px
+			font-weight: 400
+			width: 79%
+
+		.social_thankupage
+			margin-top: 20px

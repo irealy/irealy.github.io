@@ -148,10 +148,30 @@ $(document).ready(function() {
 		}
 	})
 
+	$('.checkboxes').click(function() {
+		var id = '';
+		$('.checkboxes').not(':checked').each(function(i, el) {
+			var itemAttr = $(el).attr('id');
+			id += itemAttr + ', ';
+		})
+		var showId = id.slice(0, id.length - 2);
+		$('.modal-rules__input').attr('value', showId);
+	});
 
 
 
 });
 
 
+//=include lib/locationfield.js
+	
+	// $('#autocomplete').change(function() {
+	// 	$('#city').val(city);
+	// });
 
+	// $('#autocomplete').change(function() {
+	// 	$('#street').attr('value', street);
+	// 	$('#postalcode').attr('value', postalcode);
+	// 	$('#city').val(city);
+	// 	$('#countryCode').val(countryCode);
+	// })

@@ -144,6 +144,10 @@ body.modal-active {
 }
 
 #form2 {
+  display: block;
+}
+
+.hidden-inputs {
   display: none;
 }
 
@@ -290,7 +294,7 @@ body.modal-active {
   bottom: 0;
   right: 0;
   left: 0;
-  display: none;
+  display: block;
   box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -326,6 +330,12 @@ body.modal-active {
 
 .modal-rules__content table td {
   padding: 10px;
+}
+
+.modal-rules__input {
+  display: block;
+  background-color: #333;
+  color: #fff;
 }
 
 .modal-rules__close {

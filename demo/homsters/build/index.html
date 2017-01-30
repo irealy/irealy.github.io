@@ -16,7 +16,7 @@
     <div class="out">
       <header class="header">
         <div class="container">
-          <div class="header__logo"> <img src="img/logo.png" alt="homsters"> </div>
+          <a href="#" class="header__logo"></a>
           <div class="nav">
             <ul class="nav__list">
               <li>
@@ -89,18 +89,15 @@
         <div class="container">
           <h2 class="vote__title">Голосуйте и выигрывайте приз для всей семьи от <svg class="icon icon-vote-logo"><use xlink:href="img/sprite.svg#icon-vote-logo"></use></svg> </h2>
           <div class="vote__list">
-            <div class="vote__list-item vote__list-item_cinema">
-              <p class="vote__list-item-text">Поход в кино</p> <a href="#" class="vote__list-item-more">Подробнее...</a> </div>
-            <div class="vote__list-item vote__list-item_dinner">
-              <p class="vote__list-item-text">Ужин в ресторане</p> <a href="#" class="vote__list-item-more">Подробнее...</a> </div>
-            <div class="vote__list-item vote__list-item_family">
-              <p class="vote__list-item-text">Семейный отдых</p> <a href="#" class="vote__list-item-more">Подробнее...
-			</div>
-		</div>
-
-		<a href="#!" class="vote__btn">Перейти к голосованию</a>
-              <p class="vote__rules">Ознакомиться с <a href="#">официальными правилами</a><br> участия</p>
-            </div>
+            <div class="vote-image vote-image_cinema js-vote" data-modal="0">
+              <p class="vote-image__text">Поход в кино</p> <span href="#" class="vote-image__more">Подробнее...</span> </div>
+            <div class="vote-image vote-image_dinner js-vote" data-modal="1">
+              <p class="vote-image__text">Ужин в ресторане</p> <span href="#" class="vote-image__more">Подробнее...</span> </div>
+            <div class="vote-image vote-image_family js-vote" data-modal="2">
+              <p class="vote-image__text">Семейный отдых</p> <span href="#" class="vote-image__more">Подробнее...</span> </div>
+          </div> <a href="#!" class="vote__btn">Перейти к голосованию</a>
+          <p class="vote__rules">Ознакомиться с <a href="#">официальными правилами</a><br> участия</p>
+        </div>
       </section>
       <section class="step-one">
         <div class="container">
@@ -301,14 +298,14 @@
             <div class="footer__item-image"> <img src="img/logo.png" alt=""> </div>
             <p class="footer__item-descr">будут опубликованы на данной странице <strong>26 сентября 2016 года</strong> <br>а также на страницах <strong>Homsters.kz</strong> в социальных сетях.</p>
           </div>
-          <div class="footer__icons">
-            <div class="footer__icons-item footer__icons-item_facebook">
+          <div class="social">
+            <div class="social-icon social-icon_facebook">
               <a href="#!"> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg> </a>
             </div>
-            <div class="footer__icons-item footer__icons-item_linkedin">
+            <div class="social-icon social-icon_linkedin">
               <a href="#!"> <svg class="icon icon-linkedin"><use xlink:href="img/sprite.svg#icon-linkedin"></use></svg> </a>
             </div>
-            <div class="footer__icons-item footer__icons-item_vk">
+            <div class="social-icon social-icon_vk">
               <a href="#!"> <svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg> </a>
             </div>
           </div>
@@ -318,20 +315,77 @@
         <div class="container">
           <div class="fill-modal__item"> <img src="img/about-logo.png" alt="">
             <h2 class="fill-modal__title">Для участия в розыгрыше призов <br>заполните следующие поля и нажмите кнопку <br>«Проголосовать»</h2>
-            <form action="" class="fill-modal__form"> <input type="text" class="fill-modal__form-lastname" placeholder="Фамилия"> <input type="text" class="fill-modal__form-name" placeholder="Имя"> <input type="email" class="fill-modal__form-email" placeholder="E-mail">
+            <form action="" class="fill-modal__form"> <input type="text" class="form-input" name="lastname" placeholder="Фамилия"> <input type="text" class="form-input" name="name" placeholder="Имя"> <input type="email" class="form-input" name="email" placeholder="E-mail">
               <button type="submit"
-                class="fill-modal__form-btn">Проголосовать</button> <br> <input type="checkbox" id="confirm" name='confirm' class="fill-modal__form-confirm"> <label for="confirm" class="fill-modal__form-confirm-label">Я соглашаюсь с 
+                class="form-btn">Проголосовать</button> <br> <input type="checkbox" id="confirm" name='confirm' class="form-confirm"> <label for="confirm" class="form-confirm-label">Я соглашаюсь с 
 				<a href="#"> официальными правилами участия</a> и даю согласие на обработку персональных данных</label> </form>
-            <div class="fill-modal__close"></div>
+            <div class="modal-close js-form-close"></div>
           </div>
         </div>
         <div class="fill-modal__overlay"></div>
       </div>
+      <div class="thankupage">
+        <div class="thankupage__wrap">
+          <div class="thankupage__title">Homsters.kz благодарит Вас <br>за участие в проекте <span>«Выбор народа»</span><br> и желает удачи в розыгрыше призов!</div>
+          <div class="thankupage__inner">
+            <div class="another-info-box">
+              <div class="another-info-box__image"></div>
+              <div class="another-info-box__text"> Все о том, как продать или купить недвижимость </div>
+            </div>
+            <div class="another-info-box">
+              <div class="another-info-box__text"> Новые акции, обзоры <br>и новости рынка недвижимости. Homsters.kz в социальных сетях </div>
+              <div class="social social_thankupage">
+                <div class="social-icon social-icon_facebook">
+                  <a href="#!"> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg> </a>
+                </div>
+                <div class="social-icon social-icon_linkedin">
+                  <a href="#!"> <svg class="icon icon-linkedin"><use xlink:href="img/sprite.svg#icon-linkedin"></use></svg> </a>
+                </div>
+                <div class="social-icon social-icon_vk">
+                  <a href="#!"> <svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- END content -->
-      <!-- BEGIN scripts -->
-      <script type="text/javascript" src="js/app.js"></script>
-      <!-- END scripts -->
+      <div class="vote-modal">
+        <div class="container">
+          <div class="vote-modal__window" data-modal="0">
+            <div class="vote-image vote-image_cinema vote-image_modal"></div>
+            <div class="vote-modal__window-info">
+              <div class="vote-modal__window-title">Поход в кино <br>в “Тао-Spa” от <span class="head-logo"></span></div>
+              <p class="vote-modal__window-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезызвестный универсальный код речей.</p>
+              <p class="vote-modal__window-text">Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p> <a href="" class="vote-modal__window-link">Перейти к голосованию</a>              </div>
+            <div class="modal-close js-vote-close"></div>
+          </div>
+          <div class="vote-modal__window" data-modal="1">
+            <div class="vote-image vote-image_dinner vote-image_modal"></div>
+            <div class="vote-modal__window-info">
+              <div class="vote-modal__window-title">Ужин в ресторане <br>в “Тао-Spa” от <span class="head-logo"></span></div>
+              <p class="vote-modal__window-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезызвестный универсальный код речей.</p>
+              <p class="vote-modal__window-text">Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p> <a href="" class="vote-modal__window-link">Перейти к голосованию</a>              </div>
+            <div class="modal-close js-vote-close"></div>
+          </div>
+          <div class="vote-modal__window" data-modal="2">
+            <div class="vote-image vote-image_family vote-image_modal"></div>
+            <div class="vote-modal__window-info">
+              <div class="vote-modal__window-title">Отдых всей семьей <br>в “Тао-Spa” от <span class="head-logo"></span></div>
+              <p class="vote-modal__window-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезызвестный универсальный код речей.</p>
+              <p class="vote-modal__window-text">Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p> <a href="" class="vote-modal__window-link">Перейти к голосованию</a>              </div>
+            <div class="modal-close js-vote-close"></div>
+          </div>
+          <div class="vote-modal__overlay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
   </body>
 
 </html>

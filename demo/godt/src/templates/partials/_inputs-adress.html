@@ -1,7 +1,14 @@
 
 
 	<label for="addresse" class="content__body-form-label">Addresse *</label>
-	<input type="text" id="addresse" name="addresse" class="content__body-form-inputs">
+	<input type="text" id="autocomplete" onFocus="geolocate()" name="addresse" class="content__body-form-inputs">
+
+	<div class="hidden-inputs">
+		<input type="text" id="street">
+		<input type="text" id="postalcode">
+		<input type="text" id="city">
+		<input type="text" id="country">
+	</div>
 
 	<label for="telefonnummer" class="content__body-form-label">Telefonnummer *</label>
 	<input type="text" id="telefonnummer" name="telefonnummer" class="content__body-form-inputs">

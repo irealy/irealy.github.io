@@ -19,18 +19,18 @@
 		margin-left: 9px
 		font-size: 40px
 
-.vote__list-item
+.vote-image
 	color: #fff
 	font-size: 34px
 	font-weight: 700
 	position: relative
 	min-height: 400px
 
-.vote__list-item-text
+.vote-image__text
 	+vcenter
 	z-index: 2
 
-.vote__list-item-more
+.vote-image__more
 	color: #fff
 	font-size: 20px
 	font-weight: 600
@@ -41,7 +41,7 @@
 	left: 50%
 	transform: translate(-50%)
 
-.vote__list-item_cinema
+.vote-image_cinema
 	background-image: url("../img/road-to-cinema.jpg")
 	background-size: cover
 	background-position: center center
@@ -60,8 +60,8 @@
 		background-image: repeating-linear-gradient(to bottom right,rgba(123, 160, 210, .9) 0%,rgba(86, 105, 174, .9) 0%,rgba(210, 132, 171, .9) 100%,rgba(142, 212, 241, .9) 100%)
     	background-image: -ms-repeating-linear-gradient(top left,rgba(123, 160, 210, .9) 0%,rgba(86, 105, 174, .9) 0%,rgba(210, 132, 171, .9) 100%,rgba(142, 212, 241, .9) 100%)
 	
-.vote__list-item_dinner
-	@extend .vote__list-item_cinema
+.vote-image_dinner
+	@extend .vote-image_cinema
 	background-image: url("../img/dinner.jpg")
 	&::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(217, 185, 115, .6) 0%,rgba(142, 212, 241, .6) 100%)
@@ -70,8 +70,8 @@
 		background-image: repeating-linear-gradient(to bottom right,rgba(217, 185, 115, .9) 0%,rgba(142, 212, 241, .9) 100%)
     	background-image: -ms-repeating-linear-gradient(top left,rgba(217, 185, 115, .9) 0%,rgba(142, 212, 241, .9) 100%)
 
-.vote__list-item_family
-	@extend .vote__list-item_cinema
+.vote-image_family
+	@extend .vote-image_cinema
 	background-image: url("../img/family-weekend.jpg")
 	&::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(103, 190, 113, .6) 0%,rgba(112, 151, 210, .6) 100%)
@@ -102,3 +102,6 @@
 	letter-spacing: 1px
 	a
 		color: #fff
+
+.js-vote
+	cursor: pointer

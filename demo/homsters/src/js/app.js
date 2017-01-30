@@ -4,6 +4,8 @@
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
 
+//=include lib/jquery.validate.min.js
+
 sayHello();
 
 $(document).ready(function() {
@@ -11,7 +13,11 @@ $(document).ready(function() {
 
 	scrolls();
 
+	modal();
+
 	modalForm();
+
+	validation($('.fill-modal__form'));
 })
 
 function stiky() {
@@ -46,6 +52,8 @@ function scrolls() {
 		$('body, html').animate({ scrollTop: stepOne - 100}, 1000);
 	});
 
+
+
 	$('.step-one__item').click(function() {
 		var $this = $(this);
 		var choiceCity = $this.data('city');
@@ -53,14 +61,30 @@ function scrolls() {
 			
 			$('.step-two').fadeOut('fast');
 			$('.step-two[data-city=' + choiceCity + ']').slideDown();
-			
-			var stepTwo = $('.step-two').offset().top;
-			$('body, html').animate({ scrollTop: stepTwo - 100}, 1000);
 		}
-
 	});
 
 }
+
+function modal() {
+
+	$('.js-vote').click(function() {
+		var modalItem = $(this).data('modal');
+		console.log(modalItem)
+		$('.vote-modal').fadeIn();
+		$('.vote-modal__window[data-modal=' + modalItem + ']').fadeIn();
+		$('.stiky-nav').removeClass('stiky-nav-active');
+		$('body').addClass('no-active-scroll')
+	});
+
+	$('.js-vote-close, .vote-modal__overlay').click(function() {
+		$('.vote-modal__window').fadeOut();
+		$('.vote-modal').fadeOut();
+		$('.stiky-nav').addClass('stiky-nav-active');
+		$('body').removeClass('no-active-scroll')
+	})
+
+};
 
 function modalForm() {
 
@@ -75,14 +99,68 @@ function modalForm() {
 	$('.step-two__list-item-vote').click(function() {
 		$('.fill-modal[data-form="0"]').fadeIn();
 		$('.stiky-nav').removeClass('stiky-nav-active');
-		$('body').addClass('no-active-scroll')
+		$('body').addClass('no-active-scroll');
 
 	});
 
-	$('.fill-modal__overlay, .fill-modal__close').click(function() {
+	$('.fill-modal__overlay, .js-form-close').click(function() {
 		$('.fill-modal[data-form="0"]').fadeOut();
 		$('.stiky-nav').addClass('stiky-nav-active');
-		$('body').removeClass('no-active-scroll')
+		$('body').removeClass('no-active-scroll');
 	})
 }
 
+function validation(element) {
+
+	element.validate({
+		rules: {
+			lastname: {
+				required: true,
+				minlength: 3,
+				maxlength: 30
+			},
+			name: {
+				required: true,
+				minlength: 3,
+				maxlength: 30
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			confirm: {
+				required: true
+			}
+		},
+
+		messages: {
+			lastname: {
+				required: false,
+				minlength: false,
+				maxlength: false
+			},
+			name: {
+				required: false,
+				minlength: false,
+				maxlength: false
+			},
+			email: {
+				required: false,
+				email: false
+			},
+			confirm: {
+				required: "Дайте согласие на обработку персональных данных и подтвердите ознакомление с официальными правилами участия"
+			}
+		},
+
+		submitHandler: function(form) {
+			$('.fill-modal').hide();
+			$('.thankupage').fadeIn();
+			$('.stiky-nav').addClass('stiky-nav-active');
+		},
+
+		focusClenaup: true,
+		focusInvalid: true
+
+	});
+}
