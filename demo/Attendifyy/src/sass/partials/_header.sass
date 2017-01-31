@@ -91,7 +91,7 @@
 				text-decoration: underline
 				color: #4d8fbf
 
-.action-buttons__login	
+.action-buttons__link
 	display: inline-block
 	color: #fff
 	text-decoration: none
@@ -107,15 +107,16 @@
 		background-color: #fff
 		color: #4d8fbf
 		border: 2px solid #fff
-	&.action-buttons__login_fixed
+
+.action-buttons__link_login
+	&.login-is-fixed
 		color: #4d8fbf
 		&:hover
 			background-color: #4d8fbf
 			border: 2px solid #4d8fbf
 			color: #fff
 
-.action-buttons__signup
-	@extend .action-buttons__login
+.action-buttons__link_signup
 	border: none
 	background-color: #8fb324
 	padding: 8px 24px
@@ -178,7 +179,6 @@
 	right: 0
 	left: 0
 	margin: 0 auto
-	max-width: 950px
 	padding-bottom: 27px
 
 	.header__bottom-orgranizations-descr

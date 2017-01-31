@@ -9,6 +9,25 @@
 		cursor: pointer
 		padding: 8px 0px
 		background-color: #fff
+		&.point-is-active
+			position: relative
+			transition: all .5s
+			&::after 
+				content: ''
+				display: block
+				height: 3px
+				width: 100%
+				background-color: #528cc2
+				position: absolute
+				bottom: -1px
+				z-index: 3
+			.icon-png
+				opacity: 1
+				transition: all .5s
+
+			.app-tabs__list-point-title
+				color: #528cc2
+
 		.icon-png
 			opacity: .2
 			margin-right: 6px
@@ -28,29 +47,6 @@
 			font-size: 13px
 			font-family: $helveticanuen-mid
 			font-weight: 500
-
-	// active item
-
-	.app-tabs__list-point_active
-		position: relative
-		transition: all .5s
-		&::after 
-			content: ''
-			display: block
-			height: 3px
-			width: 100%
-			background-color: #528cc2
-			position: absolute
-			bottom: -1px
-			z-index: 3
-
-		.icon-png
-			opacity: 1
-			transition: all .5s
-
-		.app-tabs__list-point-title
-			color: #528cc2
-
 
 // tabs content
 

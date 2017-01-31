@@ -787,11 +787,11 @@ body.menu-active {
   border-radius: 7px 0px 0px 7px;
 }
 
-.select-price__unit:nth-child(2) {
+.select-price__unit_big {
   border-radius: 7px 7px 0px 0px;
 }
 
-.select-price__unit:last-child {
+.select-price__unit_right {
   border-radius: 0px 7px 7px 0px;
 }
 
@@ -975,7 +975,7 @@ body.menu-active {
   color: #4d8fbf;
 }
 
-.action-buttons__login, .action-buttons__signup {
+.action-buttons__link {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -989,30 +989,30 @@ body.menu-active {
   transition: background .5s;
 }
 
-.action-buttons__login:hover, .action-buttons__signup:hover {
+.action-buttons__link:hover {
   background-color: #fff;
   color: #4d8fbf;
   border: 2px solid #fff;
 }
 
-.action-buttons__login.action-buttons__login_fixed, .action-buttons__login_fixed.action-buttons__signup {
+.action-buttons__link_login.login-is-fixed {
   color: #4d8fbf;
 }
 
-.action-buttons__login.action-buttons__login_fixed:hover, .action-buttons__login_fixed.action-buttons__signup:hover {
+.action-buttons__link_login.login-is-fixed:hover {
   background-color: #4d8fbf;
   border: 2px solid #4d8fbf;
   color: #fff;
 }
 
-.action-buttons__signup {
+.action-buttons__link_signup {
   border: none;
   background-color: #8fb324;
   padding: 8px 24px;
   margin-right: 0;
 }
 
-.action-buttons__signup:hover {
+.action-buttons__link_signup:hover {
   background-color: #56ae00;
   color: #fff;
   border: none;
@@ -1071,7 +1071,6 @@ body.menu-active {
   right: 0;
   left: 0;
   margin: 0 auto;
-  max-width: 950px;
   padding-bottom: 27px;
 }
 
@@ -1410,6 +1409,31 @@ body.menu-active {
   background-color: #fff;
 }
 
+.app-tabs__list .app-tabs__list-point.point-is-active {
+  position: relative;
+  transition: all .5s;
+}
+
+.app-tabs__list .app-tabs__list-point.point-is-active::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #528cc2;
+  position: absolute;
+  bottom: -1px;
+  z-index: 3;
+}
+
+.app-tabs__list .app-tabs__list-point.point-is-active .icon-png {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.app-tabs__list .app-tabs__list-point.point-is-active .app-tabs__list-point-title {
+  color: #528cc2;
+}
+
 .app-tabs__list .app-tabs__list-point .icon-png {
   opacity: .2;
   margin-right: 6px;
@@ -1436,31 +1460,6 @@ body.menu-active {
   font-size: 13px;
   font-family: "HelveticaNeueCyr-Medium", sans-serif;
   font-weight: 500;
-}
-
-.app-tabs__list .app-tabs__list-point_active {
-  position: relative;
-  transition: all .5s;
-}
-
-.app-tabs__list .app-tabs__list-point_active::after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #528cc2;
-  position: absolute;
-  bottom: -1px;
-  z-index: 3;
-}
-
-.app-tabs__list .app-tabs__list-point_active .icon-png {
-  opacity: 1;
-  transition: all .5s;
-}
-
-.app-tabs__list .app-tabs__list-point_active .app-tabs__list-point-title {
-  color: #528cc2;
 }
 
 .app-tabs__content {
@@ -2108,9 +2107,9 @@ body.menu-active {
   width: 4px;
   height: 6px;
   background-position: -424px -129px;
-  position: absolute;
-  top: 4px;
-  left: 2px;
+  position: relative;
+  top: -2px;
+  left: -6px;
 }
 
 .footer__list .footer__catalog li .footer__catalog-link:hover {

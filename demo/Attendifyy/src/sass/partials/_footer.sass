@@ -25,9 +25,9 @@
 				content: ''
 				display: inline-block
 				+s('footer-arrow')
-				position: absolute
-				top: 4px
-				left: 2px
+				position: relative
+				top: -2px
+				left: -6px
 			&:hover 
 				color: #bdc2ce
 			&:hover::before 
@@ -60,30 +60,14 @@
 
 		// hover collection
 		
-		.footer__catalog-social-link_facebook:hover
-			background-color: #3b5998
-			border: 2px solid #3b5998
-			
-		.footer__catalog-social-link_twitter:hover 
-			background-color: #00aced
-			border: 2px solid #00aced
+		$select-name: facebook #3b5998, twitter #00aced, in #0977b5, google #cc3732, pinterest #cc2127, instagram #3f729b
 
-		.footer__catalog-social-link_in:hover 
-			background-color: #0977b5
-			border: 2px solid #0977b5
-			
-		.footer__catalog-social-link_google:hover 
-			background-color: #cc3732
-			border: 2px solid #cc3732
-			
-		.footer__catalog-social-link_pinterest:hover 
-			background-color: #cc2127
-			border: 2px solid #cc2127
-
-		.footer__catalog-social-link_instagram:hover 
-			background-color: #3f729b
-			border: 2px solid #3f729b
-
+		.footer__catalog-social-link
+			@each $name, $color in $select-name 
+				&_#{$name}:hover
+					background-color: $color
+					border: 2px solid $color
+	
 // copyrights
 
 .copyright

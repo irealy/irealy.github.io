@@ -2779,7 +2779,7 @@ function tabs() {
 	$('.app-tabs__list-point').click(function () {
 		var self = $(this);
 		var dataTab = self.data('tab');
-		self.addClass('app-tabs__list-point_active').siblings().removeClass('app-tabs__list-point_active');
+		self.addClass('point-is-active').siblings().removeClass('point-is-active');
 		$('.app-tabs__content').hide();
 		$('.app-tabs__content[data-tab=' + dataTab + ']').fadeIn('normal');
 	});
@@ -2812,13 +2812,13 @@ function stiky() {
 
 		if (scroll > nav) {
 			$('.navigation').addClass('navigation_fixed');
-			$('.action-buttons__login').addClass('action-buttons__login_fixed');
+			$('.action-buttons__link_login').addClass('login-is-fixed');
 			$('.navigation__logo img').attr('src', 'img/second-logo.png');
 			$('.navigation__list-item').addClass('navigation__list-item_second');
 			$('.navigation__btn').addClass('navigation__btn_fixed');
 		} else {
 			$('.navigation').removeClass('navigation_fixed');
-			$('.action-buttons__login').removeClass('action-buttons__login_fixed');
+			$('.action-buttons__link_login').removeClass('login-is-fixed');
 			$('.navigation__logo img').attr('src', 'img/logo.png');
 			$('.navigation__list-item').removeClass('navigation__list-item_second');
 			$('.navigation__btn').removeClass('navigation__btn_fixed');
