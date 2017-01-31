@@ -6,8 +6,31 @@
 	min-height: 628px
 	position: relative
 
+.navigation
+	position: relative
+	+clr
+	&.navigation-is-active
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		width: 100%
+		background-color: #fff
+		z-index: 1000
+		padding: 18px 100px
+		transition: all .5s
+		+r(1530)
+			padding: 18px 50px
+		+r(1200)
+			padding: 18px 20px
+		+r(480)
+			padding: 10px 0px
+
 .nav__list
 	float: right
+	+r(768)
+		float: none
+		text-align: center
 
 .nav__list li
 	display: inline-block
@@ -23,7 +46,6 @@
 	color: #fff
 	text-decoration: none
 	display: block
-	transition: all .5s
 	svg
 		stroke-width: 1px
 		font-size: 26px
@@ -31,11 +53,11 @@
 		vertical-align: middle
 		margin-right: 5px
 		margin-top: -5px
-		transition: all .5s
 	&:hover
 		color: $orange
 	&:hover svg
 		fill: $orange
+
 
 .header__choice
 	position: absolute
@@ -43,6 +65,8 @@
 	left: 50%
 	transform: translate(-50%, -50%)
 	text-align: center
+	+r(768)
+		top: 80%
 
 .header__choise-title
 	background-image: url("../img/header-choice.png")
@@ -123,31 +147,7 @@
 		fill: #72bbe0
 		font-size: 44px
 
-
-.stiky-nav
-	background-color: #fff
-	height: 100px
-	width: 100%
-	position: fixed
-	z-index: 1000
-	top: -100%
-	left: 0
-	padding: 18px 107px
-	text-align: center
-	transition: all .75s
-	&.stiky-nav-active
-		top: 0
-
-
-.stiky-nav__logo
-	background-image: url("../img/logo.svg")
-	background-repeat: no-repeat
-	width: 40%
-	height: 64px
-	display: block
-	float: left
-
-.stiky-nav__tagline-title
+.tagline__title
 	font-family: 'UniSans', sans-serif
 	color: $orange
 	font-size: 30px
@@ -157,7 +157,7 @@
 	display: inline-block
 	letter-spacing: -1px
 
-.stiky-nav__tagline-descr
+.tagline__descr
 	font-weight: 700
 	color: #145da9
 	font-size: 14px

@@ -19,6 +19,9 @@
 		margin-left: 9px
 		font-size: 40px
 
+.vote__list
+	+clr
+
 .vote-image
 	color: #fff
 	font-size: 34px
@@ -51,34 +54,26 @@
 		content: ''
 		border-radius: 10px
 		background-image: repeating-linear-gradient(to bottom right,rgba(123, 160, 210, .6) 0%,rgba(86, 105, 174, .6) 0%,rgba(210, 132, 171, .6) 100%,rgba(142, 212, 241, .6) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(123, 160, 210, .6) 0%,rgba(86, 105, 174, .6) 0%,rgba(210, 132, 171, .6) 100%,rgba(142, 212, 241, .6) 100%)
 		+coverdiv
 		z-index: 1
-		transition: all .5s
-
 	&:hover::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(123, 160, 210, .9) 0%,rgba(86, 105, 174, .9) 0%,rgba(210, 132, 171, .9) 100%,rgba(142, 212, 241, .9) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(123, 160, 210, .9) 0%,rgba(86, 105, 174, .9) 0%,rgba(210, 132, 171, .9) 100%,rgba(142, 212, 241, .9) 100%)
 	
 .vote-image_dinner
 	@extend .vote-image_cinema
 	background-image: url("../img/dinner.jpg")
 	&::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(217, 185, 115, .6) 0%,rgba(142, 212, 241, .6) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(217, 185, 115, .6) 0%,rgba(142, 212, 241, .6) 100%)
 	&:hover::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(217, 185, 115, .9) 0%,rgba(142, 212, 241, .9) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(217, 185, 115, .9) 0%,rgba(142, 212, 241, .9) 100%)
 
 .vote-image_family
 	@extend .vote-image_cinema
 	background-image: url("../img/family-weekend.jpg")
 	&::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(103, 190, 113, .6) 0%,rgba(112, 151, 210, .6) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(103, 190, 113, .6) 0%,rgba(112, 151, 210, .6) 100%)
 	&:hover::before
 		background-image: repeating-linear-gradient(to bottom right,rgba(103, 190, 113, .9) 0%,rgba(112, 151, 210, .9) 100%)
-    	background-image: -ms-repeating-linear-gradient(top left,rgba(103, 190, 113, .9) 0%,rgba(112, 151, 210, .9) 100%)
 
 
 .vote__btn

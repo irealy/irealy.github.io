@@ -3120,9 +3120,15 @@ function stiky() {
 		var scroll = $(this).scrollTop();
 
 		if (scroll > 350) {
-			$('.stiky-nav').addClass('stiky-nav-active');
+			$('.navigation').addClass('navigation-is-active');
+			$('.header__logo').addClass('logo-is-active');
+			$('.tagline').addClass('tagline-is-active');
+			$('.nav').addClass('nav-is-active');
 		} else {
-			$('.stiky-nav').removeClass('stiky-nav-active');
+			$('.navigation').removeClass('navigation-is-active');
+			$('.header__logo').removeClass('logo-is-active');
+			$('.tagline').removeClass('tagline-is-active');
+			$('.nav').removeClass('nav-is-active');
 		}
 	});
 }
@@ -3161,17 +3167,16 @@ function modal() {
 
 	$('.js-vote').click(function () {
 		var modalItem = $(this).data('modal');
-		console.log(modalItem);
 		$('.vote-modal').fadeIn();
 		$('.vote-modal__window[data-modal=' + modalItem + ']').fadeIn();
-		$('.stiky-nav').removeClass('stiky-nav-active');
+		$('.navigation').removeClass('navigation-is-active');
 		$('body').addClass('no-active-scroll');
 	});
 
 	$('.js-vote-close, .vote-modal__overlay').click(function () {
 		$('.vote-modal__window').fadeOut();
 		$('.vote-modal').fadeOut();
-		$('.stiky-nav').addClass('stiky-nav-active');
+		$('.navigation').addClass('navigation-is-active');
 		$('body').removeClass('no-active-scroll');
 	});
 };
@@ -3186,15 +3191,15 @@ function modalForm() {
 	// не понимаю нужно ли чтобы модальное окно открывалось к 
 	// конкретном или только к одному, поэтому пока сделаю на одно модальное окно.
 
-	$('.step-two__list-item-vote').click(function () {
+	$('.step-two__box-vote').click(function () {
 		$('.fill-modal[data-form="0"]').fadeIn();
-		$('.stiky-nav').removeClass('stiky-nav-active');
+		$('.navigation').removeClass('navigation-is-active');
 		$('body').addClass('no-active-scroll');
 	});
 
 	$('.fill-modal__overlay, .js-form-close').click(function () {
 		$('.fill-modal[data-form="0"]').fadeOut();
-		$('.stiky-nav').addClass('stiky-nav-active');
+		$('.navigation').addClass('navigation-is-active');
 		$('body').removeClass('no-active-scroll');
 	});
 }

@@ -4,46 +4,46 @@
 	padding: 120px 0px 58px
 	display: none
 
-.step-two__title
-	@extend .step-one__title
-
-.step-two__descr
-	@extend .step-one__descr
-
 .step-two__list
 	margin-top: 31px
-	display: table
+	text-align: left
+	font-size: 0
+	+clr
+	+r(1420)
+		padding: 0 15px
+		text-align: justify
+	+r(630)
+		text-align: center
 
-.step-two__list-item-image
+.step-two__box-image
 	background-repeat: no-repeat
+	background-position: center center
 	background-size: cover
 	height: 120px
-	width: 185px
+	border-radius: 10px 10px 0px 0px
 
-.step-two__list-item-name
+.step-two__box-name
 	font-size: 14px
 	color: #fff
 	font-weight: 700
 	margin-top: 12px
 	padding: 0px 15px
 
-.step-two__list-item-descr
+.step-two__box-descr
 	font-weight: 400
 	font-size: 12px
 	color: #fff
-	padding: 0px 15px
+	padding: 0px 15px 23px
 
-.step-two__list-item-more
+.step-two__box-more
 	text-align: center
 	font-weight: 400
 	font-size: 12px
 	color: #fff
-	position: absolute
-	bottom: 36px
-	left: 50%
-	transform: translate(-50%)
+	margin-bottom: 35px
+	display: inline-block
 
-.step-two__list-item-vote
+.step-two__box-vote
 	position: absolute
 	bottom: -20px
 	left: 50%
