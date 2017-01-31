@@ -89,11 +89,13 @@ function stiky() {
 function adaptiveMenu() {
 	$('.navigation__btn').click(function() {
 		$('.toogle-navigation').addClass('toogle-navigation__active');
+		$('.action-buttons__link_login').addClass('login-is-fixed')
 		$('body').addClass('menu-active');
 	});
 
 	$('.toogle-navigation__close, .toggle-navigation__item').click(function() {
 		$('.toogle-navigation').removeClass('toogle-navigation__active');
+		$('.action-buttons__link_login').removeClass('login-is-fixed')
 		$('body').removeClass('menu-active');
 	});
 
