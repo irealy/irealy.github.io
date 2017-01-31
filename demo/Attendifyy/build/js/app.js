@@ -2835,7 +2835,6 @@ function adaptiveMenu() {
 
 	$('.toogle-navigation__close, .toggle-navigation__item').click(function () {
 		$('.toogle-navigation').removeClass('toogle-navigation__active');
-		$('.action-buttons__link_login').removeClass('login-is-fixed');
 		$('body').removeClass('menu-active');
 	});
 }
