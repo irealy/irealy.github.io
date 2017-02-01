@@ -3,21 +3,21 @@
 	text-align: center
 	color: #fff
 
-.footer__item-title
-	font-weight: 700
-	font-size: 30px
-	line-height: 40px
+	.footer__list-title
+		font-weight: 700
+		font-size: 30px
+		line-height: 40px
+
+	.footer__list-descr
+		font-size: 20px
+		font-weight: 400
+		margin-top: -7px
+		line-height: 25px
 
 .logo-white_footer
 	max-width: 300px
 	height: 63px
 	margin: 37px auto
-
-.footer__item-descr
-	font-size: 20px
-	font-weight: 400
-	margin-top: -7px
-	line-height: 25px
 
 .social
 	text-align: center
@@ -41,26 +41,19 @@
 			height: 100%
 			border-radius: 50%
 
-		$social: #4867aa
+	$social: facebook #4867aa 45px #f6ab49, linkedin #3092d1 35px #f6f219, vk #4c75a3 45px #f012e9
 
-	.social-icon_facebook
-		background-color: #4867aa
+	.social-icon
 		svg
-			font-size: 45px
-
-	.social-icon_linkedin
-		background-color: #3092d1
-		svg
-			font-size: 35px
-
-	.social-icon_vk
-		background-color: #4c75a3
-		svg
-			font-size: 45px
-
-	.social-icon svg
-		fill: #fff
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
+			fill: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		@each $name, $color, $fontSize, $hoverBg in $social
+			&_#{$name} 
+				background-color: $color
+				svg
+					font-size: $fontSize
+				:hover
+					background-color: $hoverBg

@@ -259,17 +259,9 @@ body.no-active-scroll {
   float: left;
 }
 
-.step-one__item {
+.choice-city {
   width: 48%;
   float: left;
-}
-
-.step-one__item_astana {
-  margin-right: 20px;
-}
-
-.step-one__item_almatu {
-  margin-left: 20px;
 }
 
 .step-two__box {
@@ -292,7 +284,7 @@ body.no-active-scroll {
   margin-right: 0px;
 }
 
-.footer__item {
+.footer__list {
   width: 70%;
   margin: 0 auto;
 }
@@ -667,32 +659,56 @@ body.no-active-scroll {
   background-position: center center;
   text-align: center;
   padding: 46px 0px 53px;
-  display: table;
-  width: 100%;
 }
 
-.vote__title {
+.vote .vote__title {
   color: #fff;
   font-weight: 400;
   font-size: 30px;
   margin-bottom: 40px;
 }
 
-.vote__title svg {
+.vote .vote__title svg {
   fill: #fff;
   vertical-align: middle;
   margin-left: 9px;
   font-size: 40px;
 }
 
-.vote__list {
+.vote .vote__list {
   *zoom: 1;
 }
 
-.vote__list:after {
+.vote .vote__list:after {
   content: " ";
   display: table;
   clear: both;
+}
+
+.vote .vote__btn {
+  display: inline-block;
+  background-color: #f3912e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 53px;
+  padding: 19px 55px;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 0px #12496f;
+}
+
+.vote .vote__rules {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.vote .vote__rules a {
+  color: #fff;
 }
 
 .vote-image {
@@ -701,9 +717,24 @@ body.no-active-scroll {
   font-weight: 700;
   position: relative;
   min-height: 400px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  transition: all .5s;
 }
 
-.vote-image__text {
+.vote-image::before {
+  content: '';
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.vote-image .vote-image__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -713,7 +744,7 @@ body.no-active-scroll {
   z-index: 2;
 }
 
-.vote-image__more {
+.vote-image .vote-image__more {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -727,27 +758,15 @@ body.no-active-scroll {
   transform: translate(-50%);
 }
 
-.vote-image_cinema, .vote-image_dinner, .vote-image_family {
+.vote-image_cinema {
   background-image: url("../img/road-to-cinema.jpg");
-  background-size: cover;
-  background-position: center center;
-  border-radius: 10px;
-  transition: all .5s;
 }
 
-.vote-image_cinema::before, .vote-image_dinner::before, .vote-image_family::before {
-  content: '';
-  border-radius: 10px;
+.vote-image_cinema::before {
   background-image: repeating-linear-gradient(to bottom right, rgba(123, 160, 210, 0.6) 0%, rgba(86, 105, 174, 0.6) 0%, rgba(210, 132, 171, 0.6) 100%, rgba(142, 212, 241, 0.6) 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
 }
 
-.vote-image_cinema:hover::before, .vote-image_dinner:hover::before, .vote-image_family:hover::before {
+.vote-image_cinema:hover::before {
   background-image: repeating-linear-gradient(to bottom right, rgba(123, 160, 210, 0.9) 0%, rgba(86, 105, 174, 0.9) 0%, rgba(210, 132, 171, 0.9) 100%, rgba(142, 212, 241, 0.9) 100%);
 }
 
@@ -775,32 +794,6 @@ body.no-active-scroll {
   background-image: repeating-linear-gradient(to bottom right, rgba(103, 190, 113, 0.9) 0%, rgba(112, 151, 210, 0.9) 100%);
 }
 
-.vote__btn {
-  display: inline-block;
-  background-color: #f3912e;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 53px;
-  padding: 19px 55px;
-  letter-spacing: 2px;
-  box-shadow: 3px 3px 0px #12496f;
-}
-
-.vote__rules {
-  color: #fff;
-  font-weight: 400;
-  margin-top: 10px;
-  letter-spacing: 1px;
-}
-
-.vote__rules a {
-  color: #fff;
-}
-
 .js-vote {
   cursor: pointer;
 }
@@ -809,7 +802,7 @@ body.no-active-scroll {
   display: none;
 }
 
-.vote-modal__window {
+.vote-modal .vote-modal__window {
   padding: 80px;
   background-color: #fff;
   width: 1000px;
@@ -824,33 +817,26 @@ body.no-active-scroll {
   display: none;
 }
 
-.vote-modal__window .vote-modal__window-title {
+.vote-modal .vote-modal__window .vote-modal__window-title {
   color: #0071be;
   font-size: 34px;
   font-weight: 400;
 }
 
-.vote-modal__window .vote-modal__window-text {
+.vote-modal .vote-modal__window .vote-modal__window-text {
   margin-top: 15px;
   color: #42536a;
   font-size: 14px;
 }
 
-.vote-modal__window .vote-modal__window-link {
+.vote-modal .vote-modal__window .vote-modal__window-link {
   color: #f3912e;
   font-size: 14px;
   margin-top: 20px;
   display: inline-block;
 }
 
-.logo-blue_modal-title {
-  width: 230px;
-  height: 48px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.vote-modal__overlay {
+.vote-modal .vote-modal__overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -859,6 +845,13 @@ body.no-active-scroll {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-blue_modal-title {
+  width: 230px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .step-one {
@@ -880,7 +873,7 @@ body.no-active-scroll {
   font-size: 20px;
 }
 
-.step-one__item {
+.choice-city {
   text-align: center;
   height: 130px;
   color: #fff;
@@ -895,11 +888,19 @@ body.no-active-scroll {
   cursor: pointer;
 }
 
-.step-one__item_astana:hover {
+.choice-city_astana {
+  margin-right: 20px;
+}
+
+.choice-city_almatu {
+  margin-left: 20px;
+}
+
+.choice-city_astana:hover {
   background-image: url("../img/astana.jpg");
 }
 
-.step-one__item_almatu:hover {
+.choice-city_almatu:hover {
   background-image: url("../img/almatu.jpg");
 }
 
@@ -980,23 +981,23 @@ body.no-active-scroll {
   color: #fff;
 }
 
-.footer__item-title {
+.footer .footer__list-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
+}
+
+.footer .footer__list-descr {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -7px;
+  line-height: 25px;
 }
 
 .logo-white_footer {
   max-width: 300px;
   height: 63px;
   margin: 37px auto;
-}
-
-.footer__item-descr {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: -7px;
-  line-height: 25px;
 }
 
 .social {
@@ -1025,12 +1026,26 @@ body.no-active-scroll {
   border-radius: 50%;
 }
 
+.social .social-icon svg {
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .social .social-icon_facebook {
   background-color: #4867aa;
 }
 
 .social .social-icon_facebook svg {
   font-size: 45px;
+}
+
+.social .social-icon_facebook :hover {
+  background-color: #f6ab49;
 }
 
 .social .social-icon_linkedin {
@@ -1041,6 +1056,10 @@ body.no-active-scroll {
   font-size: 35px;
 }
 
+.social .social-icon_linkedin :hover {
+  background-color: #f6f219;
+}
+
 .social .social-icon_vk {
   background-color: #4c75a3;
 }
@@ -1049,14 +1068,8 @@ body.no-active-scroll {
   font-size: 45px;
 }
 
-.social .social-icon svg {
-  fill: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.social .social-icon_vk :hover {
+  background-color: #f012e9;
 }
 
 .fill-modal {
@@ -1071,7 +1084,7 @@ body.no-active-scroll {
   display: none;
 }
 
-.fill-modal__item {
+.fill-modal .fill-modal__item {
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
@@ -1086,23 +1099,34 @@ body.no-active-scroll {
   padding: 50px;
 }
 
-.logo-blue_form {
-  max-width: 380px;
-  height: 80px;
-  margin: 0 auto 10px;
-}
-
-.fill-modal__title {
+.fill-modal .fill-modal__item .fill-modal__title {
   color: #0071be;
   font-size: 20px;
   font-weight: 400;
   margin-top: 5px;
 }
 
-.fill-modal__form {
+.fill-modal .fill-modal__item .fill-modal__form {
   width: 43.4%;
   margin: 25px auto;
   text-align: center;
+}
+
+.fill-modal .fill-modal__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4999;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-blue_form {
+  max-width: 380px;
+  height: 80px;
+  margin: 0 auto 10px;
 }
 
 .form-input {
@@ -1151,12 +1175,32 @@ body.no-active-scroll {
 
 .form-confirm {
   display: inline-block;
+  margin-right: 6px;
+}
+
+.form-confirm::before {
+  content: '';
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border: 2px solid #cdd5dc;
+}
+
+.form-confirm:checked::before {
+  background-image: url("../img/check.png");
+  background-position: 2px -1px;
+  background-repeat: no-repeat;
 }
 
 .form-confirm-label {
   font-size: 12px;
   font-weight: 400;
   color: #42536a;
+}
+
+.form-confirm-label a {
+  display: inline-block;
 }
 
 .modal-close {
@@ -1167,17 +1211,6 @@ body.no-active-scroll {
   height: 20px;
   background-image: url("../img/modal-close.png");
   cursor: pointer;
-}
-
-.fill-modal__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 4999;
-  width: 100%;
-  height: 100%;
 }
 
 .thankupage {
@@ -1330,7 +1363,7 @@ body.no-active-scroll {
 }
 
 @media only screen and (max-width: 1040px){
-  .step-one__item{
+  .choice-city{
     width: 47.5%;
   }
 }
@@ -1342,7 +1375,7 @@ body.no-active-scroll {
 }
 
 @media only screen and (max-width: 1010px){
-  .fill-modal__item{
+  .fill-modal .fill-modal__item{
     width: 90%;
     margin: 0 auto;
   }
@@ -1350,7 +1383,7 @@ body.no-active-scroll {
     width: 80%;
   }
   .thankupage{
-    overflow: scroll;
+    overflow-y: auto;
   }
   .thankupage .thankupage__wrap{
     width: 100%;
@@ -1367,10 +1400,10 @@ body.no-active-scroll {
 }
 
 @media only screen and (max-width: 1000px){
-  .vote-modal__window{
+  .vote-modal .vote-modal__window{
     width: 90%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 40px 20px;
     margin: 25px 0px;
   }
@@ -1440,10 +1473,10 @@ body.no-active-scroll {
 }
 
 @media only screen and (max-width: 910px){
-  .step-one__item_astana{
+  .choice-city_astana{
     margin-right: 2%;
   }
-  .step-one__item_almatu{
+  .choice-city_almatu{
     margin-left: 2%;
   }
 }
@@ -1497,7 +1530,7 @@ body.no-active-scroll {
     width: 100%;
     text-align: center;
   }
-  .footer__item{
+  .footer__list{
     width: 100%;
   }
   .info-box{
@@ -1531,15 +1564,22 @@ body.no-active-scroll {
     transform: translate(0%);
     padding: 10px 20px;
   }
-  .fill-modal__item{
+  .fill-modal .fill-modal__item{
     padding: 20px;
     margin-top: 20px;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-radius: 10px 10px 0px 0px;
   }
-  .fill-modal__form{
+  .fill-modal .fill-modal__item .fill-modal__form{
     width: 100%;
+  }
+  #confirm-error.error{
+    width: 100%;
+    bottom: auto;
+    top: 35%;
+    background-color: #fff;
+    font-size: 12px;
   }
   .thankupage .thankupage__wrap{
     position: static;
@@ -1585,7 +1625,7 @@ body.no-active-scroll {
   .nav.nav-is-active .nav__list-item{
     font-size: 12px;
   }
-  .step-one__item{
+  .choice-city{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -1612,9 +1652,6 @@ body.no-active-scroll {
   }
   .social .social-icon:nth-child(2){
     margin: 0px 10px;
-  }
-  #confirm-error.error{
-    width: 100%;
   }
   .thankupage .thankupage__inner .info-box .logo-blue_thanku{
     width: 100%;

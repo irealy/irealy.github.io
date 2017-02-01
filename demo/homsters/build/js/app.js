@@ -3155,7 +3155,7 @@ function scrolls() {
 		$('body, html').animate({ scrollTop: stepOne - 100 }, 1000);
 	});
 
-	$('.step-one__item').click(function () {
+	$('.js-choice-city').click(function () {
 		var $this = $(this);
 		var choiceCity = $this.data('city');
 		if ($('.step-two').is(':hidden')) {

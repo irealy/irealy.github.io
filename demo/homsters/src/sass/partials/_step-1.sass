@@ -14,7 +14,7 @@
 	color: #42536a
 	font-size: 20px
 
-.step-one__item
+.choice-city
 	text-align: center
 	height: 130px
 	color: #fff
@@ -28,11 +28,21 @@
 	margin-top: 35px
 	cursor: pointer
 
-.step-one__item_astana
+.choice-city_astana
+	margin-right: 20px
+	+r(910)
+		margin-right: 2%
+
+.choice-city_almatu
+	margin-left: 20px
+	+r(910)
+		margin-left: 2%	
+
+.choice-city_astana
 	&:hover
 		background-image: url("../img/astana.jpg")
 
-.step-one__item_almatu
+.choice-city_almatu
 	&:hover
 		background-image: url("../img/almatu.jpg")
 
