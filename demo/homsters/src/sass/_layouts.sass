@@ -1,9 +1,6 @@
-.header__logo
-	width: 31%
+.logo-white_header
+	width: 40%
 	float: left
-	display: block
-	background-image: url("../img/head-logo.svg")
-	background-repeat: no-repeat
 	height: 64px
 	+r(768)
 		width: 100%
@@ -17,7 +14,7 @@
 			display: none
 
 .nav
-	width: 69%
+	width: 60%
 	float: right
 	&.nav-is-active
 		width: 40%
@@ -58,10 +55,16 @@
 	width: 63%
 	float: left
 	padding-right: 30px
+	+r(768)
+		width: 100%
+		padding-right: 0
 
 .shares__cup
 	width: 37%
 	float: left
+	+r(768)
+		width: 100%
+		text-align: center
 
 .vote-image
 	width: 30.6%
@@ -86,7 +89,7 @@
 .vote-modal__window-info
 	width: 58%
 	float: left
-	+r(850)
+	+r(768)
 		width: 100%
 		text-align: center
 
@@ -138,22 +141,22 @@
 	+r(630)
 		width: 45%
 	+r(430)
-		width: 95%
+		width: 61%
 	
 .footer__item
 	width: 70%
 	margin: 0 auto
+	+r(768)
+		width: 100%
 
-.another-info-box
+.info-box
 	width: 48%
-	float: left
 	background-color: #fff
 	text-align: center
 	border-radius: 10px
-	padding: 55px 70px 55px 80px
 	margin-top: 70px
-	margin-right: 20px
-	&:last-child
-		padding: 35.5px
-		margin-left: 20px
-		margin-right: 0px
+	transition: all .5s
+	+r(768)
+		width: 100%
+		margin-top: 20px
+

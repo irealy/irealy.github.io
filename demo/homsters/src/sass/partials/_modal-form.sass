@@ -20,6 +20,20 @@
 	z-index: 5000
 	text-align: center
 	padding: 50px
+	+r(1010)
+		width: 90%
+		margin: 0 auto
+	+r(768)
+		padding: 20px
+		margin-top: 20px
+		height: 100%
+		overflow-y: scroll
+		border-radius: 10px 10px 0px 0px
+
+.logo-blue_form
+	max-width: 380px
+	height: 80px
+	margin: 0 auto 10px
 
 .fill-modal__title
 	color: #0071be
@@ -31,6 +45,8 @@
 	width: 43.4%
 	margin: 25px auto
 	text-align: center
+	+r(768)
+		width: 100%
 
 .form-input
 	border: 1px solid #d0d0d0
@@ -57,6 +73,10 @@
 	font-size: 14px
 	border: 1px solid red
 	padding: 5px
+	+r(1010)
+		width: 80%
+	+r(480)
+		width: 100%
 
 .form-btn
 	display: inline-block
@@ -88,7 +108,7 @@
 	background-image: url("../img/modal-close.png")
 	cursor: pointer
 	+r(850)
-		top: 10px
+		top: 5px
 		right: 25px
 
 .fill-modal__overlay

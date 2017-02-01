@@ -7,17 +7,32 @@
 	padding: 65px 65px 67px
 	background-image: url("../img/about-bg.png")
 	background-repeat: no-repeat
-	background-position: 612px center
+	background-position: 87% center
 	text-align: center
 	position: relative
+	+r(768)
+		background-image: none
+		padding: 25px
 
 .about__item-description
 	width: 56%
 	text-align: left
+	+r(768)
+		width: 100%
+
+.logo-blue_about
+	width: 380px
+	height: 80px
+	+r(768)
+		margin: 0 auto
+	+r(480)
+		width: 100%
 
 .about__item-list
 	padding-left: 80px
-	display: table
+	+clr
+	+r(768)
+		padding-left: 0px
 
 .about__item-list-point
 	font-size: 18px
@@ -56,3 +71,7 @@
 	&:hover
 		background-color: #7ec8e7
 		color: #fff
+	+r(768)
+		position: static
+		transform: translate(0%)
+		padding: 10px 20px
