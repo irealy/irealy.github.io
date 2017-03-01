@@ -2759,8 +2759,9 @@ $(document).ready(function () {
     $(link).show();
   });
 
-  $(window).on('popstate', function (e) {
+  $(window).on('hashchange', function (e) {
     var state = document.location.hash;
+
     $('#block-1, #block-2, #block-3, #block-4').hide();
     if (state.length == 0) {
       $('#block-1').show();
