@@ -53,7 +53,7 @@
     $(document).ready(function() {
 
       $(window).on('hashchange', function(e) {
-        var state = location.hash.slice(1);
+        var state = document.location.hash.slice(1);
         console.log(state)
         $('[data-id]').hide();
         $('[data-id="' + state + '"').show();
