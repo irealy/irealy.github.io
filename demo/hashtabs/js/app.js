@@ -2762,7 +2762,7 @@ $(document).ready(function () {
   $(window).on('popstate', function (e) {
     var state = document.location.hash;
     $('#block-1, #block-2, #block-3, #block-4').hide();
-    if (state.length > 25) {
+    if (state.length == 0) {
       $('#block-1').show();
       return false;
     } else {
