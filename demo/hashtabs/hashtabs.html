@@ -52,7 +52,10 @@
   <script>
     $(document).ready(function() {
 
-      $(window).on('hashchange load', function(e) {
+      $(window).on('hashchange', hashTabs);
+      hashTabs();
+
+      function hashTabs() {
         var state = document.location.hash.slice(1);
         console.log(state)
         $('[data-id]').hide();
@@ -60,8 +63,9 @@
         if(!(state)) {
           $('[data-id="block-1"]').show();
         }
+      }
 
-      })
+
     });
   </script>
 </body>
