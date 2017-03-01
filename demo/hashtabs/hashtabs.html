@@ -1,30 +1,72 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hashtabs</title>
+</head>
+<style>
+    
+  .blocks {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    height: 300px;
+  }
 
-  <head>
-    <meta charset="utf-8">
-    <title>test project with Nunjucks</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="theme-color" content="#fff">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+  #block-1,
+  #block-2,
+  #block-3,
+  #block-4 {
+    float: left;
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+  }
 
-  <body>
-    <!-- BEGIN content -->
-    <div class="out"> <a class="hashlink" href="#block-1">block-1</a> <a class="hashlink" href="#block-2">block-2</a> <a class="hashlink" href="#block-3">block-3</a> <a class="hashlink" href="#block-4">block-4</a>
-      <div class="blocks">
-        <div id="block-1">block-1</div>
-        <div id="block-2">block-2</div>
-        <div id="block-3">block-3</div>
-        <div id="block-4">block-4</div>
-      </div>
-    </div>
-    <!-- END content -->
-    <!-- BEGIN scripts -->
-    <script src="../../js/lib/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- END scripts -->
-  </body>
+  #block-2 {
+    display: none;
+  }
 
+  #block-3 {
+    display: none;
+  }
+
+  #block-4 {
+    display: none;
+  }
+</style>
+<body>
+  <a class="hashlink" href="#block-1">block-1</a>
+  <a class="hashlink" href="#block-2">block-2</a>
+  <a class="hashlink" href="#block-3">block-3</a>
+  <a class="hashlink" href="#block-4">block-4</a>
+
+  <div class="blocks">
+    
+    <div id="block-1" data-id="block-1">block-1</div>
+    <div id="block-2" data-id="block-2">block-2</div>
+    <div id="block-3" data-id="block-3">block-3</div>
+    <div id="block-4" data-id="block-4">block-4</div>
+
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $(window).on('hashchange', function(e) {
+        var state = location.hash.slice(1);
+        console.log(state)
+        $('[data-id]').hide();
+        $('[data-id="' + state + '"').show();
+        if(state.length == 0) {
+          $('[data-id="block-1"]').show();
+        }
+
+      })
+    });
+  </script>
+</body>
 </html>
+  
+
+
+
