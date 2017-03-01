@@ -2760,14 +2760,15 @@ $(document).ready(function () {
   });
 
   $(window).on('hashchange', function (e) {
-    var state = document.location.hash;
-
+    var state = location.hash;
+    console.log(state);
     $('#block-1, #block-2, #block-3, #block-4').hide();
-    if (state.length == 0) {
-      $('#block-1').show();
-      return false;
-    } else {
-      $(state).show();
-    }
+    // if(state.length == 0) {
+    // 	$('#block-1').show();
+    // 	return false;
+    // } else {
+    // 	$(state).show();
+    // }
+
   });
 });
