@@ -12,39 +12,33 @@
     height: 300px;
   }
 
-  #block-1,
-  #block-2,
-  #block-3,
-  #block-4 {
+  .block {
     float: left;
-    margin: 20px;
+    margin: 520px;
     border: 1px solid #333;
     padding: 20px;
   }
 
-  #block-2 {
-    display: none;
-  }
-
-  #block-3 {
-    display: none;
-  }
-
-  #block-4 {
-    display: none;
-  }
 </style>
 <body>
   <a class="hashlink" href="#block-1">block-1</a>
   <a class="hashlink" href="#block-2">block-2</a>
   <a class="hashlink" href="#block-3">block-3</a>
   <a class="hashlink" href="#block-4">block-4</a>
+  <a class="hashlink" href="#block-5">block-5</a>
+  <a class="hashlink" href="#block-6">block-6</a>
+  <a class="hashlink" href="#block-7">block-7</a>
+  <a class="hashlink" href="#block-8">block-8</a>
 
   <div class="blocks">
-    <div id="block-1" data-id="block-1">block-1</div>
-    <div id="block-2" data-id="block-2">block-2</div>
-    <div id="block-3" data-id="block-3">block-3</div>
-    <div id="block-4" data-id="block-4">block-4</div>
+    <div class="block" data-id="block-1">block-1</div>
+    <div class="block" data-id="block-2">block-2</div>
+    <div class="block" data-id="block-3">block-3</div>
+    <div class="block" data-id="block-4">block-4</div>
+    <div class="block" data-id="block-5">block-5</div>
+    <div class="block" data-id="block-6">block-6</div>
+    <div class="block" data-id="block-7">block-7</div>
+    <div class="block" data-id="block-8">block-8</div>
   </div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
@@ -53,9 +47,12 @@
       $(window).on('hashchange', hashTabs);
       hashTabs();
 
+
       function hashTabs() {
+        
         var state = document.location.hash.slice(1);
-        var maxState = document.location.hash.slice(-1);
+        var maxState = document.location.hash.slice(7);
+        console.log(maxState)
         var blocksLength = $('[data-id]').length;
         $('[data-id]').hide();
         $('[data-id="' + state + '"').show();
@@ -64,7 +61,7 @@
         } else if(maxState > blocksLength) {
           history.back();
         }
-      }
+      };
 
 
     });
