@@ -1,0 +1,5 @@
+ProjectTitle: my-future
+
+PageList:
+- file: page.html
+  ready: 50
