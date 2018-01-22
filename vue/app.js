@@ -4,7 +4,8 @@ let form = new Vue({
 		name: '',
 		lastname: '',
 		email: '',
-		guesses: []
+		guesses: [],
+		formsucces: false
 	},
 	methods: {
 		addGuess() {

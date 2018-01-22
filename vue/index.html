@@ -28,8 +28,9 @@
 					<div class="btn btn-error" @click="removeGuess(index)">Close</div>
 				</div>
 			</form>
+			<button class="btn btn-warning" @click="formsucces = !formsucces">Go to list</button>
 		</div>
-		<div class="form-succes">
+		<div class="form-succes" v-show="formsucces">
 			<table class="table table-striped">
 				<tr>
 					<td>Name</td>
