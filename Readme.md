@@ -1,1 +1,0 @@
-Hello! I'm web developer. If you want to work with me - write me!
